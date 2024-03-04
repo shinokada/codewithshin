@@ -1,5 +1,6 @@
 <script lang="ts">
   import { List, Li, A, Card } from 'svelte-5-ui-lib';
+  import Slider from '../utils/Slider.svelte';
   const apps = [
     {
       name: 'Norske Flashcard',
@@ -29,13 +30,5 @@
   ]
 </script>
 
-<h2>Learning Apps</h2>
+<Slider title='Learning Apps' list={apps} />
 
-<div class='flex gap-4 flex-wrap'>
-  {#each apps as {name, description, url}}
-  <Card href="{url}">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
-    <p class="font-normal text-gray-700 dark:text-gray-400 leading-tight">{description}</p>
-  </Card>
-{/each}
-</div>

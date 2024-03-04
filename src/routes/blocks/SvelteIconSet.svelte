@@ -1,8 +1,5 @@
 <script lang="ts">
-  import { slide } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
-	import { List, Li, A, Card, Badge, P } from 'svelte-5-ui-lib';
-  import { AngleDownOutline, AngleUpOutline } from 'flowbite-svelte-icons';
+	import Slider from '../utils/Slider.svelte';
 	const iconList = [
 		{
 			name: 'Svelte SVG Icon Set',
@@ -184,30 +181,7 @@
 			href: 'https://svelte-weather.codewithshin.com/'
 		}
 	];
-  let isOpen = $state(false)
-
 </script>
 
-<h2><button class='flex' onclick={()=> isOpen = !isOpen}>
-  29 Svelte SVG Icon Set 
-  {#if isOpen}
-  <AngleUpOutline class='ml-2 mt-1'/>
-  {:else}
-  <AngleDownOutline class='ml-2 mt-1'/>
-  {/if}
-</button>
-</h2>
 
-{#if isOpen}
-<div class="flex flex-wrap gap-4"  transition:slide={{ delay: 250, duration: 800, easing: quintOut, axis: 'y' }}>
-	{#each iconList as { name, href, description, versions }}
-		<Card {href} class='bg-white dark:bg-slate-800'>
-      {#if versions}
-      <Badge color="{versions.includes('Runes') ? 'blue' : 'primary'}" divclass="dark:text-white px-2 my-2">For Svelte: {versions}</Badge>
-      {/if}
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
-      <P>{description}</P>
-		</Card>
-	{/each}
-</div>
-{/if}
+<Slider title='29 Svelte SVG Icon Set' list={iconList} />

@@ -1,4 +1,5 @@
 <svelte:head>
+  <meta name="title" content="codewithshin.com" />
   <meta name="description" content="CodewithShin personal website" />
   <meta name="keywords" content="codewithshin, developer, svelte" />
   <meta name="robots" content="index,follow" />
