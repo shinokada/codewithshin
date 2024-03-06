@@ -1,32 +1,29 @@
+<script lang="ts" context="module">
+  export type BadgeColorType = 'gray' | 'red' | 'yellow' | 'green' | 'indigo' | 'purple' | 'pink' | 'blue' | 'primary' | 'none';
+</script>
 <script lang="ts">
   import { twMerge } from 'tailwind-merge'
   import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
   import { Card, Badge, P } from 'svelte-5-ui-lib';
-  function isArrayOfArrays(arr: any[]) {
-  // Check if it's an array using Array.isArray()
-  if (!Array.isArray(arr)) {
-    return false;
-  }
-  // Check if all elements are arrays themselves
-  return arr.every(element => Array.isArray(element));
-}
   import { AngleDownOutline, AngleUpOutline } from 'flowbite-svelte-icons';
   interface Props{
     children?: any;
-    list?: ListType[];
+    list?: ListItem[];
     title?: string;
     class?: string;
+    cardClass?: string;
   }
-  type ListType = {
+  interface ListItem {
     name: string;
-    href?: string;
     description?: string;
-    versions?: string;
+    href?: string;
+    badge?: string;
     icon?: any;
+    badgeColor?: BadgeColorType;
   }
 
-  let { children, title, list, class:className, icon, ...attributes } = $props<Props>()
+  let { children, title, list, class:className, cardClass = 'bg-white dark:bg-slate-800', ...attributes } = $props<Props>()
   let isOpen = $state(false)
 </script>
 
@@ -41,10 +38,10 @@
 </button>
 </h2>
 {#snippet card(arr)}
-  {#each arr as { name, href, description, versions }}
-		<Card {href} class='bg-white dark:bg-slate-800'>
-      {#if versions}
-      <Badge color="{versions.includes('Runes') ? 'blue' : 'primary'}" divclass="dark:text-white px-2 my-2"> {versions}</Badge>
+  {#each arr as { name, href, description, badge, badgeColor = 'green', icon }}
+		<Card {href} class='{cardClass}'>
+      {#if badge}
+      <Badge color="{badgeColor}" divclass="dark:text-white mb-2"> {badge}</Badge>
       {/if}
       {#if icon}
         {icon}

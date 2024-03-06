@@ -28,7 +28,7 @@
     {/snippet}
     <NavUl>
       <NavLi href="/">Home</NavLi>
-      <NavLi href="/blog">Blog</NavLi>
+      <NavLi href="https://blog.codewithshin.com">Blog</NavLi>
     </NavUl>
   </Navbar>
 </header>

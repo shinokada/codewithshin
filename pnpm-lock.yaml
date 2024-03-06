@@ -65,6 +65,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.6.6
     version: 3.6.6(postcss-load-config@5.0.3)(postcss@8.4.35)(svelte@5.0.0-next.70)
+  svelte-supertiny:
+    specifier: 2.0.0-next.4
+    version: 2.0.0-next.4(svelte@5.0.0-next.70)
   tailwind-merge:
     specifier: ^2.2.1
     version: 2.2.1
@@ -2720,6 +2723,14 @@ packages:
       strip-indent: 3.0.0
       svelte: 5.0.0-next.70
       typescript: 5.3.3
+    dev: true
+
+  /svelte-supertiny@2.0.0-next.4(svelte@5.0.0-next.70):
+    resolution: {integrity: sha512-suIo8/yVbu5guZPKfTWlm/Dw5R7ZbYERgOlZpuyAvH/hA1ol0iqEXYuSMUl7BVMhpKGSYGQP711xSQTtavKPFQ==}
+    peerDependencies:
+      svelte: ^5.0.0
+    dependencies:
+      svelte: 5.0.0-next.70
     dev: true
 
   /svelte@5.0.0-next.70:
