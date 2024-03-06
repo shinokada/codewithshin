@@ -89,6 +89,5 @@
 <SliderObj
 	list={sveltelist}
 	title="Svelte Libraries"
-	isOpen
 	cardClass="bg-gray-50 dark:bg-primary-800 hover:bg-gray-100 hover:dark:bg-primary-700"
 />

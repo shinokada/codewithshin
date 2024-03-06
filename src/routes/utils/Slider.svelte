@@ -12,6 +12,7 @@
     list?: ListItem[];
     title?: string;
     class?: string;
+    isOpen?: boolean;
     cardClass?: string;
   }
   interface ListItem {
@@ -23,17 +24,17 @@
     badgeColor?: BadgeColorType;
   }
 
-  let { children, title, list, class:className, cardClass = 'bg-white dark:bg-slate-800', ...attributes } = $props<Props>()
-  let isOpen = $state(false)
+  let { children, title, list, isOpen = true, class:className, cardClass = 'bg-white dark:bg-slate-800', ...attributes } = $props<Props>()
+  // let isOpen = $state(true)
 </script>
 
 
 <h2><button class='flex' onclick={()=> isOpen = !isOpen}>
   {title} 
   {#if isOpen}
-  <AngleUpOutline class='ml-2 mt-1'/>
+  <AngleUpOutline class='ml-2 mt-2'/>
   {:else}
-  <AngleDownOutline class='ml-2 mt-1'/>
+  <AngleDownOutline class='ml-2 mt-2'/>
   {/if}
 </button>
 </h2>

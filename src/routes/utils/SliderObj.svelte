@@ -24,16 +24,16 @@
     cardClass?: string;
   }
 
-  let { children, title, list, class:className, isOpen, cardClass = 'bg-white dark:bg-slate-800', ...attributes } = $props<Props>()
+  let { children, title, list, class:className, isOpen = true, cardClass = 'bg-white dark:bg-slate-800', ...attributes } = $props<Props>()
   let slideOpen = $state(isOpen)
 </script>
 
 <h2><button class='flex' onclick={()=> slideOpen = !slideOpen}>
   {title} 
   {#if slideOpen}
-  <AngleUpOutline class='ml-2 mt-1'/>
+  <AngleUpOutline class='ml-2 mt-2'/>
   {:else}
-  <AngleDownOutline class='ml-2 mt-1'/>
+  <AngleDownOutline class='ml-2 mt-2'/>
   {/if}
 </button>
 </h2>

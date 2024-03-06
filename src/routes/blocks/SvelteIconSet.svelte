@@ -3,7 +3,7 @@
 	import type {BadgeColorType} from '../utils/Slider.svelte'
 	const list = [
 		{
-			name: 'Svelte SVG Icon Set',
+			name: 'Svelte SVG Icon Sets',
 			badge: 'Svelte 4/5/Runes',
 			badgeColor: 'red' as BadgeColorType,
 			description: 'Website for Svelte SVG Icon Sets',
