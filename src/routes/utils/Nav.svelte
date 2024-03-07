@@ -7,7 +7,7 @@
 	let toggleNav = nav.toggle;
 	let closeNav = nav.close;
 	let divClass = 'ml-auto w-full';
-	// let ulclass = 'flex flex-col py-3 lg:flex-row lg:my-0 order-1 font-medium dark:lg:bg-transparent lg:bg-gray-100 lg:border-0 lg:space-x-4';
+	let ulclass = 'dark:lg:bg-transparent';
 	let navclass =
 		'w-full divide-gray-200 border-gray-200 bg-gray-100 dark:bg-sky-950 text-gray-500 dark:divide-gray-700 dark:border-gray-700 dark:transparent dark:text-gray-400 sm:px-4';
 
@@ -35,7 +35,7 @@
 				<Darkmode btnclass="inline-block dark:hover:text-white hover:text-gray-900" />
 			</div>
 		{/snippet}
-		<NavUl>
+		<NavUl {ulclass}>
 			<NavLi href="/">Home</NavLi>
 			<NavLi href="https://blog.codewithshin.com">Blog</NavLi>
 		</NavUl>
