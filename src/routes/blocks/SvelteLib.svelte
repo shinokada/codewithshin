@@ -25,14 +25,14 @@
 				name: 'Svelte 5 UI Lib',
 				badge: 'Svelte 5:Runes',
 				badgeColor: 'pink',
-				description: 'A collection of Svelte 5 UI components',
+				description: 'Svelte 5 UI components',
 				href: 'https://svelte-5-ui-lib.codewithshin.com/'
 			},
 			{
 				name: 'Svelte Rune Highlight',
 				badge: 'Svelte 5:Runes',
 				badgeColor: 'pink',
-				description: 'A collection of Svelte 5 UI components',
+				description: 'Code highlighting for Svelte 5 Runes',
 				href: 'https://svelte-rune-highlight.codewithshin.com/'
 			}
 		],
@@ -41,7 +41,7 @@
 				name: 'Flowbite Svelte',
 				badge: 'Svelte 4/5',
 				badgeColor: 'blue',
-				description: 'A collection of Flowbite UI components',
+				description: 'Official Flowbite UI components for Svelte',
 				href: 'https://flowbite-svelte.com/'
 			},
 			{
@@ -55,7 +55,7 @@
 				name: 'Flowbite Svelte Icons',
 				badge: 'Svelte 4/5',
 				badgeColor: 'blue',
-				description: 'A collection of Flowbite icons for Svelte',
+				description: 'Flowbite icons for Svelte',
 				href: 'https://flowbite-svelte-icons.codewithshin.com/'
 			},
 			{
@@ -89,5 +89,5 @@
 <SliderObj
 	list={sveltelist}
 	title="Svelte Libraries"
-	cardClass="dark:bg-sky-900 hover:bg-gray-50 hover:dark:bg-sky-800 max-w-[440px]"
+	cardClass="dark:bg-sky-900 hover:bg-gray-100 hover:dark:bg-sky-800 max-w-[440px]"
 />

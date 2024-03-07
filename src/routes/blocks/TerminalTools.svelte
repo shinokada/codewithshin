@@ -125,5 +125,5 @@
 <Slider
 	title="Terminal Tools"
 	list={items}
-	cardClass="dark:bg-cyan-900 hover:bg-gray-50 hover:dark:bg-cyan-800 max-w-[440px]"
+	cardClass="dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-[440px]"
 />
