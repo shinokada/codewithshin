@@ -9,7 +9,7 @@
 	let divClass = 'ml-auto w-full';
 	let ulclass = 'dark:lg:bg-transparent';
 	let navclass =
-		'w-full divide-gray-200 border-gray-200 bg-gray-100 dark:bg-sky-950 text-gray-500 dark:divide-gray-700 dark:border-gray-700 dark:transparent dark:text-gray-400 sm:px-4';
+		'w-full divide-gray-200 border-gray-200 bg-gray-50 dark:bg-sky-950 text-gray-500 dark:divide-gray-700 dark:border-gray-700 dark:transparent dark:text-gray-400 sm:px-4';
 
 	$effect(() => {
 		navStatus = nav.isOpen;
