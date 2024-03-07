@@ -34,7 +34,7 @@
 				badgeColor: 'pink',
 				description: 'A collection of Svelte 5 UI components',
 				href: 'https://svelte-rune-highlight.codewithshin.com/'
-			},
+			}
 		],
 		'Flowbite: Svelte 4/5': [
 			{
@@ -89,5 +89,5 @@
 <SliderObj
 	list={sveltelist}
 	title="Svelte Libraries"
-	cardClass="bg-gray-50 dark:bg-primary-800 hover:bg-gray-100 hover:dark:bg-primary-700"
+	cardClass="dark:bg-sky-900 hover:bg-gray-50 hover:dark:bg-sky-800 max-w-[440px]"
 />

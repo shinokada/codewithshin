@@ -1,6 +1,13 @@
 <script lang="ts">
 	import Slider from '../utils/Slider.svelte';
-	import type {BadgeColorType} from '../utils/Slider.svelte'
+	import type { BadgeColorType } from '../utils/Slider.svelte';
+	// interface Props{
+	// 	size?: "xs" | "sm" | "md" | "lg" | "xl";
+	// 	customSize?: string;
+	// }
+	// let { customSize, size } = $props<Props>();
+	const size = 'xs';
+	const customSize = 'max-w-[220px]';
 	const list = [
 		{
 			name: 'Svelte SVG Icon Sets',
@@ -189,4 +196,4 @@
 	];
 </script>
 
-<Slider title="29 Svelte SVG Icon Set" {list} />
+<Slider title="29 Svelte SVG Icon Set" {list} cardClass="dark:bg-cyan-900 hover:bg-gray-50 hover:dark:bg-cyan-800 max-w-[290px]" />
