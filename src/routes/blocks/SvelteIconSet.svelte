@@ -199,6 +199,6 @@
 <Slider 
 title="29 Svelte SVG Icon Set" 
 {list} 
-cardClass="dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[280px]"
+cardClass="dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[300px] md:max-w-[350px] xl:max-w-[400px]"
 class='flex justify-center md:justify-start'
 />
