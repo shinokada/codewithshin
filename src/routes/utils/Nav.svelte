@@ -22,7 +22,7 @@
 	<Navbar {navclass} {toggleNav} {closeNav} {navStatus} breakPoint="lg" fluid div2class={divClass}>
 		{#snippet brand()}
 			<NavBrand
-				siteName="CodewithShin"
+				siteName="codewithshin.com"
 				spanclass="self-center whitespace-nowrap text-2xl font-semibold text-primary-900 dark:text-primary-500"
 			/>
 			<div class="ml-auto flex items-center lg:order-1">

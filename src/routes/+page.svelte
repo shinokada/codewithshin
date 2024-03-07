@@ -4,7 +4,6 @@
 	import SvelteLib from './blocks/SvelteLib.svelte';
 	import SvelteIconSet from './blocks/SvelteIconSet.svelte';
 	import TerminalTools from './blocks/TerminalTools.svelte';
-	import { Card } from 'svelte-5-ui-lib';
 </script>
 
 <h1>Welcome to CodewithShin</h1>
