@@ -39,7 +39,7 @@
 			badge: 'Bash 5',
 			description:
 				'automates creating header images for your articles, email, presentation and other purposes. Tested on macOS and Ubuntu.',
-			href: 'https://effects.codewithshin.com/'
+			href: 'https://teffects.codewithshin.com/'
 		},
 		{
 			name: 'Shellscript starter',
@@ -98,12 +98,6 @@
 			badge: 'Bash',
 			description: 'A command-line tool for resizing images quickly and easily. ',
 			href: 'https://github.com/shinokada/quick-resize'
-		},
-		{
-			name: 'ssic',
-			badge: 'Bash 5',
-			description: 'Creates SVG icons for Svelte/SvelteKit from a wide variety of icon libraries.',
-			href: 'https://ssic.codewithshin.com/'
 		},
 		{
 			name: 'markdown-docs-as-pdf',

@@ -161,7 +161,7 @@
 			name: 'Svelte Remix Icons',
 			badge: 'Svelte 4/5',
 			description: '2270+ Remixicons for Svelte.',
-			href: 'https://svelte-remix-icons.codewithshin.com/'
+			href: 'https://svelte-remix.codewithshin.com/'
 		},
 		{
 			name: 'Svelte Simples',
