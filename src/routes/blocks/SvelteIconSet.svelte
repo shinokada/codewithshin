@@ -194,11 +194,12 @@
 			href: 'https://svelte-weather.codewithshin.com/'
 		}
 	];
+	const cardClass = "dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[290px] xl:max-w-[400px]"
 </script>
 
 <Slider 
 title="29 Svelte SVG Icon Set" 
 {list} 
-cardClass="dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[300px] md:max-w-[350px] xl:max-w-[400px]"
+{cardClass}
 class='flex justify-center md:justify-start'
 />

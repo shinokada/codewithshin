@@ -4,8 +4,11 @@
 	import SvelteLib from './blocks/SvelteLib.svelte';
 	import SvelteIconSet from './blocks/SvelteIconSet.svelte';
 	import TerminalTools from './blocks/TerminalTools.svelte';
+	import heroImg from '$lib/assets/codewithshin-hero.png'
 </script>
-
+<div class="max-w-7xl">
+<img src={heroImg} alt="codewithshin hero"/>
+</div>
 <h1>Welcome to CodewithShin</h1>
 
 <div class="mb-8">
