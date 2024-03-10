@@ -1,7 +1,6 @@
 <script>
 	import GitHubProfile from './blocks/GitHubProfile.svelte';
 	import LearningApps from './blocks/LearningApps.svelte';
-	import SvelteLib from './blocks/SvelteLib.svelte';
 	import SvelteIconSet from './blocks/SvelteIconSet.svelte';
 	import TerminalTools from './blocks/TerminalTools.svelte';
 	import heroImg from '$lib/assets/codewithshin-hero.png'
@@ -11,9 +10,7 @@
 </div>
 <h1>Welcome to CodewithShin</h1>
 
-<div class="mb-8">
-	<SvelteLib />
-</div>
+
 <div class="mb-8">
 	<SvelteIconSet />
 </div>
