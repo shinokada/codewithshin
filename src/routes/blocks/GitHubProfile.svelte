@@ -1,68 +1,53 @@
 <script>
-	// import Medium from "../utils/Medium.svelte";
-	// import Twitter from "../utils/Twitter.svelte";
-	import {
-		Medium,
-		Twitter,
-		Git,
-		Vim,
-		Css3,
-		Html5,
-		Javascript,
-		Svelte,
-		Python,
-		Bash,
-		Visualstudiocode,
-		Nodejs,
-		Github,
-		Ubuntu
-	} from 'svelte-supertiny';
-	const size = '50';
+	import { Card } from 'svelte-5-ui-lib';
+	const headerColor = '';
+	const cardHeight = 'h-56';
+	const thumnailSize = '';
+	const name = 'GitHub Profile';
 </script>
 
-<h2>Github Profile</h2>
-<div class="flex flex-wrap gap-4">
-	<img
-		width="400"
-		alt="github stats"
-		class="my-4"
-		src="https://github-readme-stats.vercel.app/api?username=shinokada&show_icons=true&theme=tokyonight"
-	/>
-	<img
-		width="500"
-		alt="github trophy"
-		src="https://github-profile-trophy.vercel.app/?username=shinokada&theme=onedark&row=2&column=6"
-	/>
-	<img
-		width="400"
-		alt="streak stats"
-		src="https://github-readme-streak-stats.herokuapp.com?user=shinokada&theme=neon-palenight&hide_border=true"
-	/>
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-2">
+	<Card padding="none" class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+		<div class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700">
+			<span class="text-base font-medium text-gray-900 dark:text-white">GitHub Stats</span>
+		</div>
+		<div class="flex items-center justify-center {cardHeight}">
+			<div class="flex hidden items-center justify-center gap-8 dark:block">
+				<img alt="github stats" class="inline" src="https://github-readme-stats.vercel.app/api?username=shinokada&show_icons=true&theme=tokyonight&hide_border=true" />
+			</div>
+			<div class="flex items-center justify-center gap-8 dark:hidden">
+				<img alt="github stats" class="inline" src="https://github-readme-stats.vercel.app/api?username=shinokada&show_icons=true" />
+			</div>
+		</div>
+	</Card>
+
+	<Card padding="none" class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+		<div class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700">
+			<span class="text-base font-medium text-gray-900 dark:text-white">GitHub Contributions</span>
+		</div>
+		<div class="flex items-center justify-center {cardHeight}">
+			<div class="flex hidden items-center justify-center gap-8 dark:block">
+				<img alt="streak stats" class="inline" src="https://github-readme-streak-stats.herokuapp.com?user=shinokada&theme=neon-palenight&hide_border=true" />
+			</div>
+			<div class="flex items-center justify-center gap-8 dark:hidden">
+				<img alt="streak stats" class="inline" src="https://github-readme-streak-stats.herokuapp.com?user=shinokada&hide_border=true" />
+			</div>
+		</div>
+	</Card>
 </div>
+<div class="mt-4 grid grid-cols-1">
+	<Card padding="none" class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+		<div class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700">
+			<span class="text-base font-medium text-gray-900 dark:text-white">GitHub trophies</span>
+		</div>
 
-<h2>Getin touch</h2>
-<div class="flex gap-4">
-	<a href="https://blog.codewithshin.com/" target="blank">Blog: <Medium {size} /></a>
-
-	<a href="https://twitter.com/shinokada" target="blank"
-		>X/Twitter:
-		<Twitter {size} /></a
-	>
-</div>
-
-<h2>Languages and Tools:</h2>
-
-<div class="flex flex-wrap gap-1">
-	<Svelte {size} />
-	<Bash {size} />
-	<Javascript {size} />
-	<Nodejs {size} />
-	<Git {size} />
-	<Github {size} />
-	<Ubuntu {size} />
-	<Css3 {size} />
-	<Html5 {size} />
-	<Python {size} />
-	<Visualstudiocode {size} />
-	<Vim {size} />
+		<div class="flex items-center justify-center {cardHeight}">
+			<div class="flex hidden items-center justify-center dark:block">
+				<img alt="github trophy" class="inline" src="https://github-profile-trophy.vercel.app/?username=shinokada&theme=onedark&no-frame=true&row=1" />
+			</div>
+			<div class="flex items-center justify-center dark:hidden">
+				<img alt="github trophy" class="inline" src="https://github-profile-trophy.vercel.app/?username=shinokada&no-frame=true&row=1" />
+			</div>
+		</div>
+	</Card>
 </div>

@@ -11,17 +11,7 @@
 		href: string;
 		badge?: string;
 		icon?: any;
-		badgeColor?:
-			| 'gray'
-			| 'red'
-			| 'yellow'
-			| 'green'
-			| 'indigo'
-			| 'purple'
-			| 'pink'
-			| 'blue'
-			| 'primary'
-			| 'none';
+		badgeColor?: 'gray' | 'red' | 'yellow' | 'green' | 'indigo' | 'purple' | 'pink' | 'blue' | 'primary' | 'none';
 	}
 	type ListType = { [key: string]: ListItem[] };
 
@@ -34,15 +24,7 @@
 		cardClass?: string;
 	}
 
-	let {
-		children,
-		title,
-		list,
-		class: className,
-		isOpen = true,
-		cardClass = 'bg-white dark:bg-slate-800',
-		...attributes
-	} = $props<Props>();
+	let { children, title, list, class: className, isOpen = true, cardClass = 'bg-white dark:bg-slate-800', ...attributes } = $props<Props>();
 	let slideOpen = $state(isOpen);
 </script>
 
@@ -74,11 +56,7 @@
 {/snippet}
 
 {#if slideOpen}
-	<div
-		class={twMerge('flex flex-wrap gap-4', className)}
-		transition:slide={{ delay: 250, duration: 500, easing: quintOut, axis: 'y' }}
-		{...attributes}
-	>
+	<div class={twMerge('flex flex-wrap gap-4', className)} transition:slide={{ delay: 250, duration: 500, easing: quintOut, axis: 'y' }} {...attributes}>
 		{#if list}
 			{#each Object.keys(list) as key}
 				<h3 class="w-full">{key}</h3>

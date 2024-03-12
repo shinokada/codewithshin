@@ -10,8 +10,7 @@
 		{
 			name: 'BIMGC',
 			badge: 'Node',
-			description:
-				'A Node script for converting PNG and JPG images to AVIF and WebP format with various sizes.',
+			description: 'A Node script for converting PNG and JPG images to AVIF and WebP format with various sizes.',
 			href: 'https://bimgc.codewithshin.com/'
 		},
 		{
@@ -23,22 +22,19 @@
 		{
 			name: 'Tera: Terminal Radio',
 			badge: 'Bash',
-			description:
-				'Interactive terminal music radio player. Play your favorite radio station, CRUD your favorite lists, and explore new radio stations from your terminal.',
+			description: 'Interactive terminal music radio player. Play your favorite radio station, CRUD your favorite lists, and explore new radio stations from your terminal.',
 			href: 'https://tera.codewithshin.com/'
 		},
 		{
 			name: 'Gitstart',
 			badge: 'Bash',
-			description:
-				'Automates creating a GitHub repo. The script creates .gitignore, a license.txt, a README.md file and commit with a message. It will create a remote repo and push all the files.',
+			description: 'Automates creating a GitHub repo. The script creates .gitignore, a license.txt, a README.md file and commit with a message. It will create a remote repo and push all the files.',
 			href: 'https://gitstart.codewithshin.com/'
 		},
 		{
 			name: 'TEFFECTS',
 			badge: 'Bash 5',
-			description:
-				'automates creating header images for your articles, email, presentation and other purposes. Tested on macOS and Ubuntu.',
+			description: 'automates creating header images for your articles, email, presentation and other purposes. Tested on macOS and Ubuntu.',
 			href: 'https://teffects.codewithshin.com/'
 		},
 		{
@@ -75,22 +71,19 @@
 		{
 			name: 'dotties',
 			badge: 'Bash',
-			description:
-				'Dotties is a simple dotfile management script. It saves specified dotfiles in the home directory to a secret Gist. I also can clone them from the Gist, and more.',
+			description: 'Dotties is a simple dotfile management script. It saves specified dotfiles in the home directory to a secret Gist. I also can clone them from the Gist, and more.',
 			href: 'https://dotties.codewithshin.com/'
 		},
 		{
 			name: 'awesome',
 			badge: 'Bash',
-			description:
-				'The awesome is a simple shell script package manager. Awesome installs a shell script package from a GitHub repo on your macOS/Linux.',
+			description: 'The awesome is a simple shell script package manager. Awesome installs a shell script package from a GitHub repo on your macOS/Linux.',
 			href: 'https://awesome.codewithshin.com/'
 		},
 		{
 			name: 'imgtaggen',
 			badge: 'Bash',
-			description:
-				'A CLI tool for generating a responsive image tag with support for AVIF and WebP formats',
+			description: 'A CLI tool for generating a responsive image tag with support for AVIF and WebP formats',
 			href: 'https://imgtaggen.codewithshin.com/'
 		},
 		{
@@ -102,24 +95,17 @@
 		{
 			name: 'markdown-docs-as-pdf',
 			badge: 'Bash',
-			description:
-				'A Bash Script to create PDF documents for React, Vue, Svelte, SvelteKit, Nuxt, Vitest, pnpm, Slidev, and more.',
+			description: 'A Bash Script to create PDF documents for React, Vue, Svelte, SvelteKit, Nuxt, Vitest, pnpm, Slidev, and more.',
 			href: 'https://github.com/shinokada/markdown-docs-as-pdf'
 		},
 		{
 			name: 'pdftoimg',
 			badge: 'Bash',
-			description:
-				'A script is a wrapper for Poppler/pdftoimg. This converts pdf files to image files.',
+			description: 'A script is a wrapper for Poppler/pdftoimg. This converts pdf files to image files.',
 			href: 'https://github.com/shinokada/pdftoimg'
 		}
 	];
-	const cardClass = "dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[290px] xl:max-w-[400px]"
+	const cardClass = 'dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[290px] xl:max-w-[400px]';
 </script>
 
-<Slider
-	title="Terminal Tools"
-	list={items}
-	{cardClass}
-	class='flex justify-center md:justify-start'
-/>
+<Slider title="Terminal Tools" list={items} {cardClass} class="flex justify-center md:justify-start" />

@@ -1,15 +1,5 @@
 <script lang="ts" context="module">
-	export type BadgeColorType =
-		| 'gray'
-		| 'red'
-		| 'yellow'
-		| 'green'
-		| 'indigo'
-		| 'purple'
-		| 'pink'
-		| 'blue'
-		| 'primary'
-		| 'none';
+	export type BadgeColorType = 'gray' | 'red' | 'yellow' | 'green' | 'indigo' | 'purple' | 'pink' | 'blue' | 'primary' | 'none';
 </script>
 
 <script lang="ts">
@@ -37,17 +27,7 @@
 		badgeColor?: BadgeColorType;
 	}
 
-	let {
-		children,
-		title,
-		list,
-		isOpen = true,
-		class: className,
-		cardClass = 'bg-white dark:bg-slate-800',
-		size,
-		customSize,
-		...attributes
-	} = $props<Props>();
+	let { children, title, list, isOpen = true, class: className, cardClass = 'bg-white dark:bg-slate-800', size, customSize, ...attributes } = $props<Props>();
 	// let isOpen = $state(true)
 </script>
 
@@ -77,11 +57,7 @@
 {/snippet}
 
 {#if isOpen}
-	<div
-		class={twMerge('flex flex-wrap gap-4', className)}
-		transition:slide={{ delay: 250, duration: 500, easing: quintOut, axis: 'y' }}
-		{...attributes}
-	>
+	<div class={twMerge('flex flex-wrap gap-4', className)} transition:slide={{ delay: 250, duration: 500, easing: quintOut, axis: 'y' }} {...attributes}>
 		{#if list}
 			{@render card(list)}
 		{:else}

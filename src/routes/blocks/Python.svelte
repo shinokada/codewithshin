@@ -4,8 +4,7 @@
 	const list = [
 		{
 			name: 'fastapi-webstarter',
-			description:
-				'A simple website ready to deploy. This repo includes all the file and it is ready to deploy to Heroku.',
+			description: 'A simple website ready to deploy. This repo includes all the file and it is ready to deploy to Heroku.',
 			href: 'https://github.com/shinokada/fastapi-webstarter-demo'
 		}
 	];

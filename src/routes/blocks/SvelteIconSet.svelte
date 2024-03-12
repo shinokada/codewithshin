@@ -217,7 +217,7 @@
 			path: 'https://svelte-weather.codewithshin.com/'
 		}
 	];
-	const cardClass = "dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[290px] xl:max-w-[400px]"
+	const cardClass = 'dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[290px] xl:max-w-[400px]';
 </script>
 
-<Components componentData={list} title='Svelte SVG Icon Sets' description='Explore Svelte SVG Icon Sets'/>
+<Components componentData={list} title="Svelte SVG Icon Sets" description="Explore Svelte SVG Icon Sets" />

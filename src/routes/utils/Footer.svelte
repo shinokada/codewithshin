@@ -4,6 +4,6 @@
 
 <Footer footerclass="max-w-7xl mx-auto bg-white shadow-none dark:bg-sky-950" footerType="logo">
 	<div class="sm:flex sm:items-center sm:justify-between">
-		<FooterBrand href="/" name="CodewithShin" />
+		<FooterBrand href="/" name="codewithshin.com" />
 	</div>
 </Footer>

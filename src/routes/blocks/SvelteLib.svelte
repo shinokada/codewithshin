@@ -4,18 +4,7 @@
 		[key: string]: {
 			name: string;
 			badge: string;
-			badgeColor:
-				| 'yellow'
-				| 'blue'
-				| 'gray'
-				| 'red'
-				| 'green'
-				| 'indigo'
-				| 'purple'
-				| 'pink'
-				| 'primary'
-				| 'none'
-				| undefined;
+			badgeColor: 'yellow' | 'blue' | 'gray' | 'red' | 'green' | 'indigo' | 'purple' | 'pink' | 'primary' | 'none' | undefined;
 			description: string;
 			href: string;
 		}[];
@@ -78,18 +67,12 @@
 				name: 'SRIT',
 				badge: 'Svelte 4/5',
 				badgeColor: 'blue',
-				description:
-					'Svelte Responsive Image Tag (SRIT) makes it easy to create responsive images with automatic format selection based on browser support.',
+				description: 'Svelte Responsive Image Tag (SRIT) makes it easy to create responsive images with automatic format selection based on browser support.',
 				href: 'https://srit.codewithshin.com/'
 			}
 		]
 	};
-	const cardClass = "dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[290px] xl:max-w-[400px]"
+	const cardClass = 'dark:bg-cyan-900 hover:bg-gray-100 hover:dark:bg-cyan-800 max-w-full sm:max-w-[290px] xl:max-w-[400px]';
 </script>
 
-<SliderObj
-	list={sveltelist}
-	title="Svelte Libraries"
-	{cardClass}
-	class='flex justify-center md:justify-start'
-/>
+<SliderObj list={sveltelist} title="Svelte Libraries" {cardClass} class="flex justify-center md:justify-start" />

@@ -1,9 +1,4 @@
-<svg
-	version="1.1"
-	xmlns="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	style="display:none"
->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
 	<symbol viewBox="0 0 512 512" id="amazon"
 		><path d="m0 0H512V512H0" fill="#f90" /><path
 			fill="#fff"
@@ -16,55 +11,38 @@
 		/></symbol
 	>
 	<symbol viewBox="0 0 512 512" id="facebook"
-		><path d="m0 0H512V512H0" fill="#fff" /><path
-			d="m331 312h-45v134a192 192 0 10-60 0V312h-49v-56h49v-45q4-89 116-68v47h-26q-29 1-30 30v36h53.5"
-			fill="#1877f2"
-		/></symbol
+		><path d="m0 0H512V512H0" fill="#fff" /><path d="m331 312h-45v134a192 192 0 10-60 0V312h-49v-56h49v-45q4-89 116-68v47h-26q-29 1-30 30v36h53.5" fill="#1877f2" /></symbol
 	>
 	<symbol viewBox="0 0 512 512" id="google"
-		><path d="m0 0H512V512H0" fill="#fff" /><path
-			fill="#34a853"
-			d="m90 341a192 192 0 00296 59v-48h-62c-53 35-141 22-171-60"
-		/><path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57" /><path
-			fill="#fbbc02"
-			d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"
-		/><path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55" /></symbol
+		><path d="m0 0H512V512H0" fill="#fff" /><path fill="#34a853" d="m90 341a192 192 0 00296 59v-48h-62c-53 35-141 22-171-60" /><path
+			fill="#4285f4"
+			d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57"
+		/><path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73" /><path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55" /></symbol
 	>
 </svg>
 
 <div class="grid grid-cols-2 grid-rows-2 gap-2">
 	<div class="h-10 w-10">
 		<svg class="h-full w-full">
-			<use xlink:href="#amazon" class="svg_amazon" />
+			<use xlink:href="#amazon" class="h-6 w-6" />
 		</svg>
 	</div>
 
 	<div class="h-10 w-10">
 		<svg class="h-full w-full">
-			<use xlink:href="#apple" class="svg_apple" />
+			<use xlink:href="#apple" class="h-6 w-6" />
 		</svg>
 	</div>
 
 	<div class="h-10 w-10">
 		<svg class="h-full w-full">
-			<use xlink:href="#facebook" class="svg_facebook" />
+			<use xlink:href="#facebook" class="h-6 w-6" />
 		</svg>
 	</div>
 
 	<div class="h-10 w-10">
 		<svg class="h-full w-full">
-			<use xlink:href="#google" class="svg_google" />
+			<use xlink:href="#google" class="h-6 w-6" />
 		</svg>
 	</div>
 </div>
-
-<style>
-
-	/* .svg_amazon,
-	.svg_apple,
-	.svg_facebook,
-	.svg_google {
-		width: 512px;
-		height: 512px;
-	} */
-</style>
