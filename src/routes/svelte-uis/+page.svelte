@@ -3,50 +3,35 @@
 
 	const list = [
 		{
-			name: 'SSIC',
-			description: 'Svelte SVG Icons Creator: Bash Script for creating Svelte SVG icons',
-			path: 'https://shinokada.github.io/ssic/'
+			name: 'Svelte 5 UI Lib',
+			description: 'A UI library crafted for Svelte 5 Runes.',
+			path: 'https://svelte-5-ui-lib.codewithshin.com/'
 		},
 		{
-			name: 'BIMGC',
-			description: 'A Node script for converting PNG and JPG images to AVIF and WebP format with various sizes.',
-			path: 'https://bimgc.codewithshin.com/'
+			name: 'Flowbite Svelte',
+			description: 'An official Flowbite component library for Svelte 4/5.',
+			path: 'https://flowbite-svelte.com/'
 		},
 		{
-			name: 'Read HTML Download PDF',
-			description: 'Preview and download PDFs with ease.',
-			path: 'https://read-doc-download-pdf.vercel.app/'
+			name: 'Flowbite Svelte Icons',
+			description: '540+ SVG Flowbite icons components for Svelte 3/4/5/Runes.',
+			path: 'https://flowbite-svelte-icons.codewithshin.com/'
 		},
 		{
-			name: 'Tera: Terminal Radio',
-			description: 'Interactive terminal music radio player. Play your favorite radio station, CRUD your favorite lists, and explore new radio stations from your terminal.',
-			path: 'https://tera.codewithshin.com/'
+			name: 'Flowbite Svelte Admin Dashboard',
+			description: 'Admin dashboard for Flowbite Svelte.',
+			path: 'https://flowbite-svelte-admin-dashboard.vercel.app/'
 		},
 		{
-			name: 'imgtaggen',
-			description: 'A CLI tool for generating a responsive image tag with support for AVIF and WebP formats',
-			path: 'https://imgtaggen.codewithshin.com/'
-		},
-		{
-			name: 'quick-resize',
-			description: 'A command-line tool for resizing images quickly and easily. ',
-			path: 'https://github.com/shinokada/quick-resize'
-		},
-		{
-			name: 'markdown-docs-as-pdf',
-			description: 'A Bash Script to create PDF documents for React, Vue, Svelte, SvelteKit, Nuxt, Vitest, pnpm, Slidev, and more.',
-			path: 'https://github.com/shinokada/markdown-docs-as-pdf'
-		},
-		{
-			name: 'pdftoimg',
-			description: 'A script is a wrapper for Poppler/pdftoimg. This converts pdf files to image files.',
-			path: 'https://github.com/shinokada/pdftoimg'
+			name: 'Flowbite Svelte Blocks',
+			description: 'Svelte blocks for Flowbite Svelte.',
+			path: 'https://flowbite-svelte-blocks.codewithshin.com/'
 		}
 	];
 </script>
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
-	<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">Svelte UIs</h2>
+	<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">Flowbite Svelte UIs</h2>
 	<p class="mx-auto max-w-3xl text-center text-lg font-normal text-gray-500 dark:text-gray-400">UIs for Svelte 4/5/Runes projects</p>
 </div>
 

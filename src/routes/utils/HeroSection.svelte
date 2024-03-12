@@ -8,7 +8,7 @@
 		<div class="flex items-center gap-8">
 			<div class="flex flex-col justify-start gap-10">
 				<div class="flex flex-col gap-4 text-left align-text-top lg:gap-6">
-					<h1 class="max-w-2xl text-4xl font-extrabold leading-none text-gray-900 dark:text-white lg:text-5xl">
+					<h1 class="max-w-2xl text-4xl font-extrabold leading-none text-gray-900 dark:text-white lg:text-5xl mt-2">
 						<span class="block1 xl:inline">Welcome to</span>
 						<span class="block1 text-primary-700 dark:text-primary-700 xl:inline">Codewithshin</span>
 						<span class="block1 xl:inline">where you can find a lot of coding goodies</span>
@@ -39,10 +39,10 @@
 			</div>
 			<div class="hidden p-0 lg:block">
 				<div class="relative dark:hidden">
-					<img class="-me-7 max-w-md" src="/images/hero.png" alt="Header" />
+					<img class="-me-7 max-w-[460px]" src="/images/codewithshin.png" alt="Header" />
 				</div>
 				<div class="relative hidden dark:block">
-					<img class="-me-7 max-w-md" src="/images/hero.png" alt="Header" />
+					<img class="-me-7 max-w-[460px]" src="/images/codewithshin-dark.png" alt="Header" />
 				</div>
 			</div>
 		</div>

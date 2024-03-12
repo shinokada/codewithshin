@@ -29,7 +29,7 @@
 		},
 		{
 			name: 'TEFFECTS',
-			description: 'automates creating header images for your articles, email, presentation and other purposes. Tested on macOS and Ubuntu.',
+			description: 'A bash script that automates creating header images for your articles, email, presentation and other purposes.',
 			path: 'https://teffects.codewithshin.com/'
 		},
 		{
@@ -40,7 +40,7 @@
 		{
 			name: 'MacGNU',
 			description:
-				'Transform the macOS CLI into a fresh GNU/Linux CLI experience by installing missing GNU programs, updating outdated GNU programs, replacing pre-installed BSD programs with their preferred GNU implementation.',
+				'Transform the macOS CLI into a fresh GNU/Linux CLI by installing missing GNU programs, updating outdated GNU programs, replacing pre-installed BSD programs.',
 			path: 'https://macgnu.codewithshin.com/'
 		},
 		{
@@ -55,17 +55,17 @@
 		},
 		{
 			name: 'Replaceit',
-			description: 'replaces spaces of file names with underscores as the default',
+			description: 'Replaces spaces of file names with underscores as the default',
 			path: 'https://replaceit.codewithshin.com/'
 		},
 		{
 			name: 'dotties',
-			description: 'Dotties is a simple dotfile management script. It saves specified dotfiles in the home directory to a secret Gist. I also can clone them from the Gist, and more.',
+			description: 'A dotfile management script that saves specified dotfiles to a secret Gist and clone them from the Gist.',
 			path: 'https://dotties.codewithshin.com/'
 		},
 		{
 			name: 'awesome',
-			description: 'The awesome is a simple shell script package manager. Awesome installs a shell script package from a GitHub repo on your macOS/Linux.',
+			description: 'A simple shell script package manager that installs a shell script package from a GitHub repo on your macOS/Linux.',
 			path: 'https://awesome.codewithshin.com/'
 		},
 		{
@@ -75,7 +75,7 @@
 		},
 		{
 			name: 'quick-resize',
-			description: 'A command-line tool for resizing images quickly and easily. ',
+			description: 'A command-line tool for resizing images quickly and easily.',
 			path: 'https://github.com/shinokada/quick-resize'
 		},
 		{
@@ -85,7 +85,7 @@
 		},
 		{
 			name: 'pdftoimg',
-			description: 'A script is a wrapper for Poppler/pdftoimg. This converts pdf files to image files.',
+			description: 'A wrapper for Poppler/pdftoimg that converts pdf files to image files.',
 			path: 'https://github.com/shinokada/pdftoimg'
 		}
 	];

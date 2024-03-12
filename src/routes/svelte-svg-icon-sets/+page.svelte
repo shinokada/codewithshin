@@ -5,7 +5,6 @@
 		{
 			name: 'Flowbite Svelte Icons',
 			description: '510+ SVG Flowbite icon components for Svelte 4/5/Runes.',
-			icon:'flowbite-svelte-icons',
 			path: 'https://flowbite-svelte-icons.codewithshin.com/'
 		},
 		{
