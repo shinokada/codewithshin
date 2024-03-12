@@ -7,8 +7,8 @@ test('index page has expected h1', async ({ page }) => {
 
 
 test('svelte-uis page has expected h1', async ({ page }) => {
-	await page.goto('/svelte-uis');
-	await expect(page.getByRole('heading', { name: 'Flowbite Svelte UIs' })).toBeVisible();
+	await page.goto('/svelte');
+	await expect(page.getByRole('heading', { name: 'Svelte Libraries' })).toBeVisible();
 });
 
 
@@ -22,12 +22,13 @@ test('terminal-tools page has expected h1', async ({ page }) => {
 	await expect(page.getByRole('heading', { name: 'Terminal Tools' })).toBeVisible();
 });
 
-test('svelte-libraries page has expected h1', async ({ page }) => {
-	await page.goto('/svelte-libraries');
-	await expect(page.getByRole('heading', { name: 'Svelte Libraries' })).toBeVisible();
-});
 
 test('python-and-jupyter page has expected h1', async ({ page }) => {
 	await page.goto('/python-and-jupyter');
-	await expect(page.getByRole('heading', { name: 'Python & Jupyter' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: 'Python and Jupyter' })).toBeVisible();
+});
+
+test('others page has expected h1', async ({ page }) => {
+	await page.goto('/others');
+	await expect(page.getByRole('heading', { name: 'Other Goodies' })).toBeVisible();
 });

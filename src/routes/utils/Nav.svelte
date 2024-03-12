@@ -45,11 +45,11 @@
 			</div>
 		{/snippet}
 		<NavUl {ulclass}>
-			<NavLi href="/svelte-uis">UIs</NavLi>
+			<NavLi href="/svelte">Svelte</NavLi>
 			<NavLi href="/svelte-svg-icon-sets">Icons</NavLi>
 			<NavLi href="/terminal-tools">Terminal</NavLi>
-			<NavLi href="/svelte-libraries">Libraries</NavLi>
 			<NavLi href="/python-and-jupyter">Python</NavLi>
+			<NavLi href="/others">Others</NavLi>
 			<NavLi href="https://blog.codewithshin.com">Blog</NavLi>
 		</NavUl>
 	</Navbar>
