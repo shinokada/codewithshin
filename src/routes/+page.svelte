@@ -6,9 +6,9 @@
 	
 	const list = [
 		{
-			name: 'Svelte UIs',
+			name: 'Svelte Libraries',
 			thumnailSize: '',
-			path: '/svelte-uis',
+			path: '/svelte',
       description: 'Official Flowbite UI components, Admin dashboard, Block components for Svelte.'
 		},
 		{
@@ -24,16 +24,16 @@
       description: 'Terminal Tools for macOS, and Linux including terminal radio, package manager, text effects, and more.'
 		},
 		{
-			name: 'Svelte libraries',
-			thumnailSize: '',
-			path: '/svelte-libraries',
-      description: 'Svelte libraries for Svelte 4/5/Runes.'
-		},
-		{
 			name: 'Python and Jupyter',
 			thumnailSize: '',
 			path: '/python-and-jupyter',
       description: 'Starter for FASTAPI, data science with Jupyter.'
+		},
+		{
+			name: 'Homebrew',
+			thumnailSize: '',
+			path: '/homebrew',
+      description: 'Homebrew taps for MacOS and Linux.'
 		},
     {
 			name: 'Blog',
