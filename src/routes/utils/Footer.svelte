@@ -12,7 +12,7 @@
       <FooterLi href="/svelte-svg-icon-sets">Icons</FooterLi>
 			<FooterLi href="/terminal-tools">Terminal</FooterLi>
 			<FooterLi href="/python-and-jupyter">Python</FooterLi>
-			<FooterLi href="/others">Others</FooterLi>
+			<FooterLi href="/homebrew">Homebrew</FooterLi>
 			<FooterLi href="https://blog.codewithshin.com/">Blog</FooterLi>
     </FooterUl>
 	</div>

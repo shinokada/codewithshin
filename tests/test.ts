@@ -14,7 +14,7 @@ test('svelte-uis page has expected h1', async ({ page }) => {
 
 test('svelte-svg-icon-sets page has expected h1', async ({ page }) => {
 	await page.goto('/svelte-svg-icon-sets');
-	await expect(page.getByRole('heading', { name: 'Svelte SVG Icon Sets' })).toBeVisible();
+	await expect(page.getByRole('heading', { name: '29 Svelte SVG Icon Sets' })).toBeVisible();
 });
 
 test('terminal-tools page has expected h1', async ({ page }) => {
@@ -29,6 +29,6 @@ test('python-and-jupyter page has expected h1', async ({ page }) => {
 });
 
 test('others page has expected h1', async ({ page }) => {
-	await page.goto('/others');
-	await expect(page.getByRole('heading', { name: 'Other Goodies' })).toBeVisible();
+	await page.goto('/homebrew');
+	await expect(page.getByRole('heading', { name: 'Homebrew Taps' })).toBeVisible();
 });

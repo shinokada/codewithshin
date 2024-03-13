@@ -49,7 +49,7 @@
 			<NavLi href="/svelte-svg-icon-sets">Icons</NavLi>
 			<NavLi href="/terminal-tools">Terminal</NavLi>
 			<NavLi href="/python-and-jupyter">Python</NavLi>
-			<NavLi href="/others">Others</NavLi>
+			<NavLi href="/homebrew">Homebrew</NavLi>
 			<NavLi href="https://blog.codewithshin.com">Blog</NavLi>
 		</NavUl>
 	</Navbar>

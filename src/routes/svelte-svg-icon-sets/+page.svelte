@@ -1,6 +1,22 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
-
+	const listRunes = [
+		{
+			name: 'Flowbite Svelte Icons',
+			description: '510+ SVG Flowbite icon components for Svelte 4/5/Runes.',
+			path: 'https://flowbite-svelte-icons.codewithshin.com/'
+		},
+		{
+			name: 'Svelte Awesome Icons',
+			description: '2000+ Font Awesome SVG icon components for Svelte 4/5/Runes.',
+			path: 'https://svelte-awesome-icons.codewithshin.com/'
+		},
+		{
+			name: 'Svelte Supertiny',
+			description: '340+ SVG logos for popular brands from SuperTinyIcons for Svelte 4/5/Runes.',
+			path: 'https://svelte-supertiny.codewithshin.com/'
+		}
+	];
 	const list = [
 		{
 			name: 'Flowbite Svelte Icons',
@@ -151,8 +167,14 @@
 </script>
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
-	<h1 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">Svelte SVG Icon Sets</h1>
-	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">29 SVG Icon Sets for your Svelte projects</h2>
+	<h1 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">29 Svelte SVG Icon Sets</h1>
+	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">For Svelte 5/Runes projects</h2>
+</div>
+
+<Components componentData={listRunes} />
+
+<div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
+	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">For Svelte 4/5 projects</h2>
 </div>
 
 <Components componentData={list} />

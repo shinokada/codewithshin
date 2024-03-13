@@ -18,7 +18,7 @@
 			path: 'https://read-doc-download-pdf.vercel.app/'
 		},
 		{
-			name: 'Tera: Terminal Radio',
+			name: 'TERA: Terminal Radio',
 			description: 'Interactive terminal music radio player. Play your favorite radio station, CRUD your favorite lists, and explore new radio stations from your terminal.',
 			path: 'https://tera.codewithshin.com/'
 		},
@@ -28,7 +28,7 @@
 			path: 'https://gitstart.codewithshin.com/'
 		},
 		{
-			name: 'TEFFECTS',
+			name: 'Teffects',
 			description: 'A bash script that automates creating header images for your articles, email, presentation and other purposes.',
 			path: 'https://teffects.codewithshin.com/'
 		},
@@ -54,17 +54,27 @@
 			path: 'https://spt.codewithshin.com/'
 		},
 		{
+			name: 'Typelet',
+			description: 'Create and add large words print it with a typewriter effect.',
+			path: 'https://typelet.codewithshin.com/'
+		},
+		{
+			name: 'Consize',
+			description: 'Convert formats and resize image',
+			path: 'https://consize.codewithshin.com/'
+		},
+		{
 			name: 'Replaceit',
 			description: 'Replaces spaces of file names with underscores as the default',
 			path: 'https://replaceit.codewithshin.com/'
 		},
 		{
-			name: 'dotties',
+			name: 'Dotties',
 			description: 'A dotfile management script that saves specified dotfiles to a secret Gist and clone them from the Gist.',
 			path: 'https://dotties.codewithshin.com/'
 		},
 		{
-			name: 'awesome',
+			name: 'Awesome',
 			description: 'A simple shell script package manager that installs a shell script package from a GitHub repo on your macOS/Linux.',
 			path: 'https://awesome.codewithshin.com/'
 		},
@@ -87,6 +97,22 @@
 			name: 'pdftoimg',
 			description: 'A wrapper for Poppler/pdftoimg that converts pdf files to image files.',
 			path: 'https://github.com/shinokada/pdftoimg'
+		},
+		{
+			name: 'Cleanit',
+			description: 'Cleanit cleanup your ~/Downloads and ~/.Trash directory, and set the cleanup schedule on your MacOS.',
+			path: 'https://consize.codewithshin.com/'
+		},
+		{
+			name: 'ABI',
+			description: 'Automate Brew Install creates a Gist of your Homebrew formula or cask, and install Homebrew them from a Gist',
+			path: 'https://github.com/shinokada/abi'
+		},
+		{
+			name: 'Manop',
+			description:
+				'A simple Bash script that display a command description and options from Man page or help on macOS/Linux.',
+			path: 'https://manop.codewithshin.com/'
 		}
 	];
 </script>
