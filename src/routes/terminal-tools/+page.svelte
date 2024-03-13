@@ -3,29 +3,9 @@
 
 	const list = [
 		{
-			name: 'SSIC',
-			description: 'Svelte SVG Icons Creator: Bash Script for creating Svelte SVG icons',
-			path: 'https://shinokada.github.io/ssic/'
-		},
-		{
-			name: 'BIMGC',
-			description: 'A Node script for converting PNG and JPG images to AVIF and WebP format with various sizes.',
-			path: 'https://bimgc.codewithshin.com/'
-		},
-		{
-			name: 'Read HTML Download PDF',
-			description: 'Preview and download PDFs with ease.',
-			path: 'https://read-doc-download-pdf.vercel.app/'
-		},
-		{
 			name: 'TERA: Terminal Radio',
 			description: 'Interactive terminal music radio player. Play your favorite radio station, CRUD your favorite lists, and explore new radio stations from your terminal.',
 			path: 'https://tera.codewithshin.com/'
-		},
-		{
-			name: 'Gitstart',
-			description: 'Automates creating a GitHub repo. The script creates .gitignore, a license.txt, a README.md file and commit with a message. It will create a remote repo and push all the files.',
-			path: 'https://gitstart.codewithshin.com/'
 		},
 		{
 			name: 'Teffects',
@@ -44,6 +24,16 @@
 			path: 'https://macgnu.codewithshin.com/'
 		},
 		{
+			name: 'Awesome',
+			description: 'A simple shell script package manager that installs a shell script package from a GitHub repo on your macOS/Linux.',
+			path: 'https://awesome.codewithshin.com/'
+		},
+		{
+			name: 'BIMGC',
+			description: 'A Node script for converting PNG and JPG images to AVIF and WebP format with various sizes.',
+			path: 'https://bimgc.codewithshin.com/'
+		},
+		{
 			name: 'Consize',
 			description: 'Convert formats and resize image',
 			path: 'https://consize.codewithshin.com/'
@@ -59,6 +49,11 @@
 			path: 'https://typelet.codewithshin.com/'
 		},
 		{
+			name: 'Gitstart',
+			description: 'Automates creating a GitHub repo. The script creates .gitignore, a license.txt, a README.md file and commit with a message. It will create a remote repo and push all the files.',
+			path: 'https://gitstart.codewithshin.com/'
+		},
+		{
 			name: 'Consize',
 			description: 'Convert formats and resize image',
 			path: 'https://consize.codewithshin.com/'
@@ -72,11 +67,6 @@
 			name: 'Dotties',
 			description: 'A dotfile management script that saves specified dotfiles to a secret Gist and clone them from the Gist.',
 			path: 'https://dotties.codewithshin.com/'
-		},
-		{
-			name: 'Awesome',
-			description: 'A simple shell script package manager that installs a shell script package from a GitHub repo on your macOS/Linux.',
-			path: 'https://awesome.codewithshin.com/'
 		},
 		{
 			name: 'imgtaggen',
@@ -113,7 +103,17 @@
 			description:
 				'A simple Bash script that display a command description and options from Man page or help on macOS/Linux.',
 			path: 'https://manop.codewithshin.com/'
-		}
+		},
+		{
+			name: 'Read HTML Download PDF',
+			description: 'Preview and download PDFs with ease.',
+			path: 'https://read-doc-download-pdf.vercel.app/'
+		},
+		{
+			name: 'SSIC',
+			description: 'Svelte SVG Icons Creator: Bash Script for creating Svelte SVG icons',
+			path: 'https://shinokada.github.io/ssic/'
+		},
 	];
 </script>
 
