@@ -1,5 +1,12 @@
 <script>
 	import { Medium, Twitter, Git, Vim, Css3, Html5, Javascript, Svelte, Python, Bash, Visualstudiocode, Nodejs, Github, Ubuntu } from 'svelte-supertiny';
+	// import { setContext } from 'svelte';
+	import Tailwindcss from './Tailwindcss.svelte';
+	// const iconCtx = {
+  //   fill: '#082f49',
+  // };
+  // setContext('iconCtx', iconCtx);
+	const svgclass='text-white dark:text-sky-950'
 	const size = '40';
 </script>
 
@@ -20,18 +27,19 @@
 						<div class="relative w-full gap-1 text-xl eading-normal text-gray-500 dark:text-gray-400 xl:text-2xl">
 							Please explore my projects and share your thoughts.
 							<div class="mt-4 flex w-full flex-wrap gap-1">
-								<Svelte {size} />
-								<Bash {size} />
-								<Javascript {size} />
-								<Nodejs {size} />
-								<Git {size} />
-								<Github {size} />
-								<Ubuntu {size} />
-								<Css3 {size} />
-								<Html5 {size} />
-								<Python {size} />
-								<Visualstudiocode {size} />
-								<Vim {size} />
+								<Svelte {size} class={svgclass} fill='currentColor'/>
+								<Javascript {size} class={svgclass} />
+								<Tailwindcss {size} color='#39BDF8'/>
+								<Nodejs {size} class={svgclass} fill='currentColor'/>
+								<Git {size} class={svgclass} fill='currentColor'/>
+								<Github {size} class={svgclass} fill='currentColor'/>
+								<Bash {size} class={svgclass} fill='currentColor'/>
+								<Ubuntu {size} class={svgclass} fill='currentColor'/>
+								<Css3 {size} class={svgclass} fill='currentColor'/>
+								<Html5 {size} class={svgclass} fill='currentColor'/>
+								<Python {size} class={svgclass} fill='currentColor'/>
+								<Visualstudiocode {size} class={svgclass} fill='currentColor'/>
+								<Vim {size}  class={svgclass} fill='currentColor'/>
 							</div>
 						</div>
 					</div>

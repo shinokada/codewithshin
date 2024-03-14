@@ -69,8 +69,8 @@ devDependencies:
     specifier: ^0.4.3
     version: 0.4.3
   svelte-supertiny:
-    specifier: 2.0.0-next.4
-    version: 2.0.0-next.4(svelte@5.0.0-next.75)
+    specifier: 2.0.0-next.7
+    version: 2.0.0-next.7(svelte@5.0.0-next.75)
   tailwind-merge:
     specifier: ^2.2.1
     version: 2.2.1
@@ -2757,8 +2757,8 @@ packages:
       typescript: 5.4.2
     dev: true
 
-  /svelte-supertiny@2.0.0-next.4(svelte@5.0.0-next.75):
-    resolution: {integrity: sha512-suIo8/yVbu5guZPKfTWlm/Dw5R7ZbYERgOlZpuyAvH/hA1ol0iqEXYuSMUl7BVMhpKGSYGQP711xSQTtavKPFQ==}
+  /svelte-supertiny@2.0.0-next.7(svelte@5.0.0-next.75):
+    resolution: {integrity: sha512-Yga3b8LM1cqCNjsK/7LP3qsjj0yxfWwZrz9RxDfzrvNWjg4ntBuzhP/JhUaY7hCRoKwroxC0wLp45ZPcPWU1WQ==}
     peerDependencies:
       svelte: ^5.0.0
     dependencies:
