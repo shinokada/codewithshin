@@ -50,6 +50,7 @@
 			<NavLi href="/terminal-tools">Terminal</NavLi>
 			<NavLi href="/python-and-jupyter">Python</NavLi>
 			<NavLi href="/homebrew">Homebrew</NavLi>
+			<NavLi href="/web-apps">Web apps</NavLi>
 			<NavLi href="https://blog.codewithshin.com">Blog</NavLi>
 		</NavUl>
 	</Navbar>

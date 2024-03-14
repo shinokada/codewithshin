@@ -13,6 +13,7 @@
 			<FooterLi href="/terminal-tools">Terminal</FooterLi>
 			<FooterLi href="/python-and-jupyter">Python</FooterLi>
 			<FooterLi href="/homebrew">Homebrew</FooterLi>
+			<FooterLi href="/web-apps">Web apps</FooterLi>
 			<FooterLi href="https://blog.codewithshin.com/">Blog</FooterLi>
     </FooterUl>
 	</div>

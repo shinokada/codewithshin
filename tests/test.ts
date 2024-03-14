@@ -32,3 +32,8 @@ test('others page has expected h1', async ({ page }) => {
 	await page.goto('/homebrew');
 	await expect(page.getByRole('heading', { name: 'Homebrew Taps' })).toBeVisible();
 });
+
+test('apps page has expected h1', async ({ page }) => {
+	await page.goto('/web-apps');
+	await expect(page.getByRole('heading', { name: 'Web apps' })).toBeVisible();
+});
