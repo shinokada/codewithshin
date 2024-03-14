@@ -35,6 +35,12 @@
 			path: '/homebrew',
       description: 'Homebrew taps for MacOS and Linux.'
 		},
+		{
+			name: 'Web Apps',
+			thumnailSize: '',
+			path: '/web-apps',
+      description: 'Web apps for learning and more.'
+		},
     {
 			name: 'Blog',
 			thumnailSize: '',
