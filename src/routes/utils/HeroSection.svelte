@@ -1,5 +1,5 @@
 <script>
-	import { Medium, Twitter, Git, Vim, Css3, Html5, Javascript, Svelte, Python, Bash, Visualstudiocode, Nodejs, Github, Ubuntu } from 'svelte-supertiny';
+	import { Git, Vim, Css3, Html5, Javascript, Svelte, Python, Bash, Visualstudiocode, Nodejs, Github, Typescript } from 'svelte-supertiny';
 	// import { setContext } from 'svelte';
 	import Tailwindcss from './Tailwindcss.svelte';
 	// const iconCtx = {
@@ -30,11 +30,11 @@
 								<Svelte {size} class={svgclass} fill='currentColor'/>
 								<Javascript {size} class={svgclass} />
 								<Tailwindcss {size} color='#39BDF8'/>
+								<Typescript {size} class={svgclass} />
 								<Nodejs {size} class={svgclass} fill='currentColor'/>
 								<Git {size} class={svgclass} fill='currentColor'/>
 								<Github {size} class={svgclass} />
 								<Bash {size} class={svgclass} />
-								<Ubuntu {size} class={svgclass} />
 								<Css3 {size} class={svgclass} />
 								<Html5 {size} class={svgclass} />
 								<Python {size} class={svgclass} fill='currentColor'/>
