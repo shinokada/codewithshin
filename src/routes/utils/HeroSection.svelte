@@ -32,11 +32,11 @@
 								<Tailwindcss {size} color='#39BDF8'/>
 								<Nodejs {size} class={svgclass} fill='currentColor'/>
 								<Git {size} class={svgclass} fill='currentColor'/>
-								<Github {size} class={svgclass} fill='currentColor'/>
-								<Bash {size} class={svgclass} fill='currentColor'/>
-								<Ubuntu {size} class={svgclass} fill='currentColor'/>
-								<Css3 {size} class={svgclass} fill='currentColor'/>
-								<Html5 {size} class={svgclass} fill='currentColor'/>
+								<Github {size} class={svgclass} />
+								<Bash {size} class={svgclass} />
+								<Ubuntu {size} class={svgclass} />
+								<Css3 {size} class={svgclass} />
+								<Html5 {size} class={svgclass} />
 								<Python {size} class={svgclass} fill='currentColor'/>
 								<Visualstudiocode {size} class={svgclass} fill='currentColor'/>
 								<Vim {size}  class={svgclass} fill='currentColor'/>
