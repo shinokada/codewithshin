@@ -7,6 +7,11 @@
 			path: 'https://flowbite-svelte-icons.codewithshin.com/'
 		},
 		{
+			name: 'Svelte Ant Design Icons',
+			description: '780+ Ant Design SVG Icons (v4.2.1) for Svelte.',
+			path: 'https://svelte-ant-design-icons.codewithshin.com/'
+		},
+		{
 			name: 'Svelte Awesome Icons',
 			description: '2000+ Font Awesome SVG icon components for Svelte 4/5/Runes.',
 			path: 'https://svelte-awesome-icons.codewithshin.com/'
