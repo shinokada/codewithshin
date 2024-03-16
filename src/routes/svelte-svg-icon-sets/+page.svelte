@@ -1,5 +1,12 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
+	const mainWeb = [
+		{
+			name: 'Svelte SVG Icon Sets',
+			description: 'Home for Svete SVG Icon Sets.',
+			path: 'https://svelte-svg-icons.codewithshin.com/'
+		}
+	]
 	const listRunes = [
 		{
 			name: 'Flowbite Svelte Icons',
@@ -173,6 +180,11 @@
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
 	<h1 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">29 Svelte SVG Icon Sets</h1>
+</div>
+
+<Components componentData={mainWeb} colNum={1} class='sm:max-w-96 mx-auto'/>
+
+<div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
 	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">For Svelte 5/Runes projects</h2>
 </div>
 
