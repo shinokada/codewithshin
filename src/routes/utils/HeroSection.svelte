@@ -17,7 +17,7 @@
 				<div class="flex flex-col gap-2 text-left align-text-top xl:gap-6">
 					<h1 class="max-w-2xl text-4xl font-extrabold leading-none text-gray-900 dark:text-white lg:text-5xl mt-2">
 						<span class="block1 xl:inline">Welcome to</span>
-						<span class="block1 text-primary-700 dark:text-primary-700 xl:inline">Codewithshin</span>
+						<span class="block1 text-primary-700 dark:text-primary-700 xl:inline">codewithshin</span>
 						<span class="block1 xl:inline">where you can find a lot of coding goodies</span>
 					</h1>
 					<p class="text-2xl leading-normal text-gray-500 dark:text-gray-400 xl:text-3xl">
