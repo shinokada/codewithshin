@@ -4,8 +4,7 @@
 	import Nav from './utils/Nav.svelte';
 	import Footer from './utils/Footer.svelte';
 	import MetTag from './utils/MetTag.svelte';
-	import { inject } from '@vercel/analytics'
-	inject();
+
 </script>
 
 <MetTag />
