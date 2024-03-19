@@ -55,7 +55,7 @@
 		},
 		{
 			name: 'Gitig',
-			description: 'Fix your gitignore propble by recursively removing all unstaged and paths from the index, and adding all files, commit, and push to the origin main.',
+			description: 'Fix your gitignore problem by recursively removing all unstaged and paths from the index, and adding all files, commit, and push to the origin main.',
       path: 'https://gitig.codewithshin.com/'
 		},
 		{
