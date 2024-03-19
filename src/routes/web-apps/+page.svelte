@@ -21,6 +21,11 @@
 			name: 'FlexiLexi Dictionary',
 			description: 'A flexible dictionary for English, Norwegian, and Japanese.',
 			path: 'https://flexilexi-dictionary.codewithshin.com/'
+		},
+		{
+			name: 'Gjett Norsk',
+			description: 'Learn Norwegian together with friends and make learning enjoyable and collaborative.',
+			path: 'https://gjett-norsk.codewithshin.com/'
 		}
 	];
 </script>
