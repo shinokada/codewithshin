@@ -54,11 +54,6 @@
 			path: 'https://gitstart.codewithshin.com/'
 		},
 		{
-			name: 'Consize',
-			description: 'Convert formats and resize image',
-			path: 'https://consize.codewithshin.com/'
-		},
-		{
 			name: 'Replaceit',
 			description: 'Replaces spaces of file names with underscores as the default',
 			path: 'https://replaceit.codewithshin.com/'
