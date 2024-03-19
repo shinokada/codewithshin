@@ -44,6 +44,11 @@
 			name: 'Svelte Lib Helpers',
 			description: 'Simplify the process of managing exports, documentation, package distribution for Svelte 4/5/Runes.',
 			path: 'https://svelte-lib-helpers.codewithshin.com/'
+		},
+		{
+			name: 'Svelte Carbonads',
+			description: 'A component library that  set up a Carbonads on your SvelteKit project',
+			path: 'https://svelte-carbonads.codewithshin.com/'
 		}
 	];
 </script>
