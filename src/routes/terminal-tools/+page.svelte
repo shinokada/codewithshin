@@ -69,24 +69,14 @@
 			path: 'https://imgtaggen.codewithshin.com/'
 		},
 		{
-			name: 'quick-resize',
-			description: 'A command-line tool for resizing images quickly and easily.',
-			path: 'https://github.com/shinokada/quick-resize'
-		},
-		{
 			name: 'markdown-docs-as-pdf',
 			description: 'A Bash Script to create PDF documents for React, Vue, Svelte, SvelteKit, Nuxt, Vitest, pnpm, Slidev, and more.',
-			path: 'https://github.com/shinokada/markdown-docs-as-pdf'
-		},
-		{
-			name: 'pdftoimg',
-			description: 'A wrapper for Poppler/pdftoimg that converts pdf files to image files.',
-			path: 'https://github.com/shinokada/pdftoimg'
+			path: 'https://markdown-docs-as-pdf.codewithshin.com'
 		},
 		{
 			name: 'Cleanit',
 			description: 'Cleanit cleanup your ~/Downloads and ~/.Trash directory, and set the cleanup schedule on your MacOS.',
-			path: 'https://consize.codewithshin.com/'
+			path: 'https://cleanit.codewithshin.com/'
 		},
 		{
 			name: 'ABI',
@@ -108,6 +98,16 @@
 			name: 'SSIC',
 			description: 'Svelte SVG Icons Creator: Bash Script for creating Svelte SVG icons',
 			path: 'https://shinokada.github.io/ssic/'
+		},
+		{
+			name: 'quick-resize',
+			description: 'A command-line tool for resizing images quickly and easily.',
+			path: 'https://github.com/shinokada/quick-resize'
+		},
+		{
+			name: 'pdftoimg',
+			description: 'A wrapper for Poppler/pdftoimg that converts pdf files to image files.',
+			path: 'https://github.com/shinokada/pdftoimg'
 		},
 	];
 </script>
