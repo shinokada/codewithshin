@@ -50,9 +50,9 @@
 			path: 'https://manop.codewithshin.com/'
 		},
 		{
-			name: 'Abi',
+			name: 'ABI: Automate Brew Install ',
 			description: 'Automate Brew Install creates a Gist of your Homebrew formula or cask, and install Homebrew them from a Gist',
-			path: 'https://github.com/shinokada/abi'
+			path: 'https://abi.codewithshin.com/'
 		},
 		{
 			name: 'Backpack install',
