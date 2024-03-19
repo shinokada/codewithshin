@@ -79,7 +79,7 @@
 			path: 'https://cleanit.codewithshin.com/'
 		},
 		{
-			name: 'ABI',
+			name: 'ABI: Automate Brew Install',
 			description: 'Automate Brew Install creates a Gist of your Homebrew formula or cask, and install Homebrew them from a Gist',
 			path: 'https://github.com/shinokada/abi'
 		},
