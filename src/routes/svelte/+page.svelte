@@ -51,6 +51,13 @@
 			path: 'https://svelte-carbonads.codewithshin.com/'
 		}
 	];
+	const demo = [
+		{
+			name: 'Dynamic styling',
+			description: 'Dynamic styling for Svelte 5/Runes projects',
+			path: 'https://stackblitz.com/edit/sveltejs-kit-template-default-psvleh?file=src%2Flib%2Fstyles%2Flight.css'
+		}
+	]
 </script>
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
@@ -64,5 +71,10 @@
 	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">For Svelte 4/5 projects</h2>
 </div>
 
-
 <Components componentData={list} />
+
+<div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
+	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">Demo and Starters</h2>
+</div>
+
+<Components componentData={demo} />
