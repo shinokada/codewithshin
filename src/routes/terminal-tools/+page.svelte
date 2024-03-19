@@ -81,7 +81,7 @@
 		{
 			name: 'ABI: Automate Brew Install',
 			description: 'Automate Brew Install creates a Gist of your Homebrew formula or cask, and install Homebrew them from a Gist',
-			path: 'https://github.com/shinokada/abi'
+			path: 'https://abi.codewithshin.com/'
 		},
 		{
 			name: 'Manop',
@@ -92,12 +92,12 @@
 		{
 			name: 'Read HTML Download PDF',
 			description: 'Preview and download PDFs with ease.',
-			path: 'https://read-doc-download-pdf.vercel.app/'
+			path: 'https://read-doc-download-pdf.codewithshin.com/'
 		},
 		{
 			name: 'SSIC',
 			description: 'Svelte SVG Icons Creator: Bash Script for creating Svelte SVG icons',
-			path: 'https://shinokada.github.io/ssic/'
+			path: 'https://ssic.codewithshin.com/'
 		},
 		{
 			name: 'quick-resize',
