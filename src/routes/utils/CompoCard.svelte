@@ -20,7 +20,7 @@
 		description = 'Hello, I am description',
 		icon = '',
 		...attributes
-	} = $props<Props>();
+	}: Props = $props();
 </script>
 
 <Card href={path} padding="none" {...attributes} class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:hover:bg-sky-900 dark:bg-sky-950">

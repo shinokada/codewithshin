@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
-
+	import MetaTag from '../utils/MetaTag.svelte';
 	const list = [
 		{
 			name: 'Norske Flashcard',
@@ -28,11 +28,20 @@
 			path: 'https://gjett-norsk.codewithshin.com/'
 		}
 	];
+	// meta tags
+	const meta = {
+		title: 'Web Apps - codewithshin.com',
+		ogSubtitle: 'Web Apps',
+		description: 'Learn Languages! FunFlashcards, Games & Dictionaries for Norwegian, Japanese & More.',
+    path: '/web-app'
+	}
 </script>
 
+<MetaTag {...meta} />
+
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
-	<h1 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">Web apps</h1>
-	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">Learning apps</h2>
+	<h1>Web apps</h1>
+	<h2>Learning apps</h2>
 </div>
 
 <Components componentData={list} />

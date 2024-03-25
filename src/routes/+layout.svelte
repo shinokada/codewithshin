@@ -3,11 +3,8 @@
 	let { children } = $props();
 	import Nav from './utils/Nav.svelte';
 	import Footer from './utils/Footer.svelte';
-	import MetTag from './utils/MetTag.svelte';
-
 </script>
 
-<MetTag />
 <Nav />
 
 <section class="border-b border-gray-200 pb-16 dark:border-gray-600">

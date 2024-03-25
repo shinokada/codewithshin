@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
+	import MetaTag from '../utils/MetaTag.svelte';
 
 	const list = [
 		{
@@ -58,23 +59,33 @@
 			path: 'https://stackblitz.com/edit/sveltejs-kit-template-default-psvleh?file=src%2Flib%2Fstyles%2Flight.css'
 		}
 	]
+
+	// meta tags
+	const meta = {
+		title: 'Svelte Libraries - codewithshin.com',
+		ogSubtitle: 'Svelte Libraries & Projects',
+		description: 'Component Libraries and Projects for Svelte 4/5/Runes.',
+    path: '/svelte'
+	}
 </script>
 
+<MetaTag {...meta} />
+
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
-	<h1 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">Svelte Libraries</h1>
-	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">For Svelte 5/Runes projects</h2>
+	<h1>Svelte Libraries</h1>
+	<h2>For Svelte 5/Runes projects</h2>
 </div>
 
 <Components componentData={listRunes} />
 
 <div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
-	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">For Svelte 4/5 projects</h2>
+	<h2>For Svelte 4/5 projects</h2>
 </div>
 
 <Components componentData={list} />
 
 <div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
-	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">Demo and Starters</h2>
+	<h2>Demo and Starters</h2>
 </div>
 
 <Components componentData={demo} />

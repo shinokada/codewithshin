@@ -24,7 +24,7 @@
 		cardClass?: string;
 	}
 
-	let { children, title, list, class: className, isOpen = true, cardClass = 'bg-white dark:bg-slate-800', ...attributes } = $props<Props>();
+	let { children, title, list, class: className, isOpen = true, cardClass = 'bg-white dark:bg-slate-800', ...attributes }: Props = $props();
 	let slideOpen = $state(isOpen);
 </script>
 

@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
+	import MetaTag from '../utils/MetaTag.svelte';
+
 	const mainWeb = [
 		{
 			name: 'Svelte SVG Icon Sets',
@@ -176,22 +178,31 @@
 			path: 'https://svelte-weather.codewithshin.com/'
 		}
 	];
+	// meta tags
+	const meta = {
+		title: 'Svelte SVG Icon Sets - codewithshin.com',
+		ogSubtitle: 'Svelte SVG Icon Sets',
+		description: '29 Svelte SVG Icon Sets for your next Svelte projects.',
+    path: '/svelte-svg-icon-sets'
+	}
 </script>
 
+<MetaTag {...meta} />
+
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
-	<h1 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white lg:text-4xl">29 Svelte SVG Icon Sets</h1>
+	<h1>29 Svelte SVG Icon Sets</h1>
 </div>
 
 <Components componentData={mainWeb} colNum={1} class='sm:max-w-96 mx-auto'/>
 
 <div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
-	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">For Svelte 5/Runes projects</h2>
+	<h2>For Svelte 5/Runes projects</h2>
 </div>
 
 <Components componentData={listRunes} />
 
 <div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
-	<h2 class="mx-auto max-w-3xl text-center text-2xl font-normal text-gray-800 dark:text-gray-100">For Svelte 4/5 projects</h2>
+	<h2>For Svelte 4/5 projects</h2>
 </div>
 
 <Components componentData={list} />

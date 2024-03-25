@@ -4,7 +4,7 @@
 		tinted?: boolean;
 		class?: string;
 	}
-	let { children, tinted, class: classname, ...attributes } = $props<Props>();
+	let { children, tinted, class: classname, ...attributes }: Props = $props();
 	// export let tinted: boolean = false;
 </script>
 

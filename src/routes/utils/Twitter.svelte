@@ -13,7 +13,7 @@
 		ariaLabel?: string;
 		class?: string;
 	}
-	let { size = ctx.size || '24', role = ctx.role || 'img', color = ctx.color || 'currentColor', ariaLabel = 'twitter brands,', class: classname, ...restProps } = $props<Props>();
+	let { size = ctx.size || '24', role = ctx.role || 'img', color = ctx.color || 'currentColor', ariaLabel = 'twitter brands,', class: classname, ...restProps }: Props = $props();
 </script>
 
 <svg xmlns="http://www.w3.org/2000/svg" {...restProps} {role} width={size} height={size} fill={color} class={classname} aria-label={ariaLabel} viewBox="0 0 512 512">

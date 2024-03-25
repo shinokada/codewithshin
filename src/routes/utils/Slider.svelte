@@ -27,7 +27,7 @@
 		badgeColor?: BadgeColorType;
 	}
 
-	let { children, title, list, isOpen = true, class: className, cardClass = 'bg-white dark:bg-slate-800', size, customSize, ...attributes } = $props<Props>();
+	let { children, title, list, isOpen = true, class: className, cardClass = 'bg-white dark:bg-slate-800', size, customSize, ...attributes }: Props = $props();
 	// let isOpen = $state(true)
 </script>
 

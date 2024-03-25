@@ -20,7 +20,7 @@
 		componentData = [],
 		colNum = 3,
 		class: classname,
-	} = $props<Props>();
+	}: Props = $props();
 
 	const cols: { [key: number]: string } = {
 		1: 'grid-cols-1 gap-4 ',

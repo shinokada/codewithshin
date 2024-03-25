@@ -3,6 +3,7 @@
 	import Section from './utils/Section.svelte';
   import GitHubProfile from './utils/GitHubProfile.svelte';
 	import Components from './utils/Components.svelte';
+	import MetaTag from './utils/MetaTag.svelte';
 	
 	const list = [
 		{
@@ -48,8 +49,16 @@
       description: 'More than 170 programming articles and tutorials.'
 		},
 	];
+	// meta tags
+	const meta = {
+		title: 'codewithshin.com - Homepage',
+		ogSubtitle: 'Projects and coding tools',
+		description: 'Welcome to codewithshin where you can find a lot of coding goodies',
+    path: '/'
+	}
 </script>
 
+<MetaTag {...meta} />
 <HeroSection />
 
 <Section class="flex flex-col gap-8 sm:gap-12 lg:pt-24">
