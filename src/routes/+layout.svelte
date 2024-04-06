@@ -4,6 +4,7 @@
 	import Nav from './utils/Nav.svelte';
 	import Footer from './utils/Footer.svelte';
 	const analytics = data.ANALYTICS_ID
+	
   $effect(() => {
     const script = document.createElement('script');
     script.innerHTML = `
