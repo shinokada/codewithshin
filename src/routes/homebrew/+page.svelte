@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
-	import MetaTag from '../utils/MetaTag.svelte';
 
 	const list = [
 		{
@@ -61,16 +60,7 @@
 			path: 'https://github.com/shinokada/backpack_install'
 		},
 	];
-	// meta tags
-	const meta = {
-		title: 'Homebrew Taps - codewithshin.com',
-		ogSubtitle: 'Homebrew Taps',
-		description: 'Terminal tools for devs includes terminal radio, scripts, dotfiles, & more.  Automate tasks, manage files, & boost efficiency.',
-    path: '/homebrew'
-	}
 </script>
-
-<MetaTag {...meta} />
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
 	<h1>Homebrew Taps</h1>

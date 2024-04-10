@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
-	import MetaTag from '../utils/MetaTag.svelte';
 
 	const list = [
 		{
@@ -39,16 +38,8 @@
 			path: 'https://pypi.org/project/statsfig/'
 		},
 	];
-	// meta tags
-	const meta = {
-		title: 'Python and Jupyter - codewithshin.com',
-		ogSubtitle: 'Python and Jupyter',
-		description: 'Data visualization with Python includes Covid charts, Venn diagrams, animated maps & fastAPI web apps.',
-    path: '/python-and-jupyter'
-	}
 </script>
 
-<MetaTag {...meta} />
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
 	<h1>Python and Jupyter</h1>

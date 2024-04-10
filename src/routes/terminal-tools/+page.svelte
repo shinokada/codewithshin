@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
-	import MetaTag from '../utils/MetaTag.svelte';
-	const list = [
+  const list = [
 		{
 			name: 'TERA: Terminal Radio',
 			description: 'Interactive terminal music radio player. Play your favorite radio station, CRUD your favorite lists, and explore new radio stations from your terminal.',
@@ -115,16 +114,8 @@
 			path: 'https://github.com/shinokada/pdftoimg'
 		},
 	];
-	// meta tags
-	const meta = {
-		title: 'Terminal Tools - codewithshin.com',
-		ogSubtitle: 'Terminal Tools',
-		description: 'Terminal tools for devs. Automate tasks, manage files, convert formats & create graphics. PDFs, Images & more!',
-    path: '/terminal-tools'
-	}
+	
 </script>
-
-<MetaTag {...meta} />
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
 	<h1>Terminal Tools</h1>

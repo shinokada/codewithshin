@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
-	import MetaTag from '../utils/MetaTag.svelte';
 
 	const list = [
 		{
@@ -60,16 +59,8 @@
 		}
 	]
 
-	// meta tags
-	const meta = {
-		title: 'Svelte Libraries - codewithshin.com',
-		ogSubtitle: 'Svelte Libraries & Projects',
-		description: 'Component Libraries and Projects for Svelte 4/5/Runes.',
-    path: '/svelte'
-	}
 </script>
 
-<MetaTag {...meta} />
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
 	<h1>Svelte Libraries</h1>

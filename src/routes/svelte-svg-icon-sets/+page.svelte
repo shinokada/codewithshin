@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
-	import MetaTag from '../utils/MetaTag.svelte';
 
 	const mainWeb = [
 		{
@@ -178,16 +177,9 @@
 			path: 'https://svelte-weather.codewithshin.com/'
 		}
 	];
-	// meta tags
-	const meta = {
-		title: 'Svelte SVG Icon Sets - codewithshin.com',
-		ogSubtitle: 'Svelte SVG Icon Sets',
-		description: '29 Svelte SVG Icon Sets for your next Svelte projects.',
-    path: '/svelte-svg-icon-sets'
-	}
 </script>
 
-<MetaTag {...meta} />
+
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
 	<h1>29 Svelte SVG Icon Sets</h1>
