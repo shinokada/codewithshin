@@ -1,7 +1,7 @@
 import { ANALYTICS_ID } from '$env/static/private';
-/** @type {import('./$types').LayoutServerLoad} */
+
 export const load = ({ url }) => {
-  const layoutMetaTags: MetaProps = {
+  const layoutMetaTags = {
     title: 'codewithshin.com',
     description: 'Hi, I\'m Shin, a programmer and technology enthusiast with a passion for sharing my knowledge and experience.',
     keywords: 'svelte, runes, js, ts, tailwind, bash, python',
