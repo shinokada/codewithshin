@@ -17,3 +17,4 @@ export const load = () => {
   }) satisfies MetaProps;
   return { pageMetaTags };
 }
+

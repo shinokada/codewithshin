@@ -32,13 +32,28 @@
 	const listRunes = [
 		{
 			name: 'Svelte 5 UI Lib',
-			description: 'A UI library crafted for Svelte 5 Runes.',
+			description: 'A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
 			path: 'https://svelte-5-ui-lib.codewithshin.com/'
+		},
+		{
+			name: 'Runatics',
+			description: 'A simple Google analyics component for Svelte Runes project.',
+			path: 'https://runatics.codewithshin.com/'
+		},
+		{
+			name: 'Runes Meta Tags',
+			description: 'Easily configure meta tags including basic SEO information, robots meta tag, Twitter and Open Graph meta tags for Svelte 5 Runes.',
+			path: 'https://runes-meta-tags.codewithshin.com/'
 		},
 		{
 			name: 'Svelte Rune Highlight',
 			description: 'Syntax highlighting for Svelte 5 Runes using highlight.js.',
 			path: 'https://svelte-rune-highlight.codewithshin.com/'
+		},
+		{
+			name: 'Runes Webkit',
+			description: 'A collection of ready-to-use components for Svelte 5 Runes. Navbar, Footer, CodeWrapper, DocPage, HighlightCompo, HomeCards, IconPage, OnThisPage, Sidebar, TechInfo, and more.',
+			path: 'https://runes-webkit.codewithshin.com/'
 		},
 		{
 			name: 'Svelte Lib Helpers',
@@ -56,6 +71,11 @@
 			name: 'Dynamic styling',
 			description: 'Dynamic styling for Svelte 5/Runes projects',
 			path: 'https://stackblitz.com/edit/sveltejs-kit-template-default-psvleh?file=src%2Flib%2Fstyles%2Flight.css'
+		},
+		{
+			name: 'Runes Webkit starter',
+			description: 'A starter for Svelte 5/Runes projects using Runes Webkit',
+			path: 'https://github.com/shinokada/runes-webkit-starter'
 		}
 	]
 

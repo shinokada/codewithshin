@@ -5,30 +5,24 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/svelte-svg-icon-sets');
 });
 
-
 test('svelte-svg-icon-sets page has expected h1, meta title', async ({ page }) => {
   await expect(page.getByRole('heading', { name: '29 Svelte SVG Icon Sets' })).toBeVisible();
 });
 
 test('svelte-svg-icon-sets page has expected meta title', async ({ page }) => {
-  await expect(page).toHaveTitle('Svelte SVG Icon Sets | codewithshin.com');
+  await expect(page).toHaveTitle('Svelte SVG Icon Sets - codewithshin.com');
 })
 
 test('svelte-svg-icon-sets page has expected meta description', async ({ page }) => {
   const metaDescription = page.locator('meta[name="description"]');
-  await expect(metaDescription).toHaveAttribute('content', 'Svelte 4, 5, and Runes libraries | codewithshin.com.');
+  await expect(metaDescription).toHaveAttribute('content', '29 Svelte SVG Icon Sets for for Svelte 4/5/Runes projects');
 })
-
-test('svelte-svg-icon-sets page has expected meta keywords', async ({ page }) => {
-  const metaKeywords = page.locator('meta[name="keywords"]');
-  await expect(metaKeywords).toHaveAttribute('content', 'svelte, runes, js, ts, tailwind, bash, python');
-});
 
 test('svelte-svg-icon-sets page has expected meta og tags', async ({ page }) => {
   const metaOgTitle = page.locator('meta[property="og:title"]');
-  await expect(metaOgTitle).toHaveAttribute('content', 'Svelte SVG Icon Sets | codewithshin.com');
+  await expect(metaOgTitle).toHaveAttribute('content', 'Svelte SVG Icon Sets - codewithshin.com');
   const metaOgDescription = page.locator('meta[property="og:description"]');
-  await expect(metaOgDescription).toHaveAttribute('content', 'Svelte 4, 5, and Runes libraries | codewithshin.com.');
+  await expect(metaOgDescription).toHaveAttribute('content', '29 Svelte SVG Icon Sets for Svelte 4/5/Runes projects');
   const metaOgUrl = page.locator('meta[property="og:url"]');
   await expect(metaOgUrl).toHaveAttribute('content', 'http://localhost:4173/svelte-svg-icon-sets');
   const metaOgImage = page.locator('meta[property="og:image"]');
@@ -40,9 +34,9 @@ test('svelte-svg-icon-sets page has expected meta og tags', async ({ page }) => 
 
 test('svelte-svg-icon-sets page has expected meta twitter tags', async ({ page }) => {
   const metaTwitterTitle = page.locator('meta[name="twitter:title"]');
-  await expect(metaTwitterTitle).toHaveAttribute('content', 'Svelte SVG Icon Sets | codewithshin.com');
+  await expect(metaTwitterTitle).toHaveAttribute('content', 'Svelte SVG Icon Sets - codewithshin.com');
   const metaTwitterDescription = page.locator('meta[name="twitter:description"]');
-	await expect(metaTwitterDescription).toHaveAttribute('content', 'Svelte 4, 5, and Runes libraries | codewithshin.com.');
+	await expect(metaTwitterDescription).toHaveAttribute('content', '29 Svelte SVG Icon Sets for for Svelte 4/5/Runes projects');
 	const metaTwitterImage = page.locator('meta[name="twitter:image"]');
 	await expect(metaTwitterImage).toHaveAttribute('content', 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Svelte%20SVG%20Icon%20Sets');
 });
