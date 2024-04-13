@@ -5,20 +5,20 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/terminal-tools');
 });
 
-test('homebrew page has expected h1', async ({ page }) => {
+test('terminal tools page has expected h1', async ({ page }) => {
 	await expect(page.getByRole('heading', { name: 'Terminal Tools' })).toBeVisible();
 });
 
-test('homebrew page has expected meta title', async ({ page }) => {
+test('terminal tools page has expected meta title', async ({ page }) => {
   await expect(page).toHaveTitle('Terminal Tools - codewithshin.com');
 });
 
-test('homebrew page has expected meta description', async ({ page }) => {
+test('terminal tools page has expected meta description', async ({ page }) => {
   const metaDescription = page.locator('meta[name="description"]');
   await expect(metaDescription).toHaveAttribute('content', 'Bash and Node.js tools for your terminal');
 });
 
-test('homebrew page has expected meta og', async ({ page }) => {
+test('terminal tools page has expected meta og', async ({ page }) => {
   const metaOgTitle = page.locator('meta[property="og:title"]');
   await expect(metaOgTitle).toHaveAttribute('content', 'Terminal Tools - codewithshin.com');
   const metaOgDescription = page.locator('meta[property="og:description"]');
@@ -27,7 +27,7 @@ test('homebrew page has expected meta og', async ({ page }) => {
   await expect(metaImage).toHaveAttribute('content', 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Terminal%20Tools');
 });
 
-test('homebrew page has expected meta twitter', async ({ page }) => {
+test('terminal tools page has expected meta twitter', async ({ page }) => {
   const metaTwitterTitle = page.locator('meta[name="twitter:title"]');
   await expect(metaTwitterTitle).toHaveAttribute('content', 'Terminal Tools - codewithshin.com');
   const metaTwitterDescription = page.locator('meta[name="twitter:description"]');
