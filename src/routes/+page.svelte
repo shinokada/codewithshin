@@ -3,6 +3,7 @@
 	import Section from './utils/Section.svelte';
   import GitHubProfile from './utils/GitHubProfile.svelte';
 	import Components from './utils/Components.svelte';
+	import NpmProfile from './utils/NpmProfile.svelte';
 	
 	const list = [
 		{
@@ -63,3 +64,6 @@
 
 <h2>Github Profile</h2>
 <GitHubProfile />
+
+<h2 class="mt-12">NPM Profile</h2>
+<NpmProfile />
