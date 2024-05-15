@@ -6,7 +6,7 @@
 			name: 'Flowbite Svelte',
 			description: 'An official Flowbite component library for Svelte 4/5.',
 			path: 'https://flowbite-svelte.com/',
-			badge: {
+			npm_version: {
 				packageName: 'flowbite-svelte',
 				logo: 'svelte',
 				color: 'blue',
@@ -17,7 +17,7 @@
 			name: 'Flowbite Svelte Icons',
 			description: '540+ SVG Flowbite icons components for Svelte 3/4/5/Runes.',
 			path: 'https://flowbite-svelte-icons.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'flowbite-svelte-icons',
 				logo: 'svelte',
 				color: 'blue',
@@ -28,7 +28,7 @@
 			name: 'Flowbite Svelte Admin Dashboard',
 			description: 'Admin dashboard for Flowbite Svelte.',
 			path: 'https://flowbite-svelte-admin-dashboard.vercel.app/',
-			badge: {
+			npm_version: {
 				packageName: 'flowbite-svelte-admin-dashboard',
 				logo: 'svelte',
 				color: 'blue',
@@ -39,7 +39,7 @@
 			name: 'Flowbite Svelte Blocks',
 			description: 'Svelte blocks for Flowbite Svelte.',
 			path: 'https://flowbite-svelte-blocks.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'flowbite-svelte-blocks',
 				logo: 'svelte',
 				color: 'blue',
@@ -50,7 +50,7 @@
 			name: 'Svelte Lib Helpers',
 			description: 'Simplify the process of managing exports, documentation, package distribution for Svelte 4/5/Runes.',
 			path: 'https://svelte-lib-helpers.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'svelte-lib-helpers',
 				logo: 'svelte',
 				color: 'blue',
@@ -64,7 +64,7 @@
 			name: 'Svelte 5 UI Lib',
 			description: 'A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
 			path: 'https://svelte-5-ui-lib.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'svelte-5-ui-lib',
 				logo: 'svelte',
 				color: 'red',
@@ -75,7 +75,7 @@
 			name: 'Runatics',
 			description: 'A simple Google analyics component for Svelte Runes project.',
 			path: 'https://runatics.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'runatics',
 				logo: 'svelte',
 				color: 'red',
@@ -86,7 +86,7 @@
 			name: 'Runes Meta Tags',
 			description: 'Easily configure meta tags including basic SEO information, robots meta tag, Twitter and Open Graph meta tags for Svelte 5 Runes.',
 			path: 'https://runes-meta-tags.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'runes-meta-tags',
 				logo: 'svelte',
 				color: 'red',
@@ -97,7 +97,7 @@
 			name: 'Svelte Rune Highlight',
 			description: 'Syntax highlighting for Svelte 5 Runes using highlight.js.',
 			path: 'https://svelte-rune-highlight.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'svelte-rune-highlight',
 				logo: 'svelte',
 				color: 'red',
@@ -108,7 +108,7 @@
 			name: 'Runes Webkit',
 			description: 'A collection of ready-to-use components for Svelte 5 Runes. Navbar, Footer, CodeWrapper, DocPage, HighlightCompo, HomeCards, IconPage, OnThisPage, Sidebar, TechInfo, and more.',
 			path: 'https://runes-webkit.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'runes-webkit',
 				logo: 'svelte',
 				color: 'red',
@@ -119,7 +119,7 @@
 			name: 'Svelte Lib Helpers',
 			description: 'Simplify the process of managing exports, documentation, package distribution for Svelte 4/5/Runes.',
 			path: 'https://svelte-lib-helpers.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'svelte-lib-helpers',
 				logo: 'svelte',
 				color: 'red',
@@ -130,7 +130,7 @@
 			name: 'Svelte Shields',
 			description: 'Shilds.io badges for Svelte Runes project.',
 			path: 'https://svelte-shields.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'svelte-shields',
 				logo: 'svelte',
 				color: 'red',
@@ -141,7 +141,7 @@
 			name: 'Svelte Carbonads',
 			description: 'A component library that  set up a Carbonads on your SvelteKit project',
 			path: 'https://svelte-carbonads.codewithshin.com/',
-			badge: {
+			npm_version: {
 				packageName: 'svelte-carbonads',
 				logo: 'svelte',
 				color: 'red',

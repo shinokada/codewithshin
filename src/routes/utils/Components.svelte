@@ -8,7 +8,8 @@
 		path: string;
 		name: string;
 		icon?: string;
-		badge?: NpmVersionPropsType;
+		npm_version?: NpmVersionPropsType;
+		github_release?: string;
 		thumnailSize?: string;
 		description?: string;
 	};
@@ -34,7 +35,7 @@
 </script>
 
 <div class="{divCls}">
-	{#each componentData as { path, name, thumnailSize, icon, badge, description }}
-		<CompoCard {name} {thumnailSize} {path} {icon} {badge} {description} headerColor="bg-gray-50 dark:bg-sky-800" />
+	{#each componentData as { path, name, thumnailSize, icon, npm_version, github_release, description }}
+		<CompoCard {name} {thumnailSize} {path} {icon} {npm_version} {github_release} {description} headerColor="bg-gray-50 dark:bg-sky-800" />
 	{/each}
 </div>

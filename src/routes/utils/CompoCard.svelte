@@ -1,15 +1,16 @@
 <script lang="ts">
 	import { Card } from 'svelte-5-ui-lib';
 	// import type { ComponentType } from 'svelte';
-	import { NpmVersion } from 'svelte-shields'
-  import type { NpmVersionPropsType } from 'svelte-shields';
+	import { NpmVersion, GitHub } from 'svelte-shields'
+  import type { NpmVersionPropsType, GitHubPropsType } from 'svelte-shields';
 
 	interface Props {
 		name?: string;
 		path?: string;
 		thumnailSize?: string;
 		icon?: string;
-		badge?: NpmVersionPropsType;
+		npm_version?: NpmVersionPropsType;
+		github_release?: GitHubPropsType;
 		headerColor?: string;
 		cardHeight?: string;
 		description?: string;
@@ -22,7 +23,8 @@
 		cardHeight = 'h-52',
 		description = 'Hello, I am description',
 		icon = '',
-		badge,
+		npm_version,
+		github_release,
 		...attributes
 	}: Props = $props();
 </script>
@@ -52,8 +54,11 @@
     </div>
 		{:else}
 			<div class="grid gap-4">
-				{#if badge}
-					<NpmVersion {...badge} />
+				{#if npm_version}
+					<NpmVersion {...npm_version} />
+				{/if}
+				{#if github_release}
+          <GitHub {...github_release} />
 				{/if}
 				{description}
 			</div>
