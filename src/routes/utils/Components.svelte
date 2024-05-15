@@ -2,11 +2,13 @@
 	// import type { ComponentType } from 'svelte';
 	import CompoCard from './CompoCard.svelte';
 	import { twMerge } from 'tailwind-merge';
+	import type { NpmVersionPropsType } from 'svelte-shields';
 
 	type ComponentDataType = {
 		path: string;
 		name: string;
 		icon?: string;
+		badge?: NpmVersionPropsType;
 		thumnailSize?: string;
 		description?: string;
 	};
@@ -32,7 +34,7 @@
 </script>
 
 <div class="{divCls}">
-	{#each componentData as { path, name, thumnailSize, icon, description }}
-		<CompoCard {name} {thumnailSize} {path} {icon} {description} headerColor="bg-gray-50 dark:bg-sky-800" />
+	{#each componentData as { path, name, thumnailSize, icon, badge, description }}
+		<CompoCard {name} {thumnailSize} {path} {icon} {badge} {description} headerColor="bg-gray-50 dark:bg-sky-800" />
 	{/each}
 </div>

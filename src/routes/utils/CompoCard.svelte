@@ -1,12 +1,15 @@
 <script lang="ts">
 	import { Card } from 'svelte-5-ui-lib';
 	// import type { ComponentType } from 'svelte';
+	import { NpmVersion } from 'svelte-shields'
+  import type { NpmVersionPropsType } from 'svelte-shields';
 
 	interface Props {
 		name?: string;
 		path?: string;
 		thumnailSize?: string;
 		icon?: string;
+		badge?: NpmVersionPropsType;
 		headerColor?: string;
 		cardHeight?: string;
 		description?: string;
@@ -19,6 +22,7 @@
 		cardHeight = 'h-52',
 		description = 'Hello, I am description',
 		icon = '',
+		badge,
 		...attributes
 	}: Props = $props();
 </script>
@@ -32,7 +36,7 @@
 			</svg>
 		</span>
 	</div>
-	<div class="flex items-center justify-center {cardHeight}">
+	<div class="p-8 {cardHeight}">
 		{#if icon}
 		<div class="relative dark:hidden h-5/6 {thumnailSize ? thumnailSize : 'w-64'}">
       <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
@@ -47,7 +51,10 @@
       </span>
     </div>
 		{:else}
-			<div class="flex px-8 text-xl">
+			<div class="grid gap-4">
+				{#if badge}
+					<NpmVersion {...badge} />
+				{/if}
 				{description}
 			</div>
 		{/if}
