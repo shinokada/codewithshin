@@ -2,14 +2,16 @@
 	// import type { ComponentType } from 'svelte';
 	import CompoCard from './CompoCard.svelte';
 	import { twMerge } from 'tailwind-merge';
-	import type { NpmVersionPropsType } from 'svelte-shields';
+	import type { NpmVersionPropsType, GitHubPropsType, PypiVersionPropsType, StaticBadgePropsType } from 'svelte-shields';
 
 	type ComponentDataType = {
 		path: string;
 		name: string;
 		icon?: string;
 		npm_version?: NpmVersionPropsType;
-		github_release?: string;
+		github_release?: GitHubPropsType;
+		pypi_version?: PypiVersionPropsType;
+		static_badge?: StaticBadgePropsType;
 		thumnailSize?: string;
 		description?: string;
 	};
@@ -35,7 +37,7 @@
 </script>
 
 <div class="{divCls}">
-	{#each componentData as { path, name, thumnailSize, icon, npm_version, github_release, description }}
-		<CompoCard {name} {thumnailSize} {path} {icon} {npm_version} {github_release} {description} headerColor="bg-gray-50 dark:bg-sky-800" />
+	{#each componentData as { path, name, thumnailSize, icon, npm_version, github_release, pypi_version, static_badge, description }}
+		<CompoCard {name} {thumnailSize} {path} {icon} {npm_version} {github_release} {pypi_version} {static_badge} {description} headerColor="bg-gray-50 dark:bg-sky-800" />
 	{/each}
 </div>

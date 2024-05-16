@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Card } from 'svelte-5-ui-lib';
 	// import type { ComponentType } from 'svelte';
-	import { NpmVersion, GitHub } from 'svelte-shields'
-  import type { NpmVersionPropsType, GitHubPropsType } from 'svelte-shields';
+	import { NpmVersion, GitHub, PypiVersion, StaticBadge } from 'svelte-shields'
+  import type { NpmVersionPropsType, GitHubPropsType, PypiVersionPropsType, StaticBadgePropsType } from 'svelte-shields';
 
 	interface Props {
 		name?: string;
@@ -11,6 +11,8 @@
 		icon?: string;
 		npm_version?: NpmVersionPropsType;
 		github_release?: GitHubPropsType;
+		pypi_version?: PypiVersionPropsType;
+		static_badge?: StaticBadgePropsType;
 		headerColor?: string;
 		cardHeight?: string;
 		description?: string;
@@ -25,6 +27,8 @@
 		icon = '',
 		npm_version,
 		github_release,
+		pypi_version,
+		static_badge,
 		...attributes
 	}: Props = $props();
 </script>
@@ -59,6 +63,12 @@
 				{/if}
 				{#if github_release}
           <GitHub {...github_release} />
+				{/if}
+				{#if pypi_version}
+					<PypiVersion {...pypi_version} />
+				{/if}
+				{#if static_badge}
+				  <StaticBadge {...static_badge} />
 				{/if}
 				{description}
 			</div>
