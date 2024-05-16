@@ -7,9 +7,9 @@
 			description: 'An interactive graph using a dropdown menu for Jupyter Notebook.',
 			path: 'https://nbviewer.org/github/shinokada/covid-19-stats/blob/master/latest/Dropdown-interactive.ipynb',
 			static_badge: {
-				badgeContent: 'Jupyter-Covid_19_Stats-aqua',
+				badgeContent: 'Jupyter-Covid_19_Stats-1d75af',
 				logo: 'jupyter',
-				labelColor: 'f8f8ff'
+				labelColor: 'ffffff'
 			}
 		},
 		{
@@ -21,7 +21,7 @@
 				style: 'flat',
 				label: 'Vennfig',
 				logo:'python',
-				labelColor: 'f8f8ff'
+				labelColor: 'ffffff'
 			}
 		},
 		{
@@ -29,9 +29,9 @@
 			description: 'How to create an animated choropleth map with less than 15 lines of code.',
 			path: 'https://jovian.ml/shinokada/how-to-create-an-animated-choropleth-map-with-less-than-15-lines-of-code/',
 			static_badge: {
-				badgeContent: 'Jupyter-Animated_choropleth_map-aqua',
+				badgeContent: 'Jupyter-Animated_choropleth_map-1d75af',
 				logo: 'jupyter',
-				labelColor: 'f8f8ff'
+				labelColor: 'ffffff'
 			}
 		},
 		{
@@ -39,9 +39,9 @@
 			description: 'How to create a grouped bar chart with Plotly Express in Jupyter Notebook.',
 			path: 'https://jovian.ml/shinokada/how-to-create-a-grouped-bar-chart-with-plotly-express-in-python',
 			static_badge: {
-				badgeContent: 'Jupyter-A grouped bar chart-aqua',
+				badgeContent: 'Jupyter-A grouped bar chart-1d75af',
 				logo: 'jupyter',
-				labelColor: 'f8f8ff'
+				labelColor: 'ffffff'
 			}
 		},
 		{
@@ -49,9 +49,9 @@
 			description: 'An interactive dropdown menu for Jupyter Notebook.',
 			path: 'https://jovian.ml/shinokada/dropdown-interactive',
 			static_badge: {
-				badgeContent: 'Jupyter-Dropdown interactive-aqua',
+				badgeContent: 'Jupyter-Dropdown interactive-1d75af',
 				logo: 'jupyter',
-				labelColor: 'f8f8ff'
+				labelColor: 'ffffff'
 			}
 		},
 		{
@@ -63,7 +63,7 @@
 				style: 'flat',
 				label: 'Statsfig',
 				logo: 'python',
-				labelColor: 'f8f8ff'
+				labelColor: 'ffffff'
 			}
 		},
 		{
@@ -71,9 +71,9 @@
 			description: 'A static simple website ready to deploy using FastAPI and Bootstrap 5.',
 			path: 'https://github.com/shinokada/fastapi-web-starter',
 			static_badge: {
-				badgeContent: 'FastAPI-Web_starter-aqua',
+				badgeContent: 'FastAPI-Web_starter-1d75af',
 				logo: 'fastapi',
-				labelColor: 'f8f8ff'
+				labelColor: 'ffffff'
 			}
 		},
 	];

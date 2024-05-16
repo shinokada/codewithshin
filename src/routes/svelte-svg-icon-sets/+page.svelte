@@ -5,7 +5,11 @@
 		{
 			name: 'Svelte SVG Icon Sets',
 			description: 'Home for Svete SVG Icon Sets.',
-			path: 'https://svelte-svg-icons.codewithshin.com/'
+			path: 'https://svelte-svg-icons.codewithshin.com/',
+			static_badge: {
+				badgeContent: 'Svelte-Svelte_SVG_Icon_Sets-blue',
+				logo: 'svelte',
+			}
 		}
 	]
 	const listRunes = [

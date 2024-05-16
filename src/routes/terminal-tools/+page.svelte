@@ -223,6 +223,11 @@
 			name: 'Read HTML Download PDF',
 			description: 'Preview and download PDFs with ease.',
 			path: 'https://read-doc-download-pdf.codewithshin.com/',
+			static_badge: {
+				badgeContent: 'Read HTML Download PDF-1d75af',
+				logo:'',
+
+			}
 		},
 		{
 			name: 'SSIC',

@@ -10,31 +10,56 @@
 			name: 'Svelte Libraries',
 			thumnailSize: '',
 			path: '/svelte',
-      description: 'Official Flowbite UI components, Admin dashboard, Block components for Svelte.'
+      description: 'Official Flowbite UI components, Admin dashboard, Block components for Svelte.',
+			static_badge: {
+				badgeContent: 'Svelte-Libraries-1d6a96',
+				logo:'svelte',
+				labelColor: '0E766E'
+			}
 		},
 		{
 			name: 'Svelte SVG Icon Sets',
 			thumnailSize: '',
 			path: '/svelte-svg-icon-sets',
-      description: '29 SVG Icon sets including Flowbite Svelte icons, Heroicons, Font Awesome icons, Bootstrap, and more.'
+      description: '29 SVG Icon sets including Flowbite Svelte icons, Heroicons, Font Awesome icons, Bootstrap, and more.',
+			static_badge: {
+				badgeContent: 'Svelte-Icon_Libraries-1d6a96',
+				logo:'svelte',
+				labelColor: '0E766E'
+			}
 		},
 		{
 			name: 'Terminal Tools',
 			thumnailSize: '',
 			path: '/terminal-tools',
-      description: 'Terminal Tools for macOS, and Linux including terminal radio, package manager, text effects, and more.'
+      description: 'Terminal Tools for macOS, and Linux including terminal radio, package manager, text effects, and more.',
+			static_badge: {
+				badgeContent: 'Terminal-Tools-1d6a96',
+				logo:'gnubash',
+				labelColor: '0E766E'
+			}
 		},
 		{
 			name: 'Python and Jupyter',
 			thumnailSize: '',
 			path: '/python-and-jupyter',
-      description: 'Starter for FASTAPI, data science with Jupyter.'
+      description: 'Starter for FASTAPI, data science with Jupyter.',
+			static_badge: {
+				badgeContent: 'Python-Jupyter-1d6a96',
+				logo:'python',
+				labelColor: '0E766E'
+			}
 		},
 		{
 			name: 'Homebrew',
 			thumnailSize: '',
 			path: '/homebrew',
-      description: 'Homebrew taps for MacOS and Linux.'
+      description: 'Homebrew taps for MacOS and Linux.',
+			static_badge: {
+				badgeContent: 'Homebrew-Packages-1d6a96',
+				logo:'homebrew',
+				labelColor: '0E766E'
+			}
 		},
 		{
 			name: 'Web Apps',
