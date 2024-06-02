@@ -1,7 +1,7 @@
 import type { MetaProps } from 'runes-meta-tags'
 
 export const load = () => {
-  const pageMetaTags: MetaProps = Object.freeze({
+  const pageMetaTags: MetaProps = {
     title: 'Homebrew Taps - codewithshin.com',
     description: 'Homebrew taps for Mac and Lynux.',
     og: {
@@ -14,6 +14,6 @@ export const load = () => {
       description: 'Homebrew taps for Mac and Lynux.',
       image: 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Homebrew%20Taps',
     },
-  }) satisfies MetaProps;
+  };
   return { pageMetaTags };
 }

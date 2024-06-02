@@ -1,7 +1,7 @@
 import type { MetaProps } from 'runes-meta-tags'
 
 export const load = () => {
-  const pageMetaTags: MetaProps = Object.freeze({
+  const pageMetaTags: MetaProps = {
     title: 'Web apps - codewithshin.com',
     description: 'Web apps for learning and other purposes',
     og: {
@@ -14,6 +14,6 @@ export const load = () => {
       description: 'Web apps for learning and other purposes',
       image: 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Web%20apps',
     },
-  }) satisfies MetaProps;
+  };
   return { pageMetaTags };
 }
