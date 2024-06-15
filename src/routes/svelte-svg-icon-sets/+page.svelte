@@ -16,7 +16,7 @@
 		{
 			name: 'Flowbite Svelte Icons',
 			description: '510+ SVG Flowbite icon components for Svelte 5:Runes.',
-			path: 'https://flowbite-svelte-icons.codewithshin.com/',
+			path: 'https://flowbite-svelte.com/icons/svelte-4',
 			npm_version: {
 				packageName: 'flowbite-svelte-icons',
 				tag: 'next',
