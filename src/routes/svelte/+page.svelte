@@ -16,7 +16,7 @@
 		{
 			name: 'Flowbite Svelte Icons',
 			description: '540+ SVG Flowbite icons components for Svelte 3/4/5/Runes.',
-			path: 'https://flowbite-svelte-icons.codewithshin.com/',
+			path: 'https://flowbite-svelte.com/icons',
 			npm_version: {
 				packageName: 'flowbite-svelte-icons',
 				logo: 'svelte',
@@ -27,7 +27,7 @@
 		{
 			name: 'Flowbite Svelte Admin Dashboard',
 			description: 'Admin dashboard for Flowbite Svelte.',
-			path: 'https://flowbite-svelte-admin-dashboard.vercel.app/',
+			path: 'https://flowbite-svelte.com/admin-dashboard',
 			npm_version: {
 				packageName: 'flowbite-svelte-admin-dashboard',
 				logo: 'svelte',
@@ -38,7 +38,7 @@
 		{
 			name: 'Flowbite Svelte Blocks',
 			description: 'Svelte blocks for Flowbite Svelte.',
-			path: 'https://flowbite-svelte-blocks.codewithshin.com/',
+			path: 'https://flowbite-svelte.com/blocks',
 			npm_version: {
 				packageName: 'flowbite-svelte-blocks',
 				logo: 'svelte',

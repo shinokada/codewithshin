@@ -5,31 +5,31 @@
 
 	const weekly: NpmAuthorDownloadsPropsType = {
 		author: 'shinichiokada',
-		label: 'shinichiokada',
+	
 	}
 	const monthly: NpmAuthorDownloadsPropsType = {
 		author: 'shinichiokada',
 		interval: 'dm',
-		label: 'shinichiokada',
+	
 	}
 	const yearly: NpmAuthorDownloadsPropsType = {
 		author: 'shinichiokada',
 		interval: 'dy',
-		label: 'shinichiokada',
+		
 	}
 
 	const cardHeight = 'h-40';
   const badgeSize = '150'
 </script>
 
-<div class="flex items-center gap-4 max-w-lg mx-auto my-10">
-	<Card href="https://www.npmjs.com/~shinichiokada" padding="none" class="dark:hover:shadow-lg-light max-w-lg hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
-		<div class="flex items-center justify-center {cardHeight}">
-			<div class="flex items-center justify-center gap-4">
+<div class="flex items-center max-w-lg mx-auto my-10">
+	<Card padding="sm" class="px-4 dark:hover:shadow-lg-light max-w-lg hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+		<div class="flex px-4 items-center justify-center gap-2 {cardHeight}">
+			
 				<NpmAuthorDownloads {...weekly} />
         <NpmAuthorDownloads {...monthly} />
 				<NpmAuthorDownloads {...yearly} />
-			</div>
+		
 		</div>
 	</Card>
 </div>

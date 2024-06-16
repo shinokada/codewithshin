@@ -12,11 +12,12 @@
 			}
 		}
 	]
+
 	const listRunes = [
 		{
 			name: 'Flowbite Svelte Icons',
 			description: '510+ SVG Flowbite icon components for Svelte 5:Runes.',
-			path: 'https://flowbite-svelte.com/icons/svelte-4',
+			path: 'https://flowbite-svelte.com/icons/svelte-5',
 			npm_version: {
 				packageName: 'flowbite-svelte-icons',
 				tag: 'next',
@@ -47,6 +48,18 @@
 				logo: 'svelte',
 				color: 'red',
 				label:'Svelte Heros v2',
+			}
+		},
+		{
+			name: 'Svelte Heros',
+			description: '460+ SVG Heros icon components for Svelte 5:Runes.',
+			path: 'https://svelte-heros.codewithshin.com/guide/svelte-5/getting-started',
+			npm_version: {
+				packageName: 'svelte-heros',
+				tag: 'next',
+				logo: 'svelte',
+				color: 'red',
+				label:'Svelte Heros',
 			}
 		},
 		{
@@ -86,6 +99,18 @@
 			}
 		},
 		{
+			name: 'Svelte Tabler',
+			description: '5290+ Tabler icons for Svelte.',
+			path: 'https://svelte-tabler.codewithshin.com/guide/svelte-5/getting-started',
+			npm_version: {
+				packageName: 'svelte-tabler',
+				tag: 'next',
+				logo: 'svelte',
+				color: 'red',
+				label:'Svelte Tabler',
+			}
+		},
+		{
 			name: 'Svelte Flags',
 			description: '250+ SVG flag icons for Svelte',
 			path: 'https://svelte-flags.codewithshin.com/guide/svelte-5/getting-started',
@@ -95,6 +120,30 @@
 				logo: 'svelte',
 				color: 'red',
 				label:'Svelte Flags',
+			}
+		},
+		{
+			name: 'Svelte Flag Icons',
+			description: '260+ SVG flag icons for Svelte.',
+			path: 'https://svelte-flag-icons.codewithshin.com/guide/svelte-5/getting-started',
+			npm_version: {
+				packageName: 'svelte-flag-icons',
+				tag: 'next',
+				logo: 'svelte',
+				color: 'red',
+				label:'Svelte Flag Icons',
+			}
+		},
+		{
+			name: 'Svelte Remix',
+			description: '2270+ Remixicons for Svelte.',
+			path: 'https://svelte-remix.codewithshin.com/guide/svelte-5/getting-started',
+			npm_version: {
+				packageName: 'svelte-remix',
+				tag: 'next',
+				logo: 'svelte',
+				color: 'red',
+				label:'Svelte Remix',
 			}
 		},
 		{
@@ -127,7 +176,7 @@
 		{
 			name: 'Flowbite Svelte Icons',
 			description: '510+ SVG Flowbite icon components for Svelte 4/5/Runes.',
-			path: 'https://flowbite-svelte-icons.codewithshin.com/',
+			path: 'https://flowbite-svelte.com/icons/svelte-4',
 			npm_version: {
 				packageName: 'flowbite-svelte-icons',
 				logo: 'svelte',
