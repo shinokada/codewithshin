@@ -116,6 +116,18 @@
 			}
 		},
 		{
+			name: 'Svelte Next',
+			description: 'Automates updating Svelte versions (specifically targeting next versions) in project directories',
+			path: 'https://svelte-next.codewithshin.com/',
+			github_release: {
+				user: 'shinokada',
+				repo: 'svelte-next',
+				logo: 'bash',
+				color: 'green',
+				label:'Svelte Next',
+			}
+		},
+		{
 			name: 'Svelte Lib Helpers',
 			description: 'Simplify the process of managing exports, documentation, package distribution for Svelte 4/5/Runes.',
 			path: 'https://svelte-lib-helpers.codewithshin.com/',
