@@ -117,7 +117,7 @@
 		},
 		{
 			name: 'Svelte Next',
-			description: 'Automates updating Svelte versions (specifically targeting next versions) in project directories',
+			description: 'Bash script to automate updating Svelte versions (specifically targeting next versions) in project directories',
 			path: 'https://svelte-next.codewithshin.com/',
 			github_release: {
 				user: 'shinokada',
