@@ -17,6 +17,7 @@
   $effect(() => {
     metaTags = $page.data.pageMetaTags ? deepMerge($page.data.layoutMetaTags, $page.data.pageMetaTags ) : data.layoutMetaTags
   });
+  // const analyticsId = data.ANALYTICS_ID
 </script>
 
 <RunesMetaTags {...metaTags}/>
