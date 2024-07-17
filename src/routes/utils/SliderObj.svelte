@@ -42,7 +42,7 @@
 	{#each item as { name, href, description, badge, badgeColor, icon }}
 		<Card {href} class={cardClass}>
 			{#if badge}
-				<Badge color={badgeColor ? badgeColor : 'primary'} divclass="dark:text-white mb-2">
+				<Badge color={badgeColor ? badgeColor : 'primary'} class="dark:text-white mb-2">
 					{badge}</Badge
 				>
 			{/if}

@@ -45,7 +45,7 @@
 	{#each arr as { name, href, description, badge, badgeColor = 'blue', icon }}
 		<Card {size} {href} class={cardClass}>
 			{#if badge}
-				<Badge color={badgeColor} divclass="dark:text-white mb-2">{badge}</Badge>
+				<Badge color={badgeColor} class="dark:text-white mb-2">{badge}</Badge>
 			{/if}
 			{#if icon}
 				{icon}

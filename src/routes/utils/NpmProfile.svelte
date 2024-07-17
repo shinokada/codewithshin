@@ -1,21 +1,21 @@
 <script lang="ts">
 	import { Card } from 'svelte-5-ui-lib';
-	import { NpmAuthorDownloads } from 'svelte-shields';
-	import type { NpmAuthorDownloadsPropsType } from 'svelte-shields';
+	import { NpmAuthorDownload } from 'svelte-shields';
+	import type { NpmAuthorDownloadPropsType } from 'svelte-shields';
 
-	const weekly: NpmAuthorDownloadsPropsType = {
+	const weekly: NpmAuthorDownloadPropsType = {
 		author: 'shinichiokada',
-	
+		style: 'for-the-badge'
 	}
-	const monthly: NpmAuthorDownloadsPropsType = {
+	const monthly: NpmAuthorDownloadPropsType = {
 		author: 'shinichiokada',
 		interval: 'dm',
-	
+		style: 'for-the-badge'
 	}
-	const yearly: NpmAuthorDownloadsPropsType = {
+	const yearly: NpmAuthorDownloadPropsType = {
 		author: 'shinichiokada',
 		interval: 'dy',
-		
+		style: 'for-the-badge'
 	}
 
 	const cardHeight = 'h-40';
@@ -26,9 +26,9 @@
 	<Card padding="sm" class="px-4 dark:hover:shadow-lg-light max-w-lg hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
 		<div class="flex px-4 items-center justify-center gap-2 {cardHeight}">
 			
-				<NpmAuthorDownloads {...weekly} />
-        <NpmAuthorDownloads {...monthly} />
-				<NpmAuthorDownloads {...yearly} />
+				<NpmAuthorDownload {...weekly} />
+        <NpmAuthorDownload {...monthly} />
+				<NpmAuthorDownload {...yearly} />
 		
 		</div>
 	</Card>

@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
+	import type { ComponentDataType } from '../utils/types';
 
-	const list = [
+	const list: ComponentDataType[] = [
 		{
 			name: 'Covid 19 Stats',
 			description: 'An interactive graph using a dropdown menu for Jupyter Notebook.',

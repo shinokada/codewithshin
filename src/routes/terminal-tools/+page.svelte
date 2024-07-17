@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Components from '../utils/Components.svelte';
-  const list = [
+	import type { ComponentDataType } from '../utils/types';
+
+  const list: ComponentDataType[] = [
 		{
 			name: 'TERA: Terminal Radio',
 			description: 'Interactive terminal music radio player. Play your favorite radio station, CRUD your favorite lists, and explore new radio stations from your terminal.',
