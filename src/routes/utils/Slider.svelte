@@ -41,7 +41,7 @@
 		{/if}
 	</button>
 </h2>
-{#snippet card(arr)}
+{#snippet card(arr: ListItem[])}
 	{#each arr as { name, href, description, badge, badgeColor = 'blue', icon }}
 		<Card {size} {href} class={cardClass}>
 			{#if badge}
