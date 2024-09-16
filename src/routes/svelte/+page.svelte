@@ -4,7 +4,7 @@
 	const list = [
 		{
 			name: 'Flowbite Svelte',
-			description: 'An official Flowbite component library for Svelte 4/5.',
+			description: 'An official Flowbite component library for Svelte 4/5/.',
 			path: 'https://flowbite-svelte.com/',
 			npm_version: {
 				packageName: 'flowbite-svelte',
@@ -16,7 +16,7 @@
 		{
 			name: 'Flowbite Svelte Icons',
 			description: '540+ SVG Flowbite icons components for Svelte 3/4/5/Runes.',
-			path: 'https://flowbite-svelte.com/icons',
+			path: 'https://flowbite-svelte-icons.codewithshin.com/',
 			npm_version: {
 				packageName: 'flowbite-svelte-icons',
 				logo: 'svelte',
