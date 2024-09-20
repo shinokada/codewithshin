@@ -1,13 +1,10 @@
-<script lang="ts" context="module">
-	export type BadgeColorType = 'gray' | 'red' | 'yellow' | 'green' | 'indigo' | 'purple' | 'pink' | 'blue' | 'primary' | 'none';
-</script>
-
 <script lang="ts">
 	import { twMerge } from 'tailwind-merge';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { Card, Badge, P } from 'svelte-5-ui-lib';
 	import { AngleDownOutline, AngleUpOutline } from 'flowbite-svelte-icons';
+	type BadgeColorType = 'gray' | 'red' | 'yellow' | 'green' | 'indigo' | 'purple' | 'pink' | 'blue' | 'primary' | 'none';
 	interface Props {
 		children?: any;
 		list?: ListItem[];
