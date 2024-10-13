@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('homebrew page has expected h1', async ({ page }) => {
-	await expect(page.getByRole('heading', { name: 'Homebrew Taps' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Homebrew Taps' })).toBeVisible();
 });
 
 test('homebrew page has expected meta title', async ({ page }) => {

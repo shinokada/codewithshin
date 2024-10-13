@@ -32,10 +32,7 @@ test.describe('Tests for Svelt page', () => {
     const metaOgUrl = page.locator('meta[property="og:url"]');
     await expect(metaOgUrl).toHaveAttribute('content', 'http://localhost:4173/svelte');
     const metaOgImage = page.locator('meta[property="og:image"]');
-    await expect(metaOgImage).toHaveAttribute(
-      'content',
-      'https://open-graph-vercel.vercel.app/api/codewithshin?title=Svelte%20libraries'
-    );
+    await expect(metaOgImage).toHaveAttribute('content', 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Svelte%20libraries');
   });
 
   test('svelte page has expected meta twitter tags', async ({ page }) => {
@@ -45,5 +42,5 @@ test.describe('Tests for Svelt page', () => {
     await expect(metaTwitterDescription).toHaveAttribute('content', 'Svelte 4, 5, and Runes libraries');
     const metaTwitterImage = page.locator('meta[name="twitter:image"]');
     await expect(metaTwitterImage).toHaveAttribute('content', 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Svelte%20libraries');
-  });  
+  });
 });

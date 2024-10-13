@@ -1,4 +1,4 @@
-import type { MetaProps } from 'runes-meta-tags'
+import type { MetaProps } from 'runes-meta-tags';
 
 export const load = () => {
   const pageMetaTags: MetaProps = {
@@ -7,13 +7,13 @@ export const load = () => {
     og: {
       title: 'Web apps - codewithshin.com',
       description: 'Web apps for learning and other purposes',
-      image: 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Web%20apps',
+      image: 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Web%20apps'
     },
     twitter: {
       title: 'Web apps - codewithshin.com',
       description: 'Web apps for learning and other purposes',
-      image: 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Web%20apps',
-    },
+      image: 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Web%20apps'
+    }
   };
   return { pageMetaTags };
-}
+};

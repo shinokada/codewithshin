@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('python and jupyter page has expected h1', async ({ page }) => {
-	await expect(page.getByRole('heading', { name: 'Python and Jupyter' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Python and Jupyter' })).toBeVisible();
 });
 
 test('python and jupyter page has expected meta title', async ({ page }) => {

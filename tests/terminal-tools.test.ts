@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('terminal tools page has expected h1', async ({ page }) => {
-	await expect(page.getByRole('heading', { name: 'Terminal Tools' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Terminal Tools' })).toBeVisible();
 });
 
 test('terminal tools page has expected meta title', async ({ page }) => {

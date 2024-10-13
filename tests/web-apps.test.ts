@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('web apps page has expected h1', async ({ page }) => {
-	await expect(page.getByRole('heading', { name: 'Web apps' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Web apps' })).toBeVisible();
 });
 
 test('web apps page has expected meta title', async ({ page }) => {
