@@ -2,6 +2,15 @@
   import Components from '../utils/Components.svelte';
   const list = [
     {
+      name: 'Read HTML Download PDF',
+      description: 'Preview and download PDFs: React, Vue, Svelte, Nuxt, Tauri, Typescript, Nestjs, Vite, Expressjs, Vitest, Slidev, pnpm, Shellspec, Zod, and more.',
+      path: 'https://read-doc-download-pdf.codewithshin.com/',
+      static_badge: {
+        badgeContent: 'Read HTML Download PDF-yellow',
+        logo: ''
+      }
+    },
+    {
       name: 'Norske Flashcard',
       description: 'Improve your Norwegian vocabulary with interactive flashcards. Ideal for learners of all levels.',
       path: 'https://norske-flashcard.codewithshin.com/',
