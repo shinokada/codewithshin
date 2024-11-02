@@ -2,8 +2,6 @@
   import { Card } from 'svelte-5-ui-lib';
   const headerColor = '';
   const cardHeight = 'h-56';
-  const thumnailSize = '';
-  const name = 'GitHub Profile';
 </script>
 
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-2">

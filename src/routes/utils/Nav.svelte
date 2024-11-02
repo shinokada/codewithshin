@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Label, Navbar, NavLi, NavBrand, NavUl, uiHelpers, Darkmode } from 'svelte-5-ui-lib';
+  import { Navbar, NavLi, NavBrand, NavUl, uiHelpers, Darkmode } from 'svelte-5-ui-lib';
   import GitHub from './GitHub.svelte';
   import XTwitterBrands from './XTwitterBrands.svelte';
   import MediumBrands from './MediumBrands.svelte';

@@ -19,7 +19,6 @@
   };
 
   const cardHeight = 'h-40';
-  const badgeSize = '150';
 </script>
 
 <div class="mx-auto my-10 flex max-w-lg items-center">

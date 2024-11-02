@@ -13,7 +13,7 @@
     ariaLabel?: string;
     class?: string;
   }
-  let { size = ctx.size || '24', role = ctx.role || 'img', color = ctx.color || 'currentColor', ariaLabel = 'Tailwindcss', class: classname, ...restProps }: Props = $props();
+  let { size = ctx.size || '24', role = ctx.role || 'img', color = ctx.color || 'currentColor', ariaLabel = 'Tailwindcss', ...restProps }: Props = $props();
   // export let size = ctx.size || '24';
   // export let role = ctx.role || 'img';
   // export let color = ctx.color || 'currentColor';
