@@ -3,10 +3,10 @@
   const list = [
     {
       name: 'Etsy Profit Calculator',
-      description: 'Calculate your true Etsy shop profits with precision. Factor in sales price, shipping, discounts, VAT, advertising costs, and Etsy fees. Get detailed breakdowns of revenue, costs, and profit margins to make data-driven business decisions.',
+      description: 'Calculate Etsy shop profits easily. Track sales, shipping, discounts, fees, and costs. Get detailed breakdowns to boost your business profits.',
       path: 'https://etsy-profit-calculator.vercel.app/',
       static_badge: {
-        badgeContent: 'Etsy Profit Calculator-yellow',
+        badgeContent: 'Etsy-Profit_Calculator-yellow',
         logo: 'etsy'
       }
     },
