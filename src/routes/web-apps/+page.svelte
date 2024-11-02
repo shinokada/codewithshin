@@ -2,6 +2,15 @@
   import Components from '../utils/Components.svelte';
   const list = [
     {
+      name: 'Etsy Profit Calculator',
+      description: 'Calculate your true Etsy shop profits with precision. Factor in sales price, shipping, discounts, VAT, advertising costs, and Etsy fees. Get detailed breakdowns of revenue, costs, and profit margins to make data-driven business decisions.',
+      path: 'https://etsy-profit-calculator.vercel.app/',
+      static_badge: {
+        badgeContent: 'Etsy Profit Calculator-yellow',
+        logo: 'etsy'
+      }
+    },
+    {
       name: 'Read HTML Download PDF',
       description: 'Preview and download PDFs: React, Vue, Svelte, Nuxt, Tauri, Typescript, Nestjs, Vite, Expressjs, Vitest, Slidev, pnpm, Shellspec, Zod, and more.',
       path: 'https://read-doc-download-pdf.codewithshin.com/',
@@ -60,7 +69,6 @@
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
   <h1>Web apps</h1>
-  <h2>Learning apps</h2>
 </div>
 
 <Components componentData={list} />
