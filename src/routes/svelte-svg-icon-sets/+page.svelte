@@ -92,6 +92,17 @@
       }
     },
     {
+      name: 'Svelte Bootstrap SVG Icons',
+      description: '1950+ Bootstrap SVG icon components for Svelte.',
+      path: 'https://svelte-bootstrap-svg-icons.codewithshin.com/guide/svelte-5/getting-started',
+      npm_version: {
+        packageName: 'svelte-bootstrap-svg-icons',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Svelte Bootstrap SVG Icons'
+      }
+    },
+    {
       name: 'Svelte Tabler',
       description: '5290+ Tabler icons for Svelte.',
       path: 'https://svelte-tabler.codewithshin.com/guide/svelte-5/getting-started',
