@@ -20,7 +20,6 @@
       path: 'https://flowbite-svelte-icons.codewithshin.com/',
       npm_version: {
         packageName: 'flowbite-svelte-icons',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Flowbite Svelte Icons'
@@ -32,7 +31,6 @@
       path: 'https://svelte-awesome-icons.codewithshin.com/',
       npm_version: {
         packageName: 'svelte-awesome-icons',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Awesome Icons'
@@ -44,7 +42,6 @@
       path: 'https://svelte-heros-v2.codewithshin.com/guide/svelte-5/getting-started',
       npm_version: {
         packageName: 'svelte-heros-v2',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Heros v2'
@@ -56,7 +53,6 @@
       path: 'https://svelte-heros.codewithshin.com/guide/svelte-5/getting-started',
       npm_version: {
         packageName: 'svelte-heros',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Heros'
@@ -68,7 +64,6 @@
       path: 'https://svelte-lucide.codewithshin.com/guide/svelte-5/getting-started',
       npm_version: {
         packageName: 'svelte-lucide',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Lucide'
@@ -80,7 +75,6 @@
       path: 'https://svelte-radix.codewithshin.com/guide/svelte-5/getting-started',
       npm_version: {
         packageName: 'svelte-radix',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Radix'
@@ -92,7 +86,6 @@
       path: 'https://svelte-ionicons.codewithshin.com/guide/svelte-5/getting-started',
       npm_version: {
         packageName: 'svelte-ionicons',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Ionicons'
@@ -104,7 +97,6 @@
       path: 'https://svelte-tabler.codewithshin.com/guide/svelte-5/getting-started',
       npm_version: {
         packageName: 'svelte-tabler',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Tabler'
@@ -116,7 +108,6 @@
       path: 'https://svelte-flags.codewithshin.com/guide/svelte-5/getting-started',
       npm_version: {
         packageName: 'svelte-flags',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Flags'
@@ -128,7 +119,6 @@
       path: 'https://svelte-flag-icons.codewithshin.com/guide/svelte-5/getting-started',
       npm_version: {
         packageName: 'svelte-flag-icons',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Flag Icons'
@@ -140,7 +130,6 @@
       path: 'https://svelte-remix.codewithshin.com/guide/svelte-5/getting-started',
       npm_version: {
         packageName: 'svelte-remix',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Remix'
@@ -152,7 +141,6 @@
       path: 'https://svelte-ant-design-icons.codewithshin.com/',
       npm_version: {
         packageName: 'svelte-ant-design-icons',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Ant Design Icons'
@@ -164,7 +152,6 @@
       path: 'https://svelte-supertiny.codewithshin.com/',
       npm_version: {
         packageName: 'svelte-supertiny',
-        tag: 'next',
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Supertiny'
@@ -176,9 +163,10 @@
     {
       name: 'Flowbite Svelte Icons',
       description: '510+ SVG Flowbite icon components for Svelte 4/5/Runes.',
-      path: 'https://flowbite-svelte-icons.codewithshin.com/',
+      path: 'https://flowbite-svelte-icons.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'flowbite-svelte-icons',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Flowbite Svelte Icons'
@@ -187,9 +175,10 @@
     {
       name: 'Svelte Awesome Icons',
       description: '2000+ Font Awesome SVG icon components for Svelte 4/5/Runes.',
-      path: 'https://svelte-awesome-icons.codewithshin.com/',
+      path: 'https://svelte-awesome-icons.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-awesome-icons',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Awesome Icons'
@@ -198,9 +187,10 @@
     {
       name: 'Svelte Supertiny',
       description: '340+ SVG logos for popular brands from SuperTinyIcons for Svelte 4/5/Runes.',
-      path: 'https://svelte-supertiny.codewithshin.com/',
+      path: 'https://svelte-supertiny.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-supertiny',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Supertiny'
@@ -209,9 +199,10 @@
     {
       name: 'Svelte Ant Design Icons',
       description: '780+ Ant Design SVG Icons (v4.2.1) for Svelte.',
-      path: 'https://svelte-ant-design-icons.codewithshin.com/',
+      path: 'https://svelte-ant-design-icons.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-ant-design-icons',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Ant Design Icons'
@@ -220,9 +211,10 @@
     {
       name: 'Svelte Bootstrap SVG Icons',
       description: '1950+ Bootstrap SVG icon components for Svelte.',
-      path: 'https://svelte-bootstrap-svg-icons.codewithshin.com/',
+      path: 'https://svelte-bootstrap-svg-icons.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-bootstrap-svg-icons',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Bootstrap SVG Icons'
@@ -319,9 +311,10 @@
     {
       name: 'Svelte Flag Icons',
       description: '260+ SVG flag icons for Svelte.',
-      path: 'https://svelte-flag-icons.codewithshin.com/',
+      path: 'https://svelte-flag-icons.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-flag-icons',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Flag Icons'
@@ -330,9 +323,10 @@
     {
       name: 'Svelte Flags',
       description: '250+ SVG flag icons for Svelte',
-      path: 'https://svelte-flags.codewithshin.com/',
+      path: 'https://svelte-flags.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-flags',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Flags'
@@ -352,9 +346,10 @@
     {
       name: 'Svelte Heros',
       description: '580+ Tailwind CSS Hero icons for Svelte.',
-      path: 'https://svelte-heros.codewithshin.com/',
+      path: 'https://svelte-heros.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-heros',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Heros'
@@ -363,9 +358,10 @@
     {
       name: 'Svelte Heros v2',
       description: '870+ Tailwind CSS Hero icons v2 for Svelte.',
-      path: 'https://svelte-heros-v2.codewithshin.com/',
+      path: 'https://svelte-heros-v2.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-heros-v2',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Heros v2'
@@ -374,9 +370,10 @@
     {
       name: 'Svelte Ionicons',
       description: '1330+ Ionicicons for Svelte.',
-      path: 'https://svelte-ionicons.codewithshin.com/',
+      path: 'https://svelte-ionicons.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-ionicons',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Ionicons'
@@ -385,9 +382,10 @@
     {
       name: 'Svelte Lucide',
       description: '1210+ Lucide icons for Svelte.',
-      path: 'https://svelte-lucide.codewithshin.com/',
+      path: 'https://svelte-lucide.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-lucide',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Lucide'
@@ -418,9 +416,10 @@
     {
       name: 'Svelte Radix',
       description: '310+ Radix icons for Svelte.',
-      path: 'https://svelte-radix.codewithshin.com/',
+      path: 'https://svelte-radix.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-radix',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Radix'
@@ -429,9 +428,10 @@
     {
       name: 'Svelte Remix',
       description: '2270+ Remixicons for Svelte.',
-      path: 'https://svelte-remix.codewithshin.com/',
+      path: 'https://svelte-remix.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-remix',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Remix'
@@ -451,9 +451,10 @@
     {
       name: 'Svelte Tabler',
       description: '4600+ Tabler icons for Svelte.',
-      path: 'https://svelte-tabler.codewithshin.com/',
+      path: 'https://svelte-tabler.codewithshin.com/guide/svelte-4/getting-started',
       npm_version: {
         packageName: 'svelte-tabler',
+        tag:"v1-latest",
         logo: 'svelte',
         color: 'blue',
         label: 'Svelte Tabler'
