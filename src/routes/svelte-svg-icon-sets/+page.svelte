@@ -10,10 +10,22 @@
         badgeContent: 'Svelte-Svelte_SVG_Icon_Sets-blue',
         logo: 'svelte'
       }
-    }
+    },
+    
   ];
 
   const listRunes = [
+    {
+      name: 'Svelte Animated Icons',
+      description: 'A collection of animated SVG icons for Svelte with customizable draw transitions, events, and accessibility features. hover/click animations, colors, sizes, and stroke widths.',
+      path: 'https://svelte-animated-icons.codewithshin.com/',
+      npm_version: {
+        packageName: 'svelte-animated-icons',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Svelte Animated Icons'
+      }
+    },
     {
       name: 'Flowbite Svelte Icons',
       description: '510+ SVG Flowbite icon components for Svelte 5:Runes.',
