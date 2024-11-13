@@ -61,6 +61,29 @@
 
   const listRunes = [
     {
+      name: 'Svelte Animate',
+      description: 'A lightweight Svelte component that adds beautiful CSS animations to any element using Animate.css library.',
+      path: 'https://svelte-animate.codewithshin.com/',
+      npm_version: {
+        packageName: 'svelte-animate',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Svelte Animate'
+      }
+    },
+    {
+      name: 'Svelte Next',
+      description: 'Bash script to automate updating Svelte versions (specifically targeting next versions) in project directories',
+      path: 'https://svelte-next.codewithshin.com/',
+      github_release: {
+        user: 'shinokada',
+        repo: 'svelte-next',
+        logo: 'bash',
+        color: 'green',
+        label: 'Svelte Next'
+      }
+    },
+    {
       name: 'Svelte 5 UI Lib',
       description: 'A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
       path: 'https://svelte-5-ui-lib.codewithshin.com/',
