@@ -10,8 +10,7 @@
         badgeContent: 'Svelte-Svelte_SVG_Icon_Sets-blue',
         logo: 'svelte'
       }
-    },
-    
+    }
   ];
 
   const listRunes = [
