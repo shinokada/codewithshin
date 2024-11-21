@@ -3,6 +3,11 @@
   import GitHub from './GitHub.svelte';
   import XTwitterBrands from './XTwitterBrands.svelte';
   import MediumBrands from './MediumBrands.svelte';
+  import { page } from '$app/stores';
+  let activeUrl = $state($page.url.pathname);
+  $effect(() => {
+    activeUrl = $page.url.pathname;
+  });
 
   let nav = uiHelpers();
 
@@ -44,7 +49,7 @@
         <Darkmode class="inline-block hover:text-gray-900 dark:hover:text-white" />
       </div>
     {/snippet}
-    <NavUl class={ulclass}>
+    <NavUl {activeUrl} class={ulclass}>
       <NavLi href="/svelte">Svelte</NavLi>
       <NavLi href="/svelte-svg-icon-sets">Icons</NavLi>
       <NavLi href="/terminal-tools">Terminal</NavLi>
