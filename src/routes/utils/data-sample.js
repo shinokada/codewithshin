@@ -7,10 +7,10 @@ export const componentData = [
     path: 'https://flowbite-svelte-icons.codewithshin.com/'
   },
   {
-    title: 'Svelte 5 UI Lib',
+    title: 'Flowbite Svelte',
     dir: 'Components',
     description: 'Use the accordion component to show hidden information based on the collapse and expand state of the child elements using data attribute options',
-    path: 'https://svelte-5-ui-lib.codewithshin.com/'
+    path: 'https://flowbite-svelte.codewithshin.com/'
   },
   {
     title: 'Svelte Rune Highlight',

@@ -35,6 +35,9 @@ importers:
       eslint-plugin-svelte:
         specifier: 2.46.0
         version: 2.46.0(eslint@9.16.0(jiti@1.21.6))(svelte@5.5.0)
+      flowbite-svelte:
+        specifier: 1.0.0-next.1
+        version: 1.0.0-next.1(svelte@5.5.0)(tailwindcss@3.4.15)
       flowbite-svelte-icons:
         specifier: 2.0.2
         version: 2.0.2(svelte@5.5.0)(tailwind-merge@2.5.5)(tailwindcss@3.4.15)
@@ -65,9 +68,6 @@ importers:
       svelte:
         specifier: 5.5.0
         version: 5.5.0
-      svelte-5-ui-lib:
-        specifier: ^0.12.2
-        version: 0.12.2(svelte@5.5.0)(tailwindcss@3.4.15)
       svelte-check:
         specifier: ^4.1.0
         version: 4.1.0(picomatch@4.0.2)(svelte@5.5.0)(typescript@5.7.2)
@@ -1154,6 +1154,12 @@ packages:
       svelte: ^5.0.0
       tailwind-merge: ^2.3.0
       tailwindcss: ^3.4.3
+
+  flowbite-svelte@1.0.0-next.1:
+    resolution: {integrity: sha512-EfOQnQelVncXKxZNCXNrknmt868FYS1MUdTIHwjA+Xfsw+OepkNdYGWUrDxjxHeOghZz7T+b0ENLOeTN6x8Qyw==}
+    peerDependencies:
+      svelte: ^5.0.0
+      tailwindcss: ^3.0.0
 
   foreground-child@3.3.0:
     resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
@@ -3182,6 +3188,17 @@ snapshots:
     dependencies:
       svelte: 5.5.0
       tailwind-merge: 2.5.5
+      tailwindcss: 3.4.15
+
+  flowbite-svelte@1.0.0-next.1(svelte@5.5.0)(tailwindcss@3.4.15):
+    dependencies:
+      '@floating-ui/dom': 1.6.12
+      apexcharts: 3.54.1
+      clsx: 2.1.1
+      deepmerge: 4.3.1
+      svelte: 5.5.0
+      tailwind-merge: 2.5.5
+      tailwind-variants: 0.3.0(tailwindcss@3.4.15)
       tailwindcss: 3.4.15
 
   foreground-child@3.3.0:

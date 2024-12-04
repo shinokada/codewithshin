@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Card } from 'svelte-5-ui-lib';
+  import { Card } from 'flowbite-svelte';
   import { NpmAuthorDownload } from 'svelte-shields';
   import type { NpmAuthorDownloadPropsType } from 'svelte-shields';
 
