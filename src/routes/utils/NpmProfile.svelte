@@ -18,12 +18,11 @@
     style: 'for-the-badge'
   };
 
-  const cardHeight = 'h-40';
 </script>
 
-<div class="mx-auto my-10 flex max-w-lg items-center">
-  <Card padding="sm" class="dark:hover:shadow-lg-light max-w-lg px-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
-    <div class="flex items-center justify-center gap-2 px-4 {cardHeight}">
+<div class="mx-auto my-10 flex max-w-3xl items-center">
+  <Card padding="sm" class="dark:hover:shadow-lg-light max-w-3xl px-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+    <div class="flex items-center justify-center gap-2 px-4">
       <NpmAuthorDownload {...weekly} />
       <NpmAuthorDownload {...monthly} />
       <NpmAuthorDownload {...yearly} />
