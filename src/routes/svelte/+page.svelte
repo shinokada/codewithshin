@@ -80,13 +80,13 @@
         repo: 'svelte-next',
         logo: 'bash',
         color: 'green',
-        label: 'Svelte Next'
+        label: 'Svelte Next (Bash)'
       }
     },
     {
       name: 'Flowbite Svelte',
       description: 'A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
-      path: 'https://flowbite-svelte.codewithshin.com/',
+      path: 'https://preview.flowbite-svelte.com/',
       npm_version: {
         packageName: 'flowbite-svelte',
         logo: 'svelte',
