@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '../app.pcss';
+  import '../app.css';
   import { RunesMetaTags, deepMerge } from 'runes-meta-tags';
   // import type { MetaProps } from 'runes-meta-tags';
   import { page } from '$app/stores';
