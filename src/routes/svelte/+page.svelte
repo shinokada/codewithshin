@@ -5,9 +5,9 @@
     {
       name: 'Flowbite Svelte',
       description: 'An official Flowbite component library for Svelte 4/5/.',
-      path: 'https://flowbite-svelte.com/',
+      path: 'https://svelte-5-ui-lib.com/',
       npm_version: {
-        packageName: 'flowbite-svelte',
+        packageName: 'svelte-5-ui-lib',
         logo: 'svelte',
         color: 'blue',
         label: 'Flowbite Svelte'
@@ -16,9 +16,9 @@
     {
       name: 'Flowbite Svelte Icons',
       description: '540+ SVG Flowbite icons components for Svelte 3/4/5/Runes.',
-      path: 'https://flowbite-svelte-icons.codewithshin.com/',
+      path: 'https://svelte-5-ui-lib-icons.codewithshin.com/',
       npm_version: {
-        packageName: 'flowbite-svelte-icons',
+        packageName: 'svelte-5-ui-lib-icons',
         logo: 'svelte',
         color: 'blue',
         label: 'Flowbite Svelte Icons'
@@ -27,9 +27,9 @@
     {
       name: 'Flowbite Svelte Admin Dashboard',
       description: 'Admin dashboard for Flowbite Svelte.',
-      path: 'https://flowbite-svelte.com/admin-dashboard',
+      path: 'https://svelte-5-ui-lib.com/admin-dashboard',
       npm_version: {
-        packageName: 'flowbite-svelte-admin-dashboard',
+        packageName: 'svelte-5-ui-lib-admin-dashboard',
         logo: 'svelte',
         color: 'blue',
         label: 'Flowbite Svelte Admin Dashboard'
@@ -38,9 +38,9 @@
     {
       name: 'Flowbite Svelte Blocks',
       description: 'Svelte blocks for Flowbite Svelte.',
-      path: 'https://flowbite-svelte.com/blocks',
+      path: 'https://svelte-5-ui-lib.com/blocks',
       npm_version: {
-        packageName: 'flowbite-svelte-blocks',
+        packageName: 'svelte-5-ui-lib-blocks',
         logo: 'svelte',
         color: 'blue',
         label: 'Flowbite Svelte Blocks'
@@ -86,9 +86,9 @@
     {
       name: 'Flowbite Svelte',
       description: 'A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
-      path: 'https://preview.flowbite-svelte.com/',
+      path: 'https://preview.svelte-5-ui-lib.com/',
       npm_version: {
-        packageName: 'flowbite-svelte',
+        packageName: 'svelte-5-ui-lib',
         logo: 'svelte',
         color: 'red',
         label: 'Flowbite Svelte'

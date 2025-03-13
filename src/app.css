@@ -17,7 +17,7 @@
   --color-primary-900: #1e3a8a;
 }
 
-@source "../node_modules/flowbite-svelte/dist";
+@source "../node_modules/svelte-5-ui-lib/dist";
 @source "../node_modules/flowbite-svelte-icons/dist";
 
 @layer base {

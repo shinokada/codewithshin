@@ -4,13 +4,13 @@ export const componentData = [
     dir: 'icons',
     description: '510+ SVG Flowbite icon components for Svelte 4/5/Runes.',
     thumnailSize: '',
-    path: 'https://flowbite-svelte-icons.codewithshin.com/'
+    path: 'https://svelte-5-ui-lib-icons.codewithshin.com/'
   },
   {
     title: 'Flowbite Svelte',
     dir: 'Components',
     description: 'Use the accordion component to show hidden information based on the collapse and expand state of the child elements using data attribute options',
-    path: 'https://flowbite-svelte.codewithshin.com/'
+    path: 'https://svelte-5-ui-lib.codewithshin.com/'
   },
   {
     title: 'Svelte Rune Highlight',

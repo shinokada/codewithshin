@@ -1,5 +1,5 @@
 <script>
-  import { Card } from 'flowbite-svelte';
+  import { Card } from 'svelte-5-ui-lib';
   const headerColor = '';
   const cardHeight = 'h-56';
 </script>
