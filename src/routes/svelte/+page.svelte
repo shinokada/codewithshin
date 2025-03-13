@@ -161,6 +161,17 @@
       }
     },
     {
+      name: 'Flexilexi',
+      description: 'A library to facilitate dynamic and flexible searching within a dataset.',
+      path: 'https://flexilexi.codewithshin.com/',
+      npm_version: {
+        packageName: 'flexilexi',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Runatics'
+      }
+    },
+    {
       name: 'Svelte Carbonads',
       description: 'A component library that  set up a Carbonads on your SvelteKit project',
       path: 'https://svelte-carbonads.codewithshin.com/',
