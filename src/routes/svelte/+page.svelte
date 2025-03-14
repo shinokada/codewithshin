@@ -86,12 +86,23 @@
     {
       name: 'Flowbite Svelte',
       description: 'A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
-      path: 'https://preview.svelte-5-ui-lib.com/',
+      path: 'https://flowbite-svelte.com/',
+      npm_version: {
+        packageName: 'flowbite-svelte',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Flowbite Svelte'
+      }
+    },
+    {
+      name: 'Svelte 5 UI Lib',
+      description: 'A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
+      path: 'https://svelte-5-ui-lib.codewithshin.com/',
       npm_version: {
         packageName: 'svelte-5-ui-lib',
         logo: 'svelte',
         color: 'red',
-        label: 'Flowbite Svelte'
+        label: 'Svelte 5 UI Lib'
       }
     },
     {
