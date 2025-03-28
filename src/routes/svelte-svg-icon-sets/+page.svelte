@@ -10,6 +10,17 @@
         badgeContent: 'Svelte-Svelte_SVG_Icon_Sets-blue',
         logo: 'svelte'
       }
+    },
+    {
+      name: 'Flowbite Svelte Illustrations',
+      description: 'A collection of free and open-source collection of SVG illustrations.',
+      path: 'https://flowbite-svelte-illustrations.codewithshin.com/',
+      npm_version: {
+        packageName: 'flowbite-svelte-illustrations',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Flowbite Svelte Illustrations'
+      }
     }
   ];
 
@@ -519,13 +530,13 @@
 </script>
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
-  <h1>29 Svelte SVG Icon Sets</h1>
+  <h1>29 Svelte SVG Icon & Illustration Sets</h1>
 </div>
 
-<Components componentData={mainWeb} colNum={1} class="mx-auto sm:max-w-96" />
+<Components componentData={mainWeb} colNum={2} class="mx-auto"/>
 
 <div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
-  <h2>For Svelte 5/Runes projects</h2>
+  <h2>For Svelte 5 projects</h2>
 </div>
 
 <Components componentData={listRunes} />

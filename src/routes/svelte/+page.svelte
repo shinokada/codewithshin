@@ -61,6 +61,17 @@
 
   const listRunes = [
     {
+      name: 'Flowbite Svelte Illustrations',
+      description: 'A collection of free and open-source collection of SVG illustrations.',
+      path: 'https://flowbite-svelte-illustrations.codewithshin.com/',
+      npm_version: {
+        packageName: 'flowbite-svelte-illustrations',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Flowbite Svelte Illustrations'
+      }
+    },
+    {
       name: 'Svelte Animate',
       description: 'A lightweight Svelte component that adds beautiful CSS animations to any element using Animate.css library.',
       path: 'https://svelte-animate.codewithshin.com/',
