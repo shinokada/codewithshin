@@ -11,6 +11,21 @@
         logo: 'svelte'
       }
     },
+    
+  ];
+
+  const illustrations = [
+    {
+      name: 'Svelte Kawaii',
+      description: 'Svelte Kawaii is a Svelte port of React Kawaii, offering cute SVG illustrations to add adorable characters to your Svelte applications. A simple way to bring some cuteness to your UI.',
+      path: 'https://svelte-kawaii.codewithshin.com/',
+      npm_version: {
+        packageName: 'svelte-kawaii',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Svelte Kawaii'
+      }
+    },
     {
       name: 'Flowbite Svelte Illustrations',
       description: 'A collection of free and open-source collection of SVG illustrations.',
@@ -532,11 +547,16 @@
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
   <h1>29 Svelte SVG Icon & Illustration Sets</h1>
 </div>
-
-<Components componentData={mainWeb} colNum={2} class="mx-auto"/>
+<Components componentData={mainWeb} colNum={1} class="mx-auto sm:max-w-96"/>
 
 <div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
-  <h2>For Svelte 5 projects</h2>
+  <h2>Illustration icons</h2>
+</div>
+
+<Components componentData={illustrations} colNum={2} class="mx-auto"/>
+
+<div class="my-8 flex flex-col items-center gap-4 sm:gap-4">
+  <h2>For Svelte 5+ projects</h2>
 </div>
 
 <Components componentData={listRunes} />

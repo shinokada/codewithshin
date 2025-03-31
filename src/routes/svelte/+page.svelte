@@ -61,6 +61,17 @@
 
   const listRunes = [
     {
+      name: 'Svelte Kawaii',
+      description: 'Svelte Kawaii is a Svelte port of React Kawaii, offering cute SVG illustrations to add adorable characters to your Svelte applications. A simple way to bring some cuteness to your UI.',
+      path: 'https://svelte-kawaii.codewithshin.com/',
+      npm_version: {
+        packageName: 'svelte-kawaii',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Svelte Kawaii'
+      }
+    },
+    {
       name: 'Flowbite Svelte Illustrations',
       description: 'A collection of free and open-source collection of SVG illustrations.',
       path: 'https://flowbite-svelte-illustrations.codewithshin.com/',
