@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('svelte-svg-icon-sets page has expected h1, meta title', async ({ page }) => {
-  await expect(page.getByRole('heading', { name: '29 Svelte SVG Icon Sets' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Svelte SVG Icon & Illustration Sets' })).toBeVisible();
 });
 
 test('svelte-svg-icon-sets page has expected meta title', async ({ page }) => {
@@ -15,7 +15,7 @@ test('svelte-svg-icon-sets page has expected meta title', async ({ page }) => {
 
 test('svelte-svg-icon-sets page has expected meta description', async ({ page }) => {
   const metaDescription = page.locator('meta[name="description"]');
-  await expect(metaDescription).toHaveAttribute('content', '29 Svelte SVG Icon Sets for for Svelte 4/5/Runes projects');
+  await expect(metaDescription).toHaveAttribute('content', 'Svelte SVG Icon and Illustration Sets for for Svelte 4/5/Runes projects');
 });
 
 test('svelte-svg-icon-sets page has expected meta og tags', async ({ page }) => {
@@ -33,7 +33,7 @@ test('svelte-svg-icon-sets page has expected meta twitter tags', async ({ page }
   const metaTwitterTitle = page.locator('meta[name="twitter:title"]');
   await expect(metaTwitterTitle).toHaveAttribute('content', 'Svelte SVG Icon Sets - codewithshin.com');
   const metaTwitterDescription = page.locator('meta[name="twitter:description"]');
-  await expect(metaTwitterDescription).toHaveAttribute('content', '29 Svelte SVG Icon Sets for for Svelte 4/5/Runes projects');
+  await expect(metaTwitterDescription).toHaveAttribute('content', 'Svelte SVG Icon & Illustration Sets for for Svelte 4/5/Runes projects');
   const metaTwitterImage = page.locator('meta[name="twitter:image"]');
   await expect(metaTwitterImage).toHaveAttribute('content', 'https://open-graph-vercel.vercel.app/api/codewithshin?title=Svelte%20SVG%20Icon%20Sets');
 });

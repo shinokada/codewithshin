@@ -545,7 +545,7 @@
 </script>
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
-  <h1>29 Svelte SVG Icon & Illustration Sets</h1>
+  <h1>Svelte SVG Icon & Illustration Sets</h1>
 </div>
 <Components componentData={mainWeb} colNum={1} class="mx-auto sm:max-w-96"/>
 
