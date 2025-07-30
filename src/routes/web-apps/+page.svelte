@@ -4,7 +4,7 @@
     {
       name: 'Etsy Profit Calculator',
       description: 'Calculate Etsy shop profits easily. Track sales, shipping, discounts, fees, and costs. Get detailed breakdowns to boost your business profits.',
-      path: 'https://etsy-profit-calculator.vercel.app/',
+      path: 'https://github.com/shinokada/etsy-profit-calculator',
       static_badge: {
         badgeContent: 'Etsy-Profit_Calculator-yellow',
         logo: 'etsy'
