@@ -271,7 +271,7 @@
     {
       name: 'Svelte Boxicons',
       description: '1500+ SVG boxicons components for Svelte.',
-      path: 'https://svelte-boxicons.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-boxicons',
       npm_version: {
         packageName: 'svelte-boxicons',
         logo: 'svelte',
@@ -282,7 +282,7 @@
     {
       name: 'Svelte Circle Flags',
       description: '380+ SVG Circle Flag icons',
-      path: 'https://svelte-circle-flags.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-circle-flags',
       npm_version: {
         packageName: 'svelte-circle-flags',
         logo: 'svelte',
@@ -293,7 +293,7 @@
     {
       name: 'Svelte Coreui Icons',
       description: '1500+ beautifully crafted CoreUI Icons for Svelte.',
-      path: 'https://svelte-coreui-icons.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-coreui-icons',
       npm_version: {
         packageName: 'svelte-coreui-icons',
         logo: 'svelte',
@@ -304,7 +304,7 @@
     {
       name: 'Svelte Cryptocurrency Icons',
       description: '470+ SVG crypto currency icon components for Svelte.',
-      path: 'https://svelte-cryptocurrency-icons.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-cryptocurrency-icons',
       npm_version: {
         packageName: 'svelte-cryptocurrency-icons',
         logo: 'svelte',
@@ -315,7 +315,7 @@
     {
       name: 'Svelte Cssgg Icons',
       description: '700+ SVG icons from css.gg for Svelte.',
-      path: 'https://svelte-cssgg-icons.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-cssgg-icons',
       npm_version: {
         packageName: 'svelte-cssgg-icons',
         logo: 'svelte',
@@ -326,7 +326,7 @@
     {
       name: 'Svelte Evil Icons',
       description: '70+ SVG evil-icons components for Svelte.',
-      path: 'https://svelte-evil-icons.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-evil-icons',
       npm_version: {
         packageName: 'svelte-evil-icons',
         logo: 'svelte',
@@ -337,7 +337,7 @@
     {
       name: 'Svelte Feathers',
       description: '280+ SVG Feather icons for Svelte.',
-      path: 'https://svelte-feathers.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-feathers',
       npm_version: {
         packageName: 'svelte-feathers',
         logo: 'svelte',
@@ -348,7 +348,7 @@
     {
       name: 'Svelte File Icons',
       description: '930+ SVG file icons for Svelte.',
-      path: 'https://svelte-file-icons.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-file-icons',
       npm_version: {
         packageName: 'svelte-file-icons',
         logo: 'svelte',
@@ -383,7 +383,7 @@
     {
       name: 'Svelte Google Materialdesign Icons',
       description: '2120+ Google Material Design icons for Svelte.',
-      path: 'https://svelte-google-materialdesign-icons.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-google-materialdesign-icons',
       npm_version: {
         packageName: 'svelte-google-materialdesign-icons',
         logo: 'svelte',
@@ -442,7 +442,7 @@
     {
       name: 'Svelte Materialdesign Icons',
       description: '7330+ MaterialDesign icons for Svelte.',
-      path: 'https://svelte-materialdesign-icons.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-materialdesign-icons',
       npm_version: {
         packageName: 'svelte-materialdesign-icons',
         logo: 'svelte',
@@ -453,7 +453,7 @@
     {
       name: 'Svelte Oct',
       description: '270+ Octicons icons for Svelte.',
-      path: 'https://svelte-oct.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-oct',
       npm_version: {
         packageName: 'svelte-oct',
         logo: 'svelte',
@@ -488,7 +488,7 @@
     {
       name: 'Svelte Simples',
       description: '2620+ popular brands Simple-icons for Svelte.',
-      path: 'https://svelte-simples.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-simples',
       npm_version: {
         packageName: 'svelte-simples',
         logo: 'svelte',
@@ -511,7 +511,7 @@
     {
       name: 'Svelte Teenyicons',
       description: '600+ Teenyicons for Svelte.',
-      path: 'https://svelte-teenyicons.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-teenyicons',
       npm_version: {
         packageName: 'svelte-teenyicons',
         logo: 'svelte',
@@ -522,7 +522,7 @@
     {
       name: 'Svelte Twitter Emoji',
       description: '3600+ Twitter emoji color icons for Svelte.',
-      path: 'https://svelte-twitter-emoji.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-twitter-emoji',
       npm_version: {
         packageName: 'svelte-twitter-emoji',
         logo: 'svelte',
@@ -533,7 +533,7 @@
     {
       name: 'Svelte Weather',
       description: '210+ weather-icons for Svelte.',
-      path: 'https://svelte-weather.codewithshin.com/',
+      path: 'https://github.com/shinokada/svelte-weather',
       npm_version: {
         packageName: 'svelte-weather',
         logo: 'svelte',
