@@ -5,9 +5,9 @@
     {
       name: 'Flowbite Svelte',
       description: 'An official Flowbite component library for Svelte 4/5/.',
-      path: 'https://svelte-5-ui-lib.com/',
+      path: 'https://flowbite-svelte.com/',
       npm_version: {
-        packageName: 'svelte-5-ui-lib',
+        packageName: 'flowbite-svelte',
         logo: 'svelte',
         color: 'blue',
         label: 'Flowbite Svelte'
@@ -16,9 +16,9 @@
     {
       name: 'Flowbite Svelte Icons',
       description: '540+ SVG Flowbite icons components for Svelte 3/4/5/Runes.',
-      path: 'https://svelte-5-ui-lib-icons.codewithshin.com/',
+      path: 'https://flowbite-svelte-icons.codewithshin.com/',
       npm_version: {
-        packageName: 'svelte-5-ui-lib-icons',
+        packageName: 'flowbite-svelte-icons',
         logo: 'svelte',
         color: 'blue',
         label: 'Flowbite Svelte Icons'
@@ -27,9 +27,9 @@
     {
       name: 'Flowbite Svelte Admin Dashboard',
       description: 'Admin dashboard for Flowbite Svelte.',
-      path: 'https://svelte-5-ui-lib.com/admin-dashboard',
+      path: 'https://flowbite-svelte.com/admin-dashboard',
       npm_version: {
-        packageName: 'svelte-5-ui-lib-admin-dashboard',
+        packageName: 'flowbite-svelte-admin-dashboard',
         logo: 'svelte',
         color: 'blue',
         label: 'Flowbite Svelte Admin Dashboard'
@@ -38,9 +38,9 @@
     {
       name: 'Flowbite Svelte Blocks',
       description: 'Svelte blocks for Flowbite Svelte.',
-      path: 'https://svelte-5-ui-lib.com/blocks',
+      path: 'https://flowbite-svelte.com/blocks',
       npm_version: {
-        packageName: 'svelte-5-ui-lib-blocks',
+        packageName: 'flowbite-svelte-blocks',
         logo: 'svelte',
         color: 'blue',
         label: 'Flowbite Svelte Blocks'
@@ -72,6 +72,50 @@
       }
     },
     {
+      name: 'Flowbite Svelte Plugins Datatable',
+      description: 'Use the datatable component to search, sort, filter and paginate table data of rows and columns for your web application.',
+      path: 'https://flowbite-svelte.com/docs/plugins/datatables',
+      npm_version: {
+        packageName: '@flowbite-svelte-plugins/datatable',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Flowbite Svelte Plugins Datatable'
+      }
+    },
+    {
+      name: 'Flowbite Svelte Plugins Texteditor',
+      description: 'Use the wysiwyg text editor component to create and modify content by manipulating paragraphs, headings, images and styling them using all available options.',
+      path: 'https://flowbite-svelte.com/docs/plugins/wysiwyg',
+      npm_version: {
+        packageName: '@flowbite-svelte-plugins/texteditor',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Flowbite Svelte Plugins Texteditor'
+      }
+    },
+    {
+      name: 'Flowbite Svelte Plugins Chart',
+      description: 'Use the chart and graph components from flowbite-svelte built with Tailwind CSS and ApexCharts to choose from line, area, bar, column, pie, and radial charts',
+      path: 'https://flowbite-svelte.com/docs/plugins/charts',
+      npm_version: {
+        packageName: '@flowbite-svelte-plugins/chart',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Flowbite Svelte Plugins Chart'
+      }
+    },
+    {
+      name: 'Svelte Animate',
+      description: 'A lightweight Svelte component that adds beautiful CSS animations to any element using Animate.css library.',
+      path: 'https://svelte-animate.codewithshin.com/',
+      npm_version: {
+        packageName: 'svelte-animate',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Svelte Animate'
+      }
+    },
+    {
       name: 'Flowbite Svelte Blocks',
       description: 'A UI components built with Flowbite Svelte for Svelte 5 Runes.',
       path: 'https://flowbite-svelte-blocks.vercel.app/',
@@ -94,39 +138,6 @@
       }
     },
     {
-      name: 'Svelte Kawaii',
-      description: 'Svelte Kawaii is a Svelte port of React Kawaii, offering cute SVG illustrations to add adorable characters to your Svelte applications. A simple way to bring some cuteness to your UI.',
-      path: 'https://svelte-kawaii.codewithshin.com/',
-      npm_version: {
-        packageName: 'svelte-kawaii',
-        logo: 'svelte',
-        color: 'red',
-        label: 'Svelte Kawaii'
-      }
-    },
-    {
-      name: 'Flowbite Svelte Illustrations',
-      description: 'A collection of free and open-source collection of SVG illustrations.',
-      path: 'https://flowbite-svelte-illustrations.codewithshin.com/',
-      npm_version: {
-        packageName: 'flowbite-svelte-illustrations',
-        logo: 'svelte',
-        color: 'red',
-        label: 'Flowbite Svelte Illustrations'
-      }
-    },
-    {
-      name: 'Svelte Animate',
-      description: 'A lightweight Svelte component that adds beautiful CSS animations to any element using Animate.css library.',
-      path: 'https://svelte-animate.codewithshin.com/',
-      npm_version: {
-        packageName: 'svelte-animate',
-        logo: 'svelte',
-        color: 'red',
-        label: 'Svelte Animate'
-      }
-    },
-    {
       name: 'Svelte Next',
       description: 'Bash script to automate updating Svelte versions (specifically targeting next versions) in project directories',
       path: 'https://svelte-next.codewithshin.com/',
@@ -136,17 +147,6 @@
         logo: 'bash',
         color: 'green',
         label: 'Svelte Next (Bash)'
-      }
-    },
-    {
-      name: 'Svelte 5 UI Lib',
-      description: 'Moved to Flowbite Svelte. A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
-      path: 'https://svelte-5-ui-lib.codewithshin.com/',
-      npm_version: {
-        packageName: 'svelte-5-ui-lib',
-        logo: 'svelte',
-        color: 'red',
-        label: 'Svelte 5 UI Lib'
       }
     },
     {
@@ -235,6 +235,17 @@
         logo: 'svelte',
         color: 'red',
         label: 'Svelte Carbonads'
+      }
+    },
+    {
+      name: 'Svelte 5 UI Lib (Deprecated)',
+      description: 'Moved to Flowbite Svelte. A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
+      path: 'https://svelte-5-ui-lib.codewithshin.com/',
+      npm_version: {
+        packageName: 'svelte-5-ui-lib',
+        logo: 'svelte',
+        color: 'red',
+        label: 'Svelte 5 UI Lib'
       }
     }
   ];
