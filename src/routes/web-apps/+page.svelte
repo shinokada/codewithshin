@@ -2,24 +2,6 @@
   import Components from '../utils/Components.svelte';
   const list = [
     {
-      name: 'Etsy Profit Calculator',
-      description: 'Calculate Etsy shop profits easily. Track sales, shipping, discounts, fees, and costs. Get detailed breakdowns to boost your business profits.',
-      path: 'https://github.com/shinokada/etsy-profit-calculator',
-      static_badge: {
-        badgeContent: 'Etsy-Profit_Calculator-yellow',
-        logo: 'etsy'
-      }
-    },
-    {
-      name: 'Read HTML Download PDF',
-      description: 'Preview and download PDFs: React, Vue, Svelte, Nuxt, Tauri, Typescript, Nestjs, Vite, Expressjs, Vitest, Slidev, pnpm, Shellspec, Zod, and more.',
-      path: 'https://read-doc-download-pdf.codewithshin.com/',
-      static_badge: {
-        badgeContent: 'Read HTML Download PDF-yellow',
-        logo: ''
-      }
-    },
-    {
       name: 'Norske Flashcard',
       description: 'Improve your Norwegian vocabulary with interactive flashcards. Ideal for learners of all levels.',
       path: 'https://norske-flashcard.codewithshin.com/',
@@ -62,6 +44,24 @@
       static_badge: {
         badgeContent: 'Svelte:_Runes-Gjett_Norsk-yellow',
         logo: 'svelte'
+      }
+    },
+    {
+      name: 'Etsy Profit Calculator',
+      description: 'Calculate Etsy shop profits easily. Track sales, shipping, discounts, fees, and costs. Get detailed breakdowns to boost your business profits.',
+      path: 'https://github.com/shinokada/etsy-profit-calculator',
+      static_badge: {
+        badgeContent: 'Etsy-Profit_Calculator-yellow',
+        logo: 'etsy'
+      }
+    },
+    {
+      name: 'Read HTML Download PDF',
+      description: 'Preview and download PDFs: React, Vue, Svelte, Nuxt, Tauri, Typescript, Nestjs, Vite, Expressjs, Vitest, Slidev, pnpm, Shellspec, Zod, and more.',
+      path: 'https://read-doc-download-pdf.codewithshin.com/',
+      static_badge: {
+        badgeContent: 'Read HTML Download PDF-yellow',
+        logo: ''
       }
     }
   ];

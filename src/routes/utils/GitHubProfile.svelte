@@ -1,11 +1,11 @@
 <script>
-  import { Card } from 'svelte-5-ui-lib';
+  import { Card } from 'flowbite-svelte';
   const headerColor = '';
   const cardHeight = 'h-56';
 </script>
 
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-2">
-  <Card href="https://github.com/shinokada" padding="none" class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+  <Card href="https://github.com/shinokada" class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
     <div class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700">
       <span class="text-base font-medium text-gray-900 dark:text-white">GitHub Stats</span>
     </div>
@@ -19,7 +19,7 @@
     </div>
   </Card>
 
-  <Card href="https://github.com/shinokada" padding="none" class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+  <Card href="https://github.com/shinokada" class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
     <div class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700">
       <span class="text-base font-medium text-gray-900 dark:text-white">GitHub Contributions</span>
     </div>
@@ -34,7 +34,7 @@
   </Card>
 </div>
 <div class="mt-4 grid grid-cols-1">
-  <Card href="https://github.com/shinokada" padding="none" class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+  <Card href="https://github.com/shinokada" class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
     <div class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700">
       <span class="text-base font-medium text-gray-900 dark:text-white">GitHub trophies</span>
     </div>

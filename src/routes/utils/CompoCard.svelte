@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Card } from 'svelte-5-ui-lib';
+  import { Card } from 'flowbite-svelte';
   // import type { ComponentType } from 'svelte';
   import { NpmVersion, GitHubVersion, PypiVersion, StaticBadge } from 'svelte-shields';
   import type { NpmVersionPropsType, GitHubVersionPropsType, PypiVersionPropsType, StaticBadgePropsType } from 'svelte-shields';
@@ -33,7 +33,7 @@
   }: Props = $props();
 </script>
 
-<Card href={path} padding="none" {...attributes} class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+<Card href={path} {...attributes} class="dark:hover:shadow-lg-light !max-w-none shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
   <div class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700">
     <span class="text-base font-medium text-gray-900 dark:text-white">{name}</span>
     <span class="text-gray-500 dark:text-gray-400">

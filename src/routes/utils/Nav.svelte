@@ -1,62 +1,73 @@
 <script lang="ts">
-  import { Navbar, NavLi, NavBrand, NavUl, uiHelpers, Darkmode } from 'svelte-5-ui-lib';
-  import GitHub from './GitHub.svelte';
-  import XTwitterBrands from './XTwitterBrands.svelte';
-  import MediumBrands from './MediumBrands.svelte';
-  import { page } from '$app/stores';
-  let activeUrl = $state($page.url.pathname);
-  $effect(() => {
-    activeUrl = $page.url.pathname;
-  });
+	import {
+		Navbar,
+		NavLi,
+		NavBrand,
+		NavUl,
+		DarkMode,
+		NavHamburger,
+		Dropdown,
+		DropdownItem
+	} from 'flowbite-svelte';
 
-  let nav = uiHelpers();
+	import { Bluesky, DotsHorizontalOutline, GithubSolid, XSolid } from 'runes-webkit';
+	import { page } from '$app/state';
 
-  let navStatus = $state(false);
-  let toggleNav = nav.toggle;
-  let closeNav = nav.close;
-  let divClass = 'ml-auto w-full';
-  let ulclass = 'dark:lg:bg-transparent lg:space-x-4';
-  let navClass = 'w-full divide-gray-200 border-gray-200 bg-gray-50 dark:bg-sky-950 text-gray-500 dark:divide-gray-700 dark:border-gray-700 dark:transparent dark:text-gray-400 sm:px-4';
+	const githubUrl = `https://github.com/shinokada/codewithshin`;
+	const twitterUrl = 'https://twitter.com/shinokada';
+	const blueskyUrl = 'https://bsky.app/profile/codewithshin.com';
+	let activeUrl = $state(page.url.pathname);
+	$effect(() => {
+		activeUrl = page.url.pathname;
+	});
 
-  $effect(() => {
-    navStatus = nav.isOpen;
-  });
+	let activeClass = 'p-2 text-base hover:text-gray-600';
+	let nonActiveClass = 'p-2 text-base hover:text-gray-600';
 </script>
 
-<header class="sticky top-0 z-40 mx-auto w-full flex-none border-b border-gray-200 bg-gray-100 dark:border-gray-600 dark:bg-sky-950">
-  <Navbar {navClass} {toggleNav} {closeNav} {navStatus} breakPoint="lg" fluid div2Class={divClass}>
-    {#snippet brand()}
-      <NavBrand siteName="codewithshin.com" spanClass="self-center whitespace-nowrap text-2xl font-semibold text-primary-900 dark:text-primary-500" />
-      <div class="ml-auto flex items-center lg:order-1">
-        <a
-          class="hidden whitespace-normal rounded-lg p-2.5 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-0 focus:ring-gray-400 dark:hover:bg-gray-600 dark:hover:text-white sm:inline-block"
-          href="https://medium.com/@shinichiokada"
-        >
-          <MediumBrands />
-        </a>
-        <a
-          class="hidden whitespace-normal rounded-lg p-2.5 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-0 focus:ring-gray-400 dark:hover:bg-gray-600 dark:hover:text-white sm:inline-block"
-          href="https://twitter.com/shinokada"
-        >
-          <XTwitterBrands size="20" />
-        </a>
-        <a
-          class="hidden whitespace-normal rounded-lg p-2.5 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-0 focus:ring-gray-400 dark:hover:bg-gray-600 dark:hover:text-white sm:inline-block"
-          href="https://github.com/shinokada/"
-        >
-          <GitHub />
-        </a>
-        <Darkmode class="inline-block hover:text-gray-900 dark:hover:text-white" />
-      </div>
-    {/snippet}
-    <NavUl {activeUrl} class={ulclass}>
-      <NavLi href="/svelte">Svelte</NavLi>
-      <NavLi href="/svelte-svg-icon-sets">Icons</NavLi>
-      <NavLi href="/terminal-tools">Terminal</NavLi>
-      <NavLi href="/python-and-jupyter">Python</NavLi>
-      <NavLi href="/homebrew">Homebrew</NavLi>
-      <NavLi href="/web-apps">Web apps</NavLi>
-      <NavLi href="https://blog.codewithshin.com">Blog</NavLi>
-    </NavUl>
-  </Navbar>
-</header>
+<Navbar
+	breakpoint="lg"
+	fluid
+	class="sticky top-0 z-40 mx-auto w-full flex-none border-b border-gray-200 bg-gray-100 dark:border-gray-600 dark:bg-sky-950"
+	navContainerClass="lg:justify-between"
+>
+	<NavBrand href="/">
+		<span class="self-center font-semibold whitespace-nowrap text-2xl  text-primary-900 dark:text-primary-500"
+			>codewithshin.com</span
+		>
+	</NavBrand>
+	<div class="flex justify-end lg:order-2">
+		<NavHamburger class="order-3" />
+		<DotsHorizontalOutline class="mt-1.5 mr-4 ml-6 dark:text-white" size="lg" />
+		<Dropdown simple class="p-1">
+			{#if blueskyUrl}
+				<DropdownItem href={blueskyUrl} target="_blank" class="m-0 p-0.5">
+					<Bluesky size="30" />
+				</DropdownItem>
+			{/if}
+			{#if twitterUrl}
+				<DropdownItem href={twitterUrl} target="_blank" class="m-0 p-2"><XSolid /></DropdownItem>
+			{/if}
+			{#if githubUrl}
+				<DropdownItem href={githubUrl} target="_blank" class="m-0 p-2">
+					<GithubSolid />
+				</DropdownItem>
+			{/if}
+		</Dropdown>
+		<DarkMode class="m-0 p-2" />
+	</div>
+	<NavUl
+		breakpoint="lg"
+		{activeUrl}
+		class="order-2 lg:order-1"
+		classes={{ active: activeClass, nonActive: nonActiveClass, ul: 'p-0' }}
+	>
+		<NavLi href="/svelte">Svelte</NavLi>
+		<NavLi href="/svelte-svg-icon-sets">Icons</NavLi>
+		<NavLi href="/terminal-tools">Terminal</NavLi>
+		<NavLi href="/python-and-jupyter">Python</NavLi>
+		<NavLi href="/homebrew">Homebrew</NavLi>
+		<NavLi href="/web-apps">Web apps</NavLi>
+		<NavLi href="https://blog.codewithshin.com">Blog</NavLi>
+	</NavUl>
+</Navbar>

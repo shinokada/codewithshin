@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Card } from 'svelte-5-ui-lib';
+  import { Card } from 'flowbite-svelte';
   import { NpmAuthorDownload } from 'svelte-shields';
   import type { NpmAuthorDownloadPropsType } from 'svelte-shields';
 
@@ -21,7 +21,7 @@
 </script>
 
 <div class="mx-auto my-10 flex max-w-3xl items-center">
-  <Card padding="sm" class="dark:hover:shadow-lg-light max-w-3xl px-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
+  <Card class="dark:hover:shadow-lg-light max-w-3xl p-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900">
     <div class="flex items-center justify-center gap-2 px-4">
       <NpmAuthorDownload {...weekly} />
       <NpmAuthorDownload {...monthly} />
