@@ -11,6 +11,15 @@
       }
     },
     {
+      name: 'Svenska Flashcard',
+      description: 'Improve your Swedish vocabulary with interactive flashcards. Ideal for learners of all levels.',
+      path: 'https://svenska-flashcard.codewithshin.com/',
+      static_badge: {
+        badgeContent: 'Svelte:_Runes-Svenska_Flashcard-yellow',
+        logo: 'svelte'
+      }
+    },
+    {
       name: 'Multilanguage Flashcard',
       description: 'Learn basic phrases in 27 languages with Emoji flashcards.',
       path: 'https://multilanguage-flashcard.codewithshin.com/',
