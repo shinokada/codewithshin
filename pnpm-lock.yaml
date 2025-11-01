@@ -81,8 +81,8 @@ importers:
         specifier: ^0.5.2
         version: 0.5.2(svelte@5.43.2)
       svelte-supertiny:
-        specifier: ^2.0.2
-        version: 2.0.2(svelte@5.43.2)
+        specifier: ^3.0.0
+        version: 3.0.0(svelte@5.43.2)
       tailwind-merge:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1573,8 +1573,8 @@ packages:
     peerDependencies:
       svelte: ^5.0.0
 
-  svelte-supertiny@2.0.2:
-    resolution: {integrity: sha512-zKl5cZegyCktu81zX5KuNXd2vcz9pDoORWIZQ8rtyfpEI0soKs0K5UuDkHzaSI1S4fyHdfqPqy51PHptkEetBw==}
+  svelte-supertiny@3.0.0:
+    resolution: {integrity: sha512-PQCfSZb+QlR6Sc7HXqOUtJEkM0JHFSOatMqrfJ+MELnpygwfAf8epJ1L98mFjhudLDRrafCkCeAZ9zADEPcAtw==}
     peerDependencies:
       svelte: ^5.0.0
 
@@ -3040,7 +3040,7 @@ snapshots:
     dependencies:
       svelte: 5.43.2
 
-  svelte-supertiny@2.0.2(svelte@5.43.2):
+  svelte-supertiny@3.0.0(svelte@5.43.2):
     dependencies:
       svelte: 5.43.2
 
