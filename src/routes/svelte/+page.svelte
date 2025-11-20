@@ -60,6 +60,17 @@
   ];
 
   const listRunes = [
+        {
+      name: 'Flowbite Svelte MCP',
+      description: 'MCP server for Flowbite-Svelte documentation (LLM)',
+      path: 'https://github.com/shinokada/flowbite-svelte-mcp',
+      npm_version: {
+        packageName: 'flowbite-svelte-mcp',
+        logo: 'svelte',
+        color: 'blue',
+        label: 'Flowbite Svelte MCP'
+      }
+    },
     {
       name: 'Flowbite Svelte',
       description: 'A UI library crafted for Svelte 5 Runes. Alert, Avatar, Badge, Button, Banner, Card, Checkbox, Dropdown, Input, Progress, Select, Skeleton, Spinner, Table, and more.',
