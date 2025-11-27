@@ -3,31 +3,31 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --z-index-100: 100;
+	--z-index-100: 100;
 
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
+	--color-primary-50: #eff6ff;
+	--color-primary-100: #dbeafe;
+	--color-primary-200: #bfdbfe;
+	--color-primary-300: #93c5fd;
+	--color-primary-400: #60a5fa;
+	--color-primary-500: #3b82f6;
+	--color-primary-600: #2563eb;
+	--color-primary-700: #1d4ed8;
+	--color-primary-800: #1e40af;
+	--color-primary-900: #1e3a8a;
 }
 
-@source "../node_modules/flowbite-svelte/dist";
-@source "../node_modules/flowbite-svelte-icons/dist";
+@source '../node_modules/flowbite-svelte/dist';
+@source '../node_modules/flowbite-svelte-icons/dist';
 
 @layer base {
-  h1 {
-    @apply my-4 text-3xl font-extrabold tracking-tight text-primary-600 dark:text-primary-400 lg:text-4xl;
-  }
-  h2 {
-    @apply mx-auto my-4 text-center text-3xl font-semibold text-gray-800 dark:text-gray-100;
-  }
-  h3 {
-    @apply my-2 text-2xl dark:text-white;
-  }
+	h1 {
+		@apply text-primary-600 dark:text-primary-400 my-4 text-3xl font-extrabold tracking-tight lg:text-4xl;
+	}
+	h2 {
+		@apply mx-auto my-4 text-center text-3xl font-semibold text-gray-800 dark:text-gray-100;
+	}
+	h3 {
+		@apply my-2 text-2xl dark:text-white;
+	}
 }

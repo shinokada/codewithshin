@@ -16,7 +16,7 @@
 	const githubUrl = `https://github.com/shinokada/codewithshin`;
 	const twitterUrl = 'https://twitter.com/shinokada';
 	const blueskyUrl = 'https://bsky.app/profile/codewithshin.com';
-	let activeUrl = $state(page.url.pathname);
+	let activeUrl = $derived(page.url.pathname);
 	$effect(() => {
 		activeUrl = page.url.pathname;
 	});
@@ -32,7 +32,8 @@
 	navContainerClass="lg:justify-between"
 >
 	<NavBrand href="/">
-		<span class="self-center font-semibold whitespace-nowrap text-2xl  text-primary-900 dark:text-primary-500"
+		<span
+			class="text-primary-900 dark:text-primary-500 self-center text-2xl font-semibold whitespace-nowrap"
 			>codewithshin.com</span
 		>
 	</NavBrand>

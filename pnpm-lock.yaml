@@ -48,7 +48,7 @@ importers:
         specifier: ^16.5.0
         version: 16.5.0
       prettier:
-        specifier: ^3.6.2
+        specifier: 3.6.2
         version: 3.6.2
       prettier-plugin-svelte:
         specifier: ^3.4.0
@@ -63,8 +63,8 @@ importers:
         specifier: ^0.4.5
         version: 0.4.5(svelte@5.45.2)
       runes-webkit:
-        specifier: ^0.11.4
-        version: 0.11.4(@sveltejs/kit@2.49.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2)))(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2)))(svelte@5.45.2)(tailwindcss@4.1.17)
+        specifier: ^0.12.0
+        version: 0.12.0(@sveltejs/kit@2.49.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2)))(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2)))(svelte@5.45.2)(tailwindcss@4.1.17)
       super-sitemap:
         specifier: ^1.0.5
         version: 1.0.5(svelte@5.45.2)
@@ -1316,8 +1316,8 @@ packages:
     peerDependencies:
       postcss: ^8.4.29
 
-  postcss-selector-parser@7.1.0:
-    resolution: {integrity: sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA==}
+  postcss-selector-parser@7.1.1:
+    resolution: {integrity: sha512-orRsuYpJVw8LdAwqqLykBj9ecS5/cRHlI5+nvTo8LcCKmzDmqVORXtOIYEEQuL9D4BxtA1lm5isAqzQZCoQ6Eg==}
     engines: {node: '>=4'}
 
   postcss@8.5.6:
@@ -1430,8 +1430,8 @@ packages:
     peerDependencies:
       svelte: ^5.0.0
 
-  runes-webkit@0.11.4:
-    resolution: {integrity: sha512-eCQOa77rSJ+NOI08quXtiW2h6fgY95V7dO+4pwm/OG+QyWoGxNXg0dFrepJmqtLlhSog2wuPB2KB1vQbLhbCiw==}
+  runes-webkit@0.12.0:
+    resolution: {integrity: sha512-fIJBGlevLtCTeHJ6xu9tT/337C1p9l5WTTeOntVh7PEmckEoPQPGVKEic780pjGq3jhslE5sEXPI0tcb42jXsg==}
     peerDependencies:
       '@sveltejs/kit': ^2.5.5
       svelte: ^5.29.0
@@ -1510,8 +1510,8 @@ packages:
     resolution: {integrity: sha512-wLhMXwfJymd4IHMFIs7/vEWv2fkzbITPvYEDd2brox3b28t6oxR+iQB7WdNKuKbn/bLaLzu8CJpZeRsYyhjUkw==}
     hasBin: true
 
-  svelte-rune-highlight@0.7.1:
-    resolution: {integrity: sha512-R/mzLB+QBt3WGSrYpCg/n3r7UzeqfrLx7Cv2JqH9LdckTeTT2MBxhuo1ZvLWss2QXnIyLTr0Wx4g6xOseMoSsA==}
+  svelte-rune-highlight@0.11.1:
+    resolution: {integrity: sha512-edKVCqgv0U8JGm15sOhVrjczl+kw4W507SzfbFPVXqdLTWN/x0+6b6sXROE61f/8IR2ctKLhEE3KTyUequm+aw==}
     peerDependencies:
       svelte: ^5.0.0
 
@@ -1535,16 +1535,6 @@ packages:
 
   tailwind-merge@3.4.0:
     resolution: {integrity: sha512-uSaO4gnW+b3Y2aWoWfFpX62vn2sR3skfhbjsEnaBI81WD1wBLlHZe5sWf0AqjksNdYTbGBEd0UasQMT3SNV15g==}
-
-  tailwind-variants@2.0.1:
-    resolution: {integrity: sha512-1wt8c4PWO3jbZcKGBrjIV8cehWarREw1C2os0k8Mcq0nof/CbafNhUUjb0LRWiiRfAvDK6v1deswtHLsygKglw==}
-    engines: {node: '>=16.x', pnpm: '>=7.x'}
-    peerDependencies:
-      tailwind-merge: '>=3.0.0'
-      tailwindcss: '*'
-    peerDependenciesMeta:
-      tailwind-merge:
-        optional: true
 
   tailwind-variants@3.2.2:
     resolution: {integrity: sha512-Mi4kHeMTLvKlM98XPnK+7HoBPmf4gygdFmqQPaDivc3DpYS6aIY6KiG/PgThrGvii5YZJqRsPz0aPyhoFzmZgg==}
@@ -2766,7 +2756,7 @@ snapshots:
     dependencies:
       postcss: 8.5.6
 
-  postcss-selector-parser@7.1.0:
+  postcss-selector-parser@7.1.1:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
@@ -2842,15 +2832,15 @@ snapshots:
     dependencies:
       svelte: 5.45.2
 
-  runes-webkit@0.11.4(@sveltejs/kit@2.49.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2)))(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2)))(svelte@5.45.2)(tailwindcss@4.1.17):
+  runes-webkit@0.12.0(@sveltejs/kit@2.49.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2)))(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2)))(svelte@5.45.2)(tailwindcss@4.1.17):
     dependencies:
       '@sveltejs/kit': 2.49.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2)))(svelte@5.45.2)(vite@7.2.4(jiti@2.6.1)(lightningcss@1.30.2))
       clsx: 2.1.1
       highlight.js: 11.11.1
       svelte: 5.45.2
-      svelte-rune-highlight: 0.7.1(svelte@5.45.2)
+      svelte-rune-highlight: 0.11.1(svelte@5.45.2)
       tailwind-merge: 3.4.0
-      tailwind-variants: 2.0.1(tailwind-merge@3.4.0)(tailwindcss@4.1.17)
+      tailwind-variants: 3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.1.17)
       tailwindcss: 4.1.17
 
   sade@1.8.1:
@@ -2914,7 +2904,7 @@ snapshots:
       espree: 10.4.0
       postcss: 8.5.6
       postcss-scss: 4.0.9(postcss@8.5.6)
-      postcss-selector-parser: 7.1.0
+      postcss-selector-parser: 7.1.1
     optionalDependencies:
       svelte: 5.45.2
 
@@ -2922,7 +2912,7 @@ snapshots:
     dependencies:
       jsonc-parser: 3.3.1
 
-  svelte-rune-highlight@0.7.1(svelte@5.45.2):
+  svelte-rune-highlight@0.11.1(svelte@5.45.2):
     dependencies:
       highlight.js: 11.11.1
       svelte: 5.45.2
@@ -2961,12 +2951,6 @@ snapshots:
       wordwrapjs: 4.0.1
 
   tailwind-merge@3.4.0: {}
-
-  tailwind-variants@2.0.1(tailwind-merge@3.4.0)(tailwindcss@4.1.17):
-    dependencies:
-      tailwindcss: 4.1.17
-    optionalDependencies:
-      tailwind-merge: 3.4.0
 
   tailwind-variants@3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.1.17):
     dependencies:
