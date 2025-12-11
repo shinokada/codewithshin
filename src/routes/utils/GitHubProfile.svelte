@@ -45,11 +45,11 @@
 		// Check each service
 		const [stats, streak, trophy] = await Promise.all([
 			checkImageLoad(
-				'https://github-readme-stats.vercel.app/api?username=shinokada&show_icons=true'
+				'https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true'
 			),
 			checkImageLoad('https://github-readme-streak-stats.herokuapp.com?user=shinokada'),
 			checkImageLoad(
-				'https://github-profile-trophy.vercel.app/?username=shinokada&no-frame=true&row=1'
+				'https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&no-frame=true&row=1'
 			)
 		]);
 
@@ -81,18 +81,18 @@
 					<span class="text-base font-medium text-gray-900 dark:text-white">GitHub Stats</span>
 				</div>
 				<div class="flex items-center justify-center {cardHeight}">
-					<div class="flex hidden items-center justify-center gap-8 dark:block">
+					<div class="flex items-center justify-center gap-8 dark:block">
 						<img
 							alt="github stats"
 							class="inline"
-							src="https://github-readme-stats.vercel.app/api?username=shinokada&show_icons=true&theme=tokyonight&hide_border=true"
+							src="https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true&theme=tokyonight&hide_border=true"
 						/>
 					</div>
 					<div class="flex items-center justify-center gap-8 dark:hidden">
 						<img
 							alt="github stats"
 							class="inline"
-							src="https://github-readme-stats.vercel.app/api?username=shinokada&show_icons=true"
+							src="https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true"
 						/>
 					</div>
 				</div>
@@ -112,7 +112,7 @@
 					>
 				</div>
 				<div class="flex items-center justify-center {cardHeight}">
-					<div class="flex hidden items-center justify-center gap-8 dark:block">
+					<div class="flex items-center justify-center gap-8 dark:block">
 						<img
 							alt="streak stats"
 							class="inline"
@@ -144,18 +144,18 @@
 				</div>
 
 				<div class="flex items-center justify-center {cardHeight}">
-					<div class="flex hidden items-center justify-center dark:block">
+					<div class="flex items-center justify-center dark:block">
 						<img
 							alt="github trophy"
 							class="inline"
-							src="https://github-profile-trophy.vercel.app/?username=shinokada&theme=onedark&no-frame=true&row=1"
+							src="https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&theme=onedark&no-frame=true&row=1"
 						/>
 					</div>
 					<div class="flex items-center justify-center dark:hidden">
 						<img
 							alt="github trophy"
 							class="inline"
-							src="https://github-profile-trophy.vercel.app/?username=shinokada&no-frame=true&row=1"
+							src="https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&no-frame=true&row=1"
 						/>
 					</div>
 				</div>
