@@ -47,7 +47,7 @@
 			checkImageLoad(
 				'https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true'
 			),
-			checkImageLoad('https://github-readme-streak-stats.herokuapp.com?user=shinokada'),
+			checkImageLoad('https://github-readme-streak-stats-codewithshin.vercel.app/?user=shinokada'),
 			checkImageLoad(
 				'https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&no-frame=true&row=1'
 			)
@@ -116,14 +116,14 @@
 						<img
 							alt="streak stats"
 							class="inline"
-							src="https://github-readme-streak-stats.herokuapp.com?user=shinokada&theme=neon-palenight&hide_border=true"
+							src="https://github-readme-streak-stats-codewithshin.vercel.app/?user=shinokada&theme=neon-palenight&hide_border=true"
 						/>
 					</div>
 					<div class="flex items-center justify-center gap-8 dark:hidden">
 						<img
 							alt="streak stats"
 							class="inline"
-							src="https://github-readme-streak-stats.herokuapp.com?user=shinokada&hide_border=true"
+							src="https://github-readme-streak-stats-codewithshin.vercel.app/?user=shinokada&hide_border=true"
 						/>
 					</div>
 				</div>
