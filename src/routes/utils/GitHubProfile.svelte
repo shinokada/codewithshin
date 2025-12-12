@@ -2,6 +2,7 @@
 	import { Card } from 'flowbite-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
+	import { checkImageLoad, IMAGE_VALIDATION } from '$lib/utils/imageLoader';
 
 	let statsLoaded = $state(false);
 	let streakLoaded = $state(false);
@@ -11,52 +12,28 @@
 	const headerColor = '';
 	const cardHeight = 'h-56';
 
-	/**
-	 * Check if image actually loaded successfully
-	 * @param {string} url - The image URL to check
-	 * @returns {Promise<boolean>} - Whether the image loaded successfully
-	 */
-	async function checkImageLoad(url) {
-		if (!browser) return false;
-
-		return new Promise((resolve) => {
-			const img = new Image();
-			/** @type {ReturnType<typeof setTimeout>} */
-			let timeoutId;
-
-			img.onload = () => {
-				clearTimeout(timeoutId);
-				// Check if image has valid dimensions (not an error image)
-				if (img.naturalWidth > 100 && img.naturalHeight > 50) {
-					resolve(true);
-				} else {
-					resolve(false);
-				}
-			};
-			img.onerror = () => {
-				clearTimeout(timeoutId);
-				resolve(false);
-			};
-			// Set a timeout in case the image takes too long
-			timeoutId = setTimeout(() => resolve(false), 5000);
-			img.src = url;
-		});
-	}
-
 	onMount(async () => {
 		if (!browser) {
 			isChecking = false;
 			return;
 		}
 
-		// Check each service
+		// Check each service with themed URLs to match actual rendering
 		const [stats, streak, trophy] = await Promise.all([
 			checkImageLoad(
-				'https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true'
+				'https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true&theme=tokyonight&hide_border=true',
+				IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
+				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
 			),
-			checkImageLoad('https://github-readme-streak-stats-codewithshin.vercel.app/?user=shinokada'),
 			checkImageLoad(
-				'https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&no-frame=true&row=1'
+				'https://github-readme-streak-stats-codewithshin.vercel.app/?user=shinokada&theme=neon-palenight&hide_border=true',
+				IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
+				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
+			),
+			checkImageLoad(
+				'https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&theme=onedark&no-frame=true&row=1',
+				IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
+				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
 			)
 		]);
 

@@ -4,6 +4,7 @@
 	import type { NpmAuthorDownloadPropsType } from 'svelte-shields';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
+	import { checkImageLoad, IMAGE_VALIDATION } from '$lib/utils/imageLoader';
 
 	const weekly: NpmAuthorDownloadPropsType = {
 		author: 'shinichiokada',
@@ -23,37 +24,6 @@
 	let statsLoaded = $state(false);
 	let isChecking = $state(true);
 
-	/**
-	 * Check if NPM stats badge actually loads successfully
-	 * @param {string} url - The badge URL to check
-	 * @returns {Promise<boolean>} - Whether the badge loaded successfully
-	 */
-	async function checkBadgeLoad(url: string): Promise<boolean> {
-		if (!browser) return false;
-
-		return new Promise((resolve) => {
-			const img = new Image();
-			let timeoutId: ReturnType<typeof setTimeout>;
-
-			img.onload = () => {
-				clearTimeout(timeoutId);
-				// Check if image has valid dimensions (shields.io badges are typically > 80px wide)
-				if (img.naturalWidth > 50 && img.naturalHeight > 10) {
-					resolve(true);
-				} else {
-					resolve(false);
-				}
-			};
-			img.onerror = () => {
-				clearTimeout(timeoutId);
-				resolve(false);
-			};
-			// Set a timeout in case the badge takes too long
-			timeoutId = setTimeout(() => resolve(false), 5000);
-			img.src = url;
-		});
-	}
-
 	onMount(async () => {
 		if (!browser) {
 			isChecking = false;
@@ -63,7 +33,11 @@
 		// Check if at least one badge loads successfully
 		// We only need one to succeed to show the component
 		const weeklyUrl = `https://img.shields.io/npm-stat/dw/shinichiokada?style=for-the-badge`;
-		const loaded = await checkBadgeLoad(weeklyUrl);
+		const loaded = await checkImageLoad(
+			weeklyUrl,
+			IMAGE_VALIDATION.BADGE_MIN_WIDTH,
+			IMAGE_VALIDATION.BADGE_MIN_HEIGHT
+		);
 
 		statsLoaded = loaded;
 		isChecking = false;
