@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { Card } from 'flowbite-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
@@ -13,34 +13,36 @@
 	const cardHeight = 'h-56';
 
 	onMount(async () => {
-		if (!browser) {
+		if (!browser) return;
+
+		try {
+			// Check each service with themed URLs to match actual rendering
+			// Using Promise.allSettled to handle partial failures gracefully
+			const results = await Promise.allSettled([
+				checkImageLoad(
+					'https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true&theme=tokyonight&hide_border=true',
+					IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
+					IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
+				),
+				checkImageLoad(
+					'https://github-readme-streak-stats-codewithshin.vercel.app/?user=shinokada&theme=neon-palenight&hide_border=true',
+					IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
+					IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
+				),
+				checkImageLoad(
+					'https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&theme=onedark&no-frame=true&row=1',
+					IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
+					IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
+				)
+			]);
+
+			statsLoaded = results[0].status === 'fulfilled' ? results[0].value : false;
+			streakLoaded = results[1].status === 'fulfilled' ? results[1].value : false;
+			trophyLoaded = results[2].status === 'fulfilled' ? results[2].value : false;
+		} finally {
+			// Always set isChecking to false, even if checks fail
 			isChecking = false;
-			return;
 		}
-
-		// Check each service with themed URLs to match actual rendering
-		const [stats, streak, trophy] = await Promise.all([
-			checkImageLoad(
-				'https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true&theme=tokyonight&hide_border=true',
-				IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
-				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
-			),
-			checkImageLoad(
-				'https://github-readme-streak-stats-codewithshin.vercel.app/?user=shinokada&theme=neon-palenight&hide_border=true',
-				IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
-				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
-			),
-			checkImageLoad(
-				'https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&theme=onedark&no-frame=true&row=1',
-				IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
-				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
-			)
-		]);
-
-		statsLoaded = stats;
-		streakLoaded = streak;
-		trophyLoaded = trophy;
-		isChecking = false;
 	});
 
 	// Check if any cards should be shown
@@ -71,6 +73,9 @@
 								alt="github stats"
 								class="inline"
 								src="https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true&theme=tokyonight&hide_border=true"
+								onerror={(e) => {
+									(e.currentTarget as HTMLImageElement).style.display = 'none';
+								}}
 							/>
 						</div>
 						<div class="flex items-center justify-center gap-8 dark:hidden">
@@ -78,6 +83,9 @@
 								alt="github stats"
 								class="inline"
 								src="https://github-readme-stats-codewithshin.vercel.app/api?username=shinokada&show_icons=true"
+								onerror={(e) => {
+									(e.currentTarget as HTMLImageElement).style.display = 'none';
+								}}
 							/>
 						</div>
 					</div>
@@ -102,6 +110,9 @@
 								alt="streak stats"
 								class="inline"
 								src="https://github-readme-streak-stats-codewithshin.vercel.app/?user=shinokada&theme=neon-palenight&hide_border=true"
+								onerror={(e) => {
+									(e.currentTarget as HTMLImageElement).style.display = 'none';
+								}}
 							/>
 						</div>
 						<div class="flex items-center justify-center gap-8 dark:hidden">
@@ -109,6 +120,9 @@
 								alt="streak stats"
 								class="inline"
 								src="https://github-readme-streak-stats-codewithshin.vercel.app/?user=shinokada&hide_border=true"
+								onerror={(e) => {
+									(e.currentTarget as HTMLImageElement).style.display = 'none';
+								}}
 							/>
 						</div>
 					</div>
@@ -134,6 +148,9 @@
 								alt="github trophy"
 								class="inline"
 								src="https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&theme=onedark&no-frame=true&row=1"
+								onerror={(e) => {
+									(e.currentTarget as HTMLImageElement).style.display = 'none';
+								}}
 							/>
 						</div>
 						<div class="flex items-center justify-center dark:hidden">
@@ -141,6 +158,9 @@
 								alt="github trophy"
 								class="inline"
 								src="https://github-profile-trophy-codewithshin.vercel.app/?username=shinokada&no-frame=true&row=1"
+								onerror={(e) => {
+									(e.currentTarget as HTMLImageElement).style.display = 'none';
+								}}
 							/>
 						</div>
 					</div>
