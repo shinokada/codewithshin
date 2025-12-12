@@ -1,25 +1,23 @@
 <script lang="ts">
 	import '../app.css';
-	import { RunesMetaTags, deepMerge } from 'runes-meta-tags';
-	// import type { MetaProps } from 'runes-meta-tags';
-	import { page } from '$app/stores';
+	import { MetaTags, type MetaProps, deepMerge } from 'runes-meta-tags';
+	import { page } from '$app/state';
 	import { Runatics } from 'runatics';
-	// import Analytics from './utils/Analytics.svelte';
 	let { children, data } = $props();
 	import Nav from './utils/Nav.svelte';
 	import Footer from './utils/Footer.svelte';
 
-	let metaTags = $derived($page.data.pageMetaTags ? $page.data.pageMetaTags : data.layoutMetaTags);
-	$effect(() => {
-		metaTags = $page.data.pageMetaTags
-			? deepMerge($page.data.layoutMetaTags, $page.data.pageMetaTags)
-			: data.layoutMetaTags;
-	});
-	const analyticsId = data.ANALYTICS_ID;
+	let metaTags = $derived<MetaProps>(
+		page.data.pageMetaTags
+			? deepMerge<MetaProps>(data.layoutMetaTags, page.data.pageMetaTags)
+			: data.layoutMetaTags
+	);
+
+	const analyticsId = $derived(data.ANALYTICS_ID);
 </script>
 
 <Runatics {analyticsId} />
-<RunesMetaTags {...metaTags} />
+<MetaTags {...metaTags} />
 
 <Nav />
 

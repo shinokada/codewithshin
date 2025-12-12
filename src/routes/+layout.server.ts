@@ -1,7 +1,8 @@
 import { ANALYTICS_ID } from '$env/static/private';
+import type { MetaProps } from 'runes-meta-tags';
 
 export const load = ({ url }) => {
-	const layoutMetaTags = {
+	const layoutMetaTags: MetaProps = {
 		title: 'codewithshin.com',
 		description:
 			"Hi, I'm Shin, a programmer and technology enthusiast with a passion for sharing my knowledge and experience.",
@@ -9,7 +10,7 @@ export const load = ({ url }) => {
 		twitter: {
 			card: 'summary_large_image',
 			site: '@shinokada',
-			handle: '@shinokada',
+			creator: '@shinokada',
 			title: 'codewithshin.com',
 			description:
 				"Hi, I'm Shin, a programmer and technology enthusiast with a passion for sharing my knowledge and experience.",

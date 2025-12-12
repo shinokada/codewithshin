@@ -30,7 +30,7 @@
 		3: 'grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8 xl:grid-cols-3'
 	};
 
-	let divCls = twMerge('grid', cols[colNum], classname);
+	let divCls = $derived(twMerge('grid', cols[colNum], classname));
 </script>
 
 <div class={divCls}>
