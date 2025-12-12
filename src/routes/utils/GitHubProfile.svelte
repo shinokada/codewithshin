@@ -41,6 +41,7 @@
 
 	onMount(() => {
 		if (!browser) return;
+		let cancelled = false;
 
 		// Detect initial theme
 		isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -75,15 +76,18 @@
 			)
 		])
 			.then((results) => {
+				if (cancelled) return;
 				statsLoaded = results[0].status === 'fulfilled' ? results[0].value : false;
 				streakLoaded = results[1].status === 'fulfilled' ? results[1].value : false;
 				trophyLoaded = results[2].status === 'fulfilled' ? results[2].value : false;
 			})
 			.finally(() => {
+				if (cancelled) return;
 				isChecking = false;
 			});
 
 		return () => {
+			cancelled = true;
 			mediaQuery.removeEventListener('change', handleThemeChange);
 		};
 	});
@@ -91,8 +95,10 @@
 	// Check if any cards should be shown
 	const hasVisibleCards = $derived(statsLoaded || streakLoaded || trophyLoaded);
 
-	function handleImageError(e: Event) {
-		(e.currentTarget as HTMLImageElement).style.display = 'none';
+	function handleImageError(kind: 'stats' | 'streak' | 'trophy') {
+		if (kind === 'stats') statsLoaded = false;
+		if (kind === 'streak') streakLoaded = false;
+		if (kind === 'trophy') trophyLoaded = false;
 	}
 </script>
 
@@ -118,7 +124,7 @@
 						alt="github stats"
 						class="inline"
 						src={currentUrls.stats}
-						onerror={handleImageError}
+						onerror={() => handleImageError('stats')}
 					/>
 				</div>
 			</Card>
@@ -141,7 +147,7 @@
 						alt="streak stats"
 						class="inline"
 						src={currentUrls.streak}
-						onerror={handleImageError}
+						onerror={() => handleImageError('streak')}
 					/>
 				</div>
 			</Card>
@@ -165,7 +171,7 @@
 						alt="github trophy"
 						class="inline"
 						src={currentUrls.trophy}
-						onerror={handleImageError}
+						onerror={() => handleImageError('trophy')}
 					/>
 				</div>
 			</Card>
