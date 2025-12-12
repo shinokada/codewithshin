@@ -44,38 +44,40 @@
 	});
 </script>
 
-{#if isChecking}
-	<!-- Show loading state while checking -->
-	<div class="mx-auto my-10 flex max-w-3xl items-center">
-		<Card
-			class="dark:hover:shadow-lg-light max-w-3xl p-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
-		>
-			<div class="flex items-center justify-center gap-2 px-4 py-6">
-				<p class="text-gray-500 dark:text-gray-400">Loading NPM stats...</p>
-			</div>
-		</Card>
-	</div>
-{:else if statsLoaded}
-	<div class="mx-auto my-10 flex max-w-3xl items-center">
-		<Card
-			class="dark:hover:shadow-lg-light max-w-3xl p-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
-		>
-			<div class="flex items-center justify-center gap-2 px-4">
-				<NpmAuthorDownload {...weekly} />
-				<NpmAuthorDownload {...monthly} />
-				<NpmAuthorDownload {...yearly} />
-			</div>
-		</Card>
-	</div>
-{:else}
-	<!-- All checks failed or services unavailable -->
-	<div class="mx-auto my-10 flex max-w-3xl items-center">
-		<Card
-			class="dark:hover:shadow-lg-light max-w-3xl p-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
-		>
-			<div class="flex items-center justify-center gap-2 px-4 py-6">
-				<p class="text-gray-500 dark:text-gray-400">NPM stats temporarily unavailable</p>
-			</div>
-		</Card>
-	</div>
-{/if}
+<div role="status" aria-live="polite">
+	{#if isChecking}
+		<!-- Show loading state while checking -->
+		<div class="mx-auto my-10 flex max-w-3xl items-center">
+			<Card
+				class="dark:hover:shadow-lg-light max-w-3xl p-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
+			>
+				<div class="flex items-center justify-center gap-2 px-4 py-6">
+					<p class="text-gray-500 dark:text-gray-400">Loading NPM stats...</p>
+				</div>
+			</Card>
+		</div>
+	{:else if statsLoaded}
+		<div class="mx-auto my-10 flex max-w-3xl items-center">
+			<Card
+				class="dark:hover:shadow-lg-light max-w-3xl p-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
+			>
+				<div class="flex items-center justify-center gap-2 px-4">
+					<NpmAuthorDownload {...weekly} />
+					<NpmAuthorDownload {...monthly} />
+					<NpmAuthorDownload {...yearly} />
+				</div>
+			</Card>
+		</div>
+	{:else}
+		<!-- All checks failed or services unavailable -->
+		<div class="mx-auto my-10 flex max-w-3xl items-center">
+			<Card
+				class="dark:hover:shadow-lg-light max-w-3xl p-4 hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
+			>
+				<div class="flex items-center justify-center gap-2 px-4 py-6">
+					<p class="text-gray-500 dark:text-gray-400">NPM stats temporarily unavailable</p>
+				</div>
+			</Card>
+		</div>
+	{/if}
+</div>

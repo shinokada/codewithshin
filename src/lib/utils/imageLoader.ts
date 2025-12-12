@@ -32,17 +32,35 @@ export async function checkImageLoad(
 
 	return new Promise((resolve) => {
 		const img = new Image();
-		const timeoutId = setTimeout(() => resolve(false), timeout);
+		let settled = false;
+
+		// Cleanup function to ensure handlers fire only once
+		const done = (value: boolean) => {
+			if (settled) return;
+			settled = true;
+			clearTimeout(timeoutId);
+			img.onload = null;
+			img.onerror = null;
+			resolve(value);
+		};
+
+		const timeoutId = setTimeout(() => {
+			// Best-effort: stop further work/callbacks
+			try {
+				img.src = '';
+			} catch {
+				// Ignore errors when clearing src
+			}
+			done(false);
+		}, timeout);
 
 		img.onload = () => {
-			clearTimeout(timeoutId);
 			// Check if image has valid dimensions (not an error image)
-			resolve(img.naturalWidth > minWidth && img.naturalHeight > minHeight);
+			done(img.naturalWidth >= minWidth && img.naturalHeight >= minHeight);
 		};
 
 		img.onerror = () => {
-			clearTimeout(timeoutId);
-			resolve(false);
+			done(false);
 		};
 
 		img.src = url;
