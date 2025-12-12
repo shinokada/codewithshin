@@ -21,7 +21,11 @@
 
 		return new Promise((resolve) => {
 			const img = new Image();
+			/** @type {ReturnType<typeof setTimeout>} */
+			let timeoutId;
+
 			img.onload = () => {
+				clearTimeout(timeoutId);
 				// Check if image has valid dimensions (not an error image)
 				if (img.naturalWidth > 100 && img.naturalHeight > 50) {
 					resolve(true);
@@ -29,9 +33,12 @@
 					resolve(false);
 				}
 			};
-			img.onerror = () => resolve(false);
+			img.onerror = () => {
+				clearTimeout(timeoutId);
+				resolve(false);
+			};
 			// Set a timeout in case the image takes too long
-			setTimeout(() => resolve(false), 5000);
+			timeoutId = setTimeout(() => resolve(false), 5000);
 			img.src = url;
 		});
 	}
@@ -162,4 +169,9 @@
 			</Card>
 		</div>
 	{/if}
+{:else}
+	<!-- All checks failed or services unavailable -->
+	<div class="py-8 text-center text-gray-500 dark:text-gray-400">
+		<p>GitHub profile stats temporarily unavailable</p>
+	</div>
 {/if}
