@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Card } from 'flowbite-svelte';
+	import ProfileCard from './ProfileCard.svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	import { checkImageLoad, IMAGE_VALIDATION } from '$lib/utils/imageLoader';
@@ -110,71 +111,32 @@
 {:else if hasVisibleCards}
 	<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-2">
 		{#if statsLoaded}
-			<Card
-				href="https://github.com/shinokada"
-				class="dark:hover:shadow-lg-light max-w-none! shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
-			>
-				<div
-					class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700"
-				>
-					<span class="text-base font-medium text-gray-900 dark:text-white">GitHub Stats</span>
-				</div>
-				<div class="flex items-center justify-center {cardHeight}">
-					<img
-						alt="github stats"
-						class="inline"
-						src={currentUrls.stats}
-						onerror={() => handleImageError('stats')}
-					/>
-				</div>
-			</Card>
+			<ProfileCard
+				title="GitHub Stats"
+				imageUrl={currentUrls.stats}
+				imageAlt="github stats"
+				onError={() => handleImageError('stats')}
+			/>
 		{/if}
 
 		{#if streakLoaded}
-			<Card
-				href="https://github.com/shinokada"
-				class="dark:hover:shadow-lg-light max-w-none! shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
-			>
-				<div
-					class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700"
-				>
-					<span class="text-base font-medium text-gray-900 dark:text-white"
-						>GitHub Contributions</span
-					>
-				</div>
-				<div class="flex items-center justify-center {cardHeight}">
-					<img
-						alt="streak stats"
-						class="inline"
-						src={currentUrls.streak}
-						onerror={() => handleImageError('streak')}
-					/>
-				</div>
-			</Card>
+			<ProfileCard
+				title="GitHub Contributions"
+				imageUrl={currentUrls.streak}
+				imageAlt="streak stats"
+				onError={() => handleImageError('streak')}
+			/>
 		{/if}
 	</div>
 
 	{#if trophyLoaded}
 		<div class="mt-4 grid grid-cols-1">
-			<Card
-				href="https://github.com/shinokada"
-				class="dark:hover:shadow-lg-light max-w-none! shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
-			>
-				<div
-					class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700"
-				>
-					<span class="text-base font-medium text-gray-900 dark:text-white">GitHub trophies</span>
-				</div>
-
-				<div class="flex items-center justify-center {cardHeight}">
-					<img
-						alt="github trophy"
-						class="inline"
-						src={currentUrls.trophy}
-						onerror={() => handleImageError('trophy')}
-					/>
-				</div>
-			</Card>
+			<ProfileCard
+				title="GitHub trophies"
+				imageUrl={currentUrls.trophy}
+				imageAlt="streak trophy"
+				onError={() => handleImageError('trophy')}
+			/>
 		</div>
 	{/if}
 {:else}
