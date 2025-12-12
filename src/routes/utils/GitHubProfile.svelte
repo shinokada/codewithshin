@@ -9,6 +9,8 @@
 	let trophyLoaded = $state(false);
 	let isChecking = $state(true);
 	let isDarkMode = $state(false);
+	let lastValidatedIsDarkMode: boolean | null = null;
+	let validationRunId = 0;
 
 	// URLs for each theme
 	const urls = {
@@ -42,6 +44,7 @@
 
 		// Detect initial theme
 		isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		lastValidatedIsDarkMode = isDarkMode;
 
 		// Listen for theme changes
 		const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -100,6 +103,11 @@
 
 	$effect(() => {
 		if (!browser || isChecking) return;
+		if (lastValidatedIsDarkMode === isDarkMode) return;
+
+		lastValidatedIsDarkMode = isDarkMode;
+		const runId = ++validationRunId;
+		let cancelled = false;
 
 		// Re-validate when theme changes
 		const urlsToCheck = isDarkMode
@@ -123,10 +131,15 @@
 				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
 			)
 		]).then((results) => {
+			if (cancelled || runId !== validationRunId) return;
 			statsLoaded = results[0].status === 'fulfilled' ? results[0].value : false;
 			streakLoaded = results[1].status === 'fulfilled' ? results[1].value : false;
 			trophyLoaded = results[2].status === 'fulfilled' ? results[2].value : false;
 		});
+
+		return () => {
+			cancelled = true;
+		};
 	});
 </script>
 
