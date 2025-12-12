@@ -8,13 +8,14 @@
 		onError: () => void;
 		headerColor?: string;
 		cardHeight?: string;
+		href?: string;
 	}
 	
-	let { title, imageUrl, imageAlt, onError, headerColor = '', cardHeight = 'h-56' }: Props = $props();
+	let { title, imageUrl, imageAlt, onError, headerColor = '', cardHeight = 'h-56', href = "https://github.com/shinokada" }: Props = $props();
 </script>
 
 <Card
-	href="https://github.com/shinokada"
+	{href}
 	class="dark:hover:shadow-lg-light max-w-none! shadow-none hover:shadow-lg dark:bg-sky-950 dark:hover:bg-sky-900"
 >
 	<div class="{headerColor} flex items-center justify-between rounded-t-md border-b border-gray-200 px-5 py-2.5 dark:border-gray-700">

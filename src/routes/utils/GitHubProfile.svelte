@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Card } from 'flowbite-svelte';
 	import ProfileCard from './ProfileCard.svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
