@@ -10,9 +10,6 @@
 	let isChecking = $state(true);
 	let isDarkMode = $state(false);
 
-	const headerColor = '';
-	const cardHeight = 'h-56';
-
 	// URLs for each theme
 	const urls = {
 		stats: {
@@ -100,6 +97,37 @@
 		if (kind === 'streak') streakLoaded = false;
 		if (kind === 'trophy') trophyLoaded = false;
 	}
+
+	$effect(() => {
+		if (!browser || isChecking) return;
+
+		// Re-validate when theme changes
+		const urlsToCheck = isDarkMode
+			? [urls.stats.dark, urls.streak.dark, urls.trophy.dark]
+			: [urls.stats.light, urls.streak.light, urls.trophy.light];
+
+		Promise.allSettled([
+			checkImageLoad(
+				urlsToCheck[0],
+				IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
+				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
+			),
+			checkImageLoad(
+				urlsToCheck[1],
+				IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
+				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
+			),
+			checkImageLoad(
+				urlsToCheck[2],
+				IMAGE_VALIDATION.GITHUB_MIN_WIDTH,
+				IMAGE_VALIDATION.GITHUB_MIN_HEIGHT
+			)
+		]).then((results) => {
+			statsLoaded = results[0].status === 'fulfilled' ? results[0].value : false;
+			streakLoaded = results[1].status === 'fulfilled' ? results[1].value : false;
+			trophyLoaded = results[2].status === 'fulfilled' ? results[2].value : false;
+		});
+	});
 </script>
 
 {#if isChecking}
