@@ -17,28 +17,54 @@
 			}
 		},
 		{
-			name: 'Teffects',
+			name: 'Awesome',
 			description:
-				'A bash script that automates creating header images for your articles, email, presentation and other purposes.',
-			path: 'https://teffects.codewithshin.com/',
+				'A simple shell script package manager that installs a shell script package from a GitHub repo on your macOS/Linux.',
+			path: 'https://awesome.codewithshin.com/',
 			github_release: {
 				user: 'shinokada',
-				repo: 'teffects',
+				repo: 'awesome',
 				style: 'flat',
 				color: 'orange',
-				label: 'Teffects'
+				label: 'Awesome'
 			}
 		},
 		{
-			name: 'Shellscript starter',
-			description: 'Quick starter for Shell/Bash script',
-			path: 'https://shellscript-starter.codewithshin.com/',
+			name: 'SPT: Simple Pacakage Tool',
+			description: 'A Bash script to generate a basic DEBIAN package from Github-name/repo-name.',
+			path: 'https://spt.codewithshin.com/',
 			github_release: {
 				user: 'shinokada',
-				repo: 'shellscript-starter',
+				repo: 'spt',
 				style: 'flat',
 				color: 'orange',
-				label: 'Shellscript starter'
+				label: 'SPT'
+			}
+		},
+		{
+			name: 'Gitstart',
+			description:
+				'Automates creating a GitHub repo. The script creates .gitignore, a license.txt, a README.md file and commit with a message. It will create a remote repo and push all the files.',
+			path: 'https://gitstart.codewithshin.com/',
+			github_release: {
+				user: 'shinokada',
+				repo: 'gitstart',
+				style: 'flat',
+				color: 'orange',
+				label: 'Gitstart'
+			}
+		},
+		{
+			name: 'ABI: Automate Brew Install',
+			description:
+				'Automate Brew Install creates a Gist of your Homebrew formula or cask, and install Homebrew them from a Gist',
+			path: 'https://abi.codewithshin.com/',
+			github_release: {
+				user: 'shinokada',
+				repo: 'abi',
+				style: 'flat',
+				color: 'orange',
+				label: 'ABI'
 			}
 		},
 		{
@@ -55,16 +81,28 @@
 			}
 		},
 		{
-			name: 'Awesome',
+			name: 'Dotties',
 			description:
-				'A simple shell script package manager that installs a shell script package from a GitHub repo on your macOS/Linux.',
-			path: 'https://awesome.codewithshin.com/',
+				'A dotfile management script that saves specified dotfiles to a secret Gist and clone them from the Gist.',
+			path: 'https://dotties.codewithshin.com/',
 			github_release: {
 				user: 'shinokada',
-				repo: 'awesome',
+				repo: 'dotties',
 				style: 'flat',
 				color: 'orange',
-				label: 'Awesome'
+				label: 'Dotties'
+			}
+		},
+		{
+			name: 'Shellscript starter',
+			description: 'Quick starter for Shell/Bash script',
+			path: 'https://shellscript-starter.codewithshin.com/',
+			github_release: {
+				user: 'shinokada',
+				repo: 'shellscript-starter',
+				style: 'flat',
+				color: 'orange',
+				label: 'Shellscript starter'
 			}
 		},
 		{
@@ -93,43 +131,6 @@
 			}
 		},
 		{
-			name: 'SPT: Simple Pacakage Tool',
-			description: 'A Bash script to generate a basic DEBIAN package from Github-name/repo-name.',
-			path: 'https://spt.codewithshin.com/',
-			github_release: {
-				user: 'shinokada',
-				repo: 'spt',
-				style: 'flat',
-				color: 'orange',
-				label: 'SPT'
-			}
-		},
-		{
-			name: 'Typelet',
-			description: 'Create and add large words print it with a typewriter effect.',
-			path: 'https://typelet.codewithshin.com/',
-			github_release: {
-				user: 'shinokada',
-				repo: 'typelet',
-				style: 'flat',
-				color: 'orange',
-				label: 'Typelet'
-			}
-		},
-		{
-			name: 'Gitstart',
-			description:
-				'Automates creating a GitHub repo. The script creates .gitignore, a license.txt, a README.md file and commit with a message. It will create a remote repo and push all the files.',
-			path: 'https://gitstart.codewithshin.com/',
-			github_release: {
-				user: 'shinokada',
-				repo: 'gitstart',
-				style: 'flat',
-				color: 'orange',
-				label: 'Gitstart'
-			}
-		},
-		{
 			name: 'Gitig',
 			description:
 				'Fix your gitignore problem by recursively removing all unstaged and paths from the index, and adding all files, commit, and push to the origin main.',
@@ -155,19 +156,6 @@
 			}
 		},
 		{
-			name: 'Dotties',
-			description:
-				'A dotfile management script that saves specified dotfiles to a secret Gist and clone them from the Gist.',
-			path: 'https://dotties.codewithshin.com/',
-			github_release: {
-				user: 'shinokada',
-				repo: 'dotties',
-				style: 'flat',
-				color: 'orange',
-				label: 'Dotties'
-			}
-		},
-		{
 			name: 'imgtaggen',
 			description:
 				'A CLI tool for generating a responsive image tag with support for AVIF and WebP formats',
@@ -178,6 +166,31 @@
 				style: 'flat',
 				color: 'orange',
 				label: 'imgtaggen'
+			}
+		},
+		{
+			name: 'Teffects',
+			description:
+				'A bash script that automates creating header images for your articles, email, presentation and other purposes.',
+			path: 'https://teffects.codewithshin.com/',
+			github_release: {
+				user: 'shinokada',
+				repo: 'teffects',
+				style: 'flat',
+				color: 'orange',
+				label: 'Teffects'
+			}
+		},
+		{
+			name: 'Typelet',
+			description: 'Create and add large words print it with a typewriter effect.',
+			path: 'https://typelet.codewithshin.com/',
+			github_release: {
+				user: 'shinokada',
+				repo: 'typelet',
+				style: 'flat',
+				color: 'orange',
+				label: 'Typelet'
 			}
 		},
 		{
@@ -204,19 +217,6 @@
 				style: 'flat',
 				color: 'orange',
 				label: 'Cleanit'
-			}
-		},
-		{
-			name: 'ABI: Automate Brew Install',
-			description:
-				'Automate Brew Install creates a Gist of your Homebrew formula or cask, and install Homebrew them from a Gist',
-			path: 'https://abi.codewithshin.com/',
-			github_release: {
-				user: 'shinokada',
-				repo: 'abi',
-				style: 'flat',
-				color: 'orange',
-				label: 'ABI'
 			}
 		},
 		{
