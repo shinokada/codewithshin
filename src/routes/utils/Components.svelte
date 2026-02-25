@@ -34,7 +34,7 @@
 </script>
 
 <div class={divCls}>
-	{#each componentData as { path, name, thumnailSize, icon, npm_version, github_release, pypi_version, static_badge, description } ({ name })}
+	{#each componentData as { path, name, thumnailSize, icon, npm_version, github_release, pypi_version, static_badge, description } (name)}
 		<CompoCard
 			{name}
 			{thumnailSize}
