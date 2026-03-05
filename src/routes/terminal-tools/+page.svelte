@@ -17,6 +17,19 @@
 			}
 		},
 		{
+			name: 'Gitstart',
+			description:
+				'Automates creating a GitHub repo. It creates .gitignore, a license.txt, a README.md file and commit with a message. It will create a remote repo and push all the files.',
+			path: 'https://gitstart.codewithshin.com/',
+			github_release: {
+				user: 'shinokada',
+				repo: 'gitstart',
+				style: 'flat',
+				color: 'orange',
+				label: 'Gitstart'
+			}
+		},
+		{
 			name: 'Awesome',
 			description:
 				'A simple shell script package manager that installs a shell script package from a GitHub repo on your macOS/Linux.',
@@ -39,19 +52,6 @@
 				style: 'flat',
 				color: 'orange',
 				label: 'SPT'
-			}
-		},
-		{
-			name: 'Gitstart',
-			description:
-				'Automates creating a GitHub repo. The script creates .gitignore, a license.txt, a README.md file and commit with a message. It will create a remote repo and push all the files.',
-			path: 'https://gitstart.codewithshin.com/',
-			github_release: {
-				user: 'shinokada',
-				repo: 'gitstart',
-				style: 'flat',
-				color: 'orange',
-				label: 'Gitstart'
 			}
 		},
 		{
@@ -273,7 +273,7 @@
 
 <div class="mb-8 flex flex-col items-center gap-4 sm:gap-4">
 	<h1>Terminal Tools</h1>
-	<h2>Bash and Node.js tools for your terminal.</h2>
+	<h2>Golang, Bash and Node.js tools for your terminal.</h2>
 </div>
 
 <Components componentData={list} />
