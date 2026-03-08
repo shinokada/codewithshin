@@ -16,42 +16,12 @@
 		{
 			name: 'Vennfig',
 			description: 'A venn diagram package for Python.',
-			path: 'https://jovian.ml/shinokada/vennfig',
+			path: 'https://github.com/shinokada/vennfig',
 			pypi_version: {
 				packageName: 'vennfig',
 				style: 'flat',
 				label: 'Vennfig',
 				logo: 'python',
-				labelColor: 'ffffff'
-			}
-		},
-		{
-			name: 'Animated choropleth map',
-			description: 'How to create an animated choropleth map with less than 15 lines of code.',
-			path: 'https://jovian.ml/shinokada/how-to-create-an-animated-choropleth-map-with-less-than-15-lines-of-code/',
-			static_badge: {
-				badgeContent: 'Jupyter-Animated_choropleth_map-1d75af',
-				logo: 'jupyter',
-				labelColor: 'ffffff'
-			}
-		},
-		{
-			name: 'A grouped bar chart',
-			description: 'How to create a grouped bar chart with Plotly Express in Jupyter Notebook.',
-			path: 'https://jovian.ml/shinokada/how-to-create-a-grouped-bar-chart-with-plotly-express-in-python',
-			static_badge: {
-				badgeContent: 'Jupyter-A grouped bar chart-1d75af',
-				logo: 'jupyter',
-				labelColor: 'ffffff'
-			}
-		},
-		{
-			name: 'Dropdown interactive',
-			description: 'An interactive dropdown menu for Jupyter Notebook.',
-			path: 'https://jovian.ml/shinokada/dropdown-interactive',
-			static_badge: {
-				badgeContent: 'Jupyter-Dropdown interactive-1d75af',
-				logo: 'jupyter',
 				labelColor: 'ffffff'
 			}
 		},

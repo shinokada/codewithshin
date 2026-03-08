@@ -3,6 +3,19 @@
 
 	const list = [
 		{
+			name: 'Svelte Next',
+			description:
+				'Scans a directory for Svelte 5+ projects and automates package updates, installs, tests, and git commits. Ships as a single static binary supporting bun, pnpm, yarn, and npm.',
+			path: 'https://svelte-next.codewithshin.com/',
+			github_release: {
+				user: 'shinokada',
+				repo: 'svelte-next',
+				logo: 'go',
+				color: 'green',
+				label: 'Svelte Next (Golang)'
+			}
+		},
+		{
 			name: 'Flowbite Svelte',
 			description: 'An official Flowbite component library for Svelte 4/5/.',
 			path: 'https://flowbite-svelte.com/',
@@ -62,14 +75,16 @@
 
 	const listRunes = [
 		{
-			name: 'Flowbite Svelte MCP',
-			description: 'MCP server for Flowbite-Svelte documentation (LLM)',
-			path: 'https://github.com/shinokada/flowbite-svelte-mcp',
-			npm_version: {
-				packageName: 'flowbite-svelte-mcp',
-				logo: 'svelte',
-				color: 'blue',
-				label: 'Flowbite Svelte MCP'
+			name: 'Svelte Next',
+			description:
+				'Scans a directory for Svelte 5+ projects and automates package updates, installs, tests, and git commits. Ships as a single static binary supporting bun, pnpm, yarn, and npm.',
+			path: 'https://shinokada.github.io/svelte-next/',
+			github_release: {
+				user: 'shinokada',
+				repo: 'svelte-next',
+				logo: 'go',
+				color: 'green',
+				label: 'Svelte Next (Golang)'
 			}
 		},
 		{
@@ -121,6 +136,17 @@
 			}
 		},
 		{
+			name: 'Flowbite Svelte MCP',
+			description: 'MCP server for Flowbite-Svelte documentation (LLM)',
+			path: 'https://github.com/shinokada/flowbite-svelte-mcp',
+			npm_version: {
+				packageName: 'flowbite-svelte-mcp',
+				logo: 'svelte',
+				color: 'blue',
+				label: 'Flowbite Svelte MCP'
+			}
+		},
+		{
 			name: 'Svelte Animate',
 			description:
 				'A lightweight Svelte component that adds beautiful CSS animations to any element using Animate.css library.',
@@ -153,19 +179,6 @@
 				logo: 'svelte',
 				color: 'red',
 				label: 'Flowbite Svelte Admin Dashboard'
-			}
-		},
-		{
-			name: 'Svelte Next',
-			description:
-				'Bash script to automate updating Svelte versions (specifically targeting next versions) in project directories',
-			path: 'https://svelte-next.codewithshin.com/',
-			github_release: {
-				user: 'shinokada',
-				repo: 'svelte-next',
-				logo: 'bash',
-				color: 'green',
-				label: 'Svelte Next (Bash)'
 			}
 		},
 		{
